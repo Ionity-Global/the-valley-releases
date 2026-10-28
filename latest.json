@@ -5,7 +5,7 @@
   "version": "4.14.1",
   "minVersion": "4.13.0",
   "title": "Field of Honour",
-  "notes": "\ufeff**THE VALLEY v4.14.1** - Ionity (Pty) Ltd\n\n- Fixed: champions load from your account again (a Firestore rule from the updater blocked the champion list).\n- The title, footer, credits and loading screen show v4.14 FIELD OF HONOUR; NEWS has the v4.14 and v4.13 entries.\n- The runner says when you already have the newest version.\n",
+  "notes": "**THE VALLEY v4.14.1** - Ionity (Pty) Ltd\n\n- Fixed: champions load from your account again (an account rule added with the updater blocked the champion list).\n- The title, footer, credits and loading screen show v4.14 FIELD OF HONOUR; NEWS has the v4.14 and v4.13 entries.\n- The runner says when you already have the newest version.\n",
   "released": "2026-10-28T16:23:04Z",
   "patches": [
     {
@@ -33,9 +33,67 @@
   ],
   "full": {
     "version": "4.14.0",
-    "setup": "https://drive.google.com/open?id=1TKx3Mj_Hg75ne66N72Uh1HWSLxzM0xbH",
-    "folder": "https://drive.google.com/open?id=14fLi6HxCEQRL4WLVchU1gGD9Pr0wTZu4",
+    "setup": "https://drive.google.com/open?id=1ckkOcVtetVPZPnzoYZG2tnXbbRtfQega",
+    "folder": "https://drive.google.com/open?id=1ZQvrCKguXWNNnwHkBtP8XAP2iHAdHmKg",
     "parts": 7,
-    "size": 27495227542
+    "size": 27495227542,
+    "files": [
+      {
+        "name": "TheValley_v4.14_Client.zip.001",
+        "size": 4294967296,
+        "md5": "141d83da740f22e1a69fb3e43d419b7f",
+        "urls": [
+          "https://drive.usercontent.google.com/download?id=1DUO8gzK-dXV0K50SY7-x850gKoSOXc4p&export=download&confirm=t"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.002",
+        "size": 4294967296,
+        "md5": "bd450bd97f43d4023a154cef03c6df6f",
+        "urls": [
+          "https://drive.usercontent.google.com/download?id=1eJ7mJ3kw5j0sSapI0mj6AHiiLTnQzvH9&export=download&confirm=t"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.003",
+        "size": 4294967296,
+        "md5": "6afa657cdec8a39f0f6da64f0254ebb5",
+        "urls": [
+          "https://drive.usercontent.google.com/download?id=1xQiCaDFrsCPIldD6KLN0a7SKTPHorqTd&export=download&confirm=t"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.004",
+        "size": 4294967296,
+        "md5": "ee0a8a4a849859c4ce1eb469c649e7ea",
+        "urls": [
+          "https://drive.usercontent.google.com/download?id=1p3HW2PIoN0PaFnM11LfawIElIiw6TVJK&export=download&confirm=t"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.005",
+        "size": 4294967296,
+        "md5": "bfe986c17e860380d938bc8766fdc525",
+        "urls": [
+          "https://drive.usercontent.google.com/download?id=1nTbb12nY5gfTa70lzVKms4yiQKCojNFE&export=download&confirm=t"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.006",
+        "size": 4294967296,
+        "md5": "97de9f62df559844ccd9f34b063f5b49",
+        "urls": [
+          "https://drive.usercontent.google.com/download?id=1T9ed08p40e24qHCF-d7M4cXvdbsNTVm6&export=download&confirm=t"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.007",
+        "size": 1725423766,
+        "md5": "0326ce580dd29ec0dffcf2f3db6cd841",
+        "urls": [
+          "https://drive.usercontent.google.com/download?id=1MlgRe4gWbAhiY-j8qNMC09nAlt0KuvvO&export=download&confirm=t"
+        ]
+      }
+    ]
   }
 }
