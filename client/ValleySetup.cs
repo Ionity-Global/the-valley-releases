@@ -56,6 +56,7 @@ public class SetupForm : Form
         }
     }
     bool quiet;
+    bool bNet;   // v4.15 installer: no pieces beside the setup - it downloads them
 
     void Say(string s) { if (InvokeRequired) BeginInvoke((Action)(() => info.Text = s)); else info.Text = s; }
     void Prog(int v) { if (InvokeRequired) BeginInvoke((Action)(() => bar.Value = Math.Max(0, Math.Min(100, v)))); else bar.Value = Math.Max(0, Math.Min(100, v)); }
@@ -66,13 +67,23 @@ public class SetupForm : Form
         var all = Directory.GetFiles(folder, "*.zip.0??").OrderBy(f => f, StringComparer.OrdinalIgnoreCase).ToArray();
         var groups = all.GroupBy(f => Regex.Replace(Path.GetFileName(f), @"\.\d{3}$", "")).OrderByDescending(g => g.Key).ToArray();
         dest.Text = Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "The Valley");
-        if (groups.Length == 0) { Say("No game parts found here. Put this setup in the same folder as the downloaded parts (TheValley_..._Client.zip.001, .002 ...) and run it again."); go.Enabled = false; return; }
+        if (groups.Length == 0)
+        {   // v4.15 installer: nothing beside the setup - it downloads the game itself
+            bNet = true; keepZip.Text = "Keep the downloaded pieces afterwards"; keepZip.Checked = false;
+            Say("INSTALL downloads The Valley (about 26 GB) and installs it - there is nothing else to download. You need about 55 GB free on the drive you install to. If the connection breaks, run the setup again: it carries on where it stopped.");
+            return;
+        }
+        keepZip.Visible = false;   // v4.15: the parts beside the setup are read in place and always kept
         baseName = groups[0].Key; parts = groups[0].ToArray();
         // every number from 001 up must be there
         for (int i = 0; i < parts.Length; i++)
             if (!parts[i].EndsWith("." + (i + 1).ToString("000"))) { Say("Part " + (i + 1).ToString("000") + " of " + baseName + " is missing - download every part into this folder."); go.Enabled = false; return; }
         long total = parts.Sum(p => new FileInfo(p).Length);
-        Say(string.Format("Found {0} in {1} parts ({2:0.0} GB). INSTALL joins them, unpacks the game and starts it. You need about {3:0} GB free.", baseName, parts.Length, total / 1073741824.0, total * 2.1 / 1073741824.0));
+        // v4.15 setup: the parts are cut at one fixed size, so the LAST part is always smaller. Equal sizes = the last part(s) are missing.
+        long first = new FileInfo(parts[0]).Length, last = new FileInfo(parts[parts.Length - 1]).Length;
+        if (first >= 1000000000L && last == first)
+        { Say(string.Format("Only {0} part(s) found ({1:0.0} GB) - the game has more parts. Download EVERY part (.001, .002, .003 ...) from the Drive folder into this folder, then run the setup again.", parts.Length, total / 1073741824.0)); go.Enabled = false; return; }
+        Say(string.Format("Found {0} in {1} parts ({2:0.0} GB). INSTALL unpacks the game and starts it. You need about {3:0} GB free.", baseName, parts.Length, total / 1073741824.0, total * 1.1 / 1073741824.0));
         // a part that is smaller than the others (except the last) is a broken download
         for (int i = 0; i + 1 < parts.Length; i++)
             if (new FileInfo(parts[i]).Length != new FileInfo(parts[0]).Length) { Say("Part " + Path.GetExtension(parts[i]) + " looks incomplete (wrong size) - download it again."); go.Enabled = false; return; }
@@ -87,20 +98,40 @@ public class SetupForm : Form
         {
             try
             {
-                string zip = Path.Combine(folder, baseName);
-                long total = parts.Sum(p => new FileInfo(p).Length), done = 0;
-                if (!File.Exists(zip) || new FileInfo(zip).Length != total)
-                {
-                    byte[] buf = new byte[8 << 20];
-                    using (FileStream o = new FileStream(zip, FileMode.Create, FileAccess.Write, FileShare.None, 1 << 20))
-                        foreach (string p in parts)
-                            using (FileStream i = new FileStream(p, FileMode.Open, FileAccess.Read, FileShare.Read, 1 << 20))
-                            {
-                                int n; while ((n = i.Read(buf, 0, buf.Length)) > 0) { o.Write(buf, 0, n); done += n; Prog((int)(done * 50 / total)); Say(string.Format("Joining the parts... {0:0.0} of {1:0.0} GB", done / 1073741824.0, total / 1073741824.0)); }
-                            }
+                string dl = null;
+                if (bNet)
+                {   // v4.15 installer: the list of pieces from the release record, then every piece (resumed, checked)
+                    Say("Asking the server for the newest game ...");
+                    string fv, ferr; List<ValleyFullFile> files = ValleyFull.Files(out fv, out ferr);
+                    if (files == null) throw new Exception("could not reach the download server (" + ferr + ") - check the internet connection and try again");
+                    long need = files.Sum(x => x.Size);
+                    Directory.CreateDirectory(target);
+                    string root = Path.GetPathRoot(Path.GetFullPath(target)); long free = -1;
+                    try { free = new DriveInfo(root).AvailableFreeSpace; } catch (Exception) { }
+                    dl = Path.Combine(target, "_download"); Directory.CreateDirectory(dl);
+                    long have0 = Directory.GetFiles(dl).Sum(x => new FileInfo(x).Length);
+                    if (free >= 0 && free + have0 < (long)(need * 2.05))
+                        throw new Exception(string.Format("not enough free space on {0} - The Valley needs about {1:0} GB there, {2:0} GB is free. Pick another drive with the ... button.", root, need * 2.05 / 1073741824.0, (free + have0) / 1073741824.0));
+                    long before = 0; List<string> got2 = new List<string>(); DateTime t0 = DateTime.UtcNow; long fresh = 0;
+                    for (int k = 0; k < files.Count; k++)
+                    {
+                        ValleyFullFile ff = files[k]; string to2 = Path.Combine(dl, ff.Name); long b0 = before; int kk = k; long seen = 0;
+                        ValleyFull.Fetch(ff, to2, (g, a) =>
+                        {
+                            if (g > seen) { fresh += g - seen; seen = g; }
+                            long d = b0 + g; double secs = Math.Max(1.0, (DateTime.UtcNow - t0).TotalSeconds);
+                            Prog((int)(d * 50 / need));
+                            Say(string.Format("Downloading The Valley {0} - piece {1} of {2} - {3:0.0} of {4:0.0} GB  ({5:0.0} MB/s)", fv, kk + 1, files.Count, d / 1073741824.0, need / 1073741824.0, fresh / 1048576.0 / secs));
+                        }, Say);
+                        before += ff.Size; got2.Add(to2);
+                    }
+                    parts = got2.ToArray(); baseName = Regex.Replace(files[0].Name, @"\.\d{3}$", "");
                 }
                 Directory.CreateDirectory(target);
-                using (ZipArchive a = ZipFile.OpenRead(zip))
+                ZipArchive za;
+                try { za = new ZipArchive(new PartsStream(parts), ZipArchiveMode.Read); }   // v4.15: read across the pieces, no joined copy
+                catch (Exception) { throw new Exception("the game pieces do not fit together - one is missing or broken. " + (bNet ? "Run the setup again: it downloads only what is missing." : "Download every part again and run the setup again.")); }
+                using (ZipArchive a = za)
                 {
                     long all = a.Entries.Sum(e => e.Length), got = 0; string full = Path.GetFullPath(target);
                     foreach (ZipArchiveEntry e in a.Entries)
@@ -109,11 +140,23 @@ public class SetupForm : Form
                         if (!to.StartsWith(full, StringComparison.OrdinalIgnoreCase)) continue;   // never outside the install folder
                         if (e.FullName.EndsWith("/") || e.FullName.EndsWith("\\")) { Directory.CreateDirectory(to); continue; }
                         Directory.CreateDirectory(Path.GetDirectoryName(to));
-                        e.ExtractToFile(to, true); got += e.Length;
+                        // v4.15 setup: copy in blocks so the bar moves while a 20 GB file unpacks
+                        byte[] ub = new byte[8 << 20]; long eDone = 0;
+                        using (Stream src = e.Open()) using (FileStream dst = new FileStream(to, FileMode.Create, FileAccess.Write, FileShare.None, 1 << 20))
+                        {
+                            int n; long lastSay = 0;
+                            while ((n = src.Read(ub, 0, ub.Length)) > 0)
+                            {
+                                dst.Write(ub, 0, n); eDone += n;
+                                if (eDone - lastSay >= (256L << 20)) { lastSay = eDone; Prog(50 + (int)(all > 0 ? (got + eDone) * 50 / all : 50)); Say(string.Format("Unpacking {0} ... {1:0.0} of {2:0.0} GB", e.Name, (got + eDone) / 1073741824.0, all / 1073741824.0)); }
+                            }
+                        }
+                        try { File.SetLastWriteTime(to, e.LastWriteTime.DateTime); } catch (Exception) { }
+                        got += e.Length;
                         Prog(50 + (int)(all > 0 ? got * 50 / all : 50)); Say("Unpacking " + e.Name + " ...");
                     }
                 }
-                if (!keep) try { File.Delete(zip); } catch (Exception) { }
+                if (bNet && !keep && dl != null) try { Directory.Delete(dl, true); } catch (Exception) { }   // v4.15 installer: the pieces are no longer needed
                 string exe = Directory.GetFiles(target, "The Valley.exe", SearchOption.AllDirectories).FirstOrDefault();
 
                 if (exe != null)
@@ -122,6 +165,20 @@ public class SetupForm : Form
                     Match vm = Regex.Match(baseName, @"v(\d+(?:\.\d+)*)", RegexOptions.IgnoreCase);
                     if (!File.Exists(vt) && vm.Success) { string v = vm.Groups[1].Value; while (v.Split('.').Length < 3) v += ".0"; try { File.WriteAllText(vt, v); } catch (Exception) { } }
                     MakeShortcut(exe);
+                    // v4.15 prereqs: the Visual C++ runtime and DirectX parts the game needs - installed once (Windows asks for permission)
+                    try
+                    {
+                        bool have = false;
+                        using (Microsoft.Win32.RegistryKey k = Microsoft.Win32.RegistryKey.OpenBaseKey(Microsoft.Win32.RegistryHive.LocalMachine, Microsoft.Win32.RegistryView.Registry64).OpenSubKey(@"SOFTWARE\Microsoft\VisualStudio\14.0\VC\Runtimes\x64"))
+                            if (k != null) { object inst = k.GetValue("Installed"), minor = k.GetValue("Minor"); have = inst != null && Convert.ToInt32(inst) == 1 && minor != null && Convert.ToInt32(minor) >= 30; }
+                        string pre = Directory.GetFiles(target, "UEPrereqSetup_x64.exe", SearchOption.AllDirectories).FirstOrDefault();
+                        if (!have && pre != null)
+                        {
+                            Say("Installing what the game needs (Microsoft Visual C++ and DirectX) - Windows asks for permission once ...");
+                            using (Process pp = Process.Start(new ProcessStartInfo(pre, "/quiet /norestart") { UseShellExecute = true, Verb = "runas" })) pp.WaitForExit(600000);
+                        }
+                    }
+                    catch (Exception) { updateNote += " (if the game does not start: run UEPrereqSetup_x64.exe in the game folder once)"; }
                     // v4.14 bring the fresh install up to the newest version straight away (the same updater the runner uses)
                     string dir = Path.GetDirectoryName(exe);
                     try
