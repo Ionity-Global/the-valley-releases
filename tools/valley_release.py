@@ -1,4 +1,4 @@
-#!/usr/bin/env python3
+﻿#!/usr/bin/env python3
 # =====================================================================================================================
 # THE VALLEY - RELEASE TOOL  (valley_release.py)
 # Document: GME-2026-10-043 | Version 1.0 | 28 Oct 2026 (SAST)
@@ -28,12 +28,12 @@ REPO_SLUG = "Ionity-Global/the-valley-releases"
 DRIVE = "ionity-digital:The Valley - Downloads/updates"
 PROJECT = "the-valley-mmo"
 BASE_VERSION = "4.13.0"
-CHANGELOG = r"E:\TheValley_UE5\CHANGELOG.md"
+CHANGELOG = r"E:\TheValley_UE5\TheValley\Docs\CHANGELOG.md"
 FULL = {"version": "4.13.0",
         "setup": "https://drive.google.com/open?id=1M3gTJeHkbuXCyHQpR2Re0N-qQjP8uqnu",
         "folder": "https://drive.google.com/open?id=1pWhlsx7gwKH53fpulbngL6OW34IVnQ1U"}
 SKIP_DIRS = {"saved", "_update", "intermediate", "deriveddatacache", ".git"}
-SKIP_EXT = (".log", ".old", ".part", ".tmp", ".dmp")
+SKIP_EXT = (".log", ".old", ".part", ".tmp", ".dmp", ".pdb")   # debug symbols stay out of patches
 AUTHOR = ("Johan Wilhelm van Antwerp", "johan@ionity.today")
 TRAILER = "\n\nCo-Authored-By: Claude Opus 5.5 <noreply@anthropic.com>\nClaude-Session: https://claude.ai/code/session_01SxRSyKhQNJ4N1dbcMZbyHG"
 
@@ -158,7 +158,7 @@ def main():
     zpath = os.path.join(STATE, "patches", name)
     if not o.dry:
         with zipfile.ZipFile(zpath, "w", zipfile.ZIP_DEFLATED, compresslevel=6, allowZip64=True) as z:
-            z.writestr("__patch__.json", json.dumps({"from": prev_ver, "to": ver, "deleted": deleted, "made": datetime.datetime.utcnow().isoformat() + "Z"}, indent=1))
+            z.writestr("__patch__.json", json.dumps({"from": prev_ver, "to": ver, "deleted": deleted, "made": datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None).isoformat() + "Z"}, indent=1))
             for rel in sorted(changed): z.write(os.path.join(o.client, rel.replace("/", os.sep)), rel)
     size = os.path.getsize(zpath) if os.path.exists(zpath) else 0
     sha = file_sha(zpath) if size else ""
@@ -184,7 +184,7 @@ def main():
     patches.append({"from": prev_ver, "to": ver, "file": name, "size": size, "sha256": sha, "urls": urls})
     latest.update({"schema": 1, "product": "The Valley", "publisher": "Ionity (Pty) Ltd", "version": ver,
                    "minVersion": o.min or latest.get("minVersion") or BASE_VERSION, "title": o.title or latest.get("title", ""),
-                   "notes": notes[:4000], "released": datetime.datetime.utcnow().replace(microsecond=0).isoformat() + "Z",
+                   "notes": notes[:4000], "released": datetime.datetime.now(datetime.timezone.utc).replace(tzinfo=None).replace(microsecond=0).isoformat() + "Z",
                    "patches": sorted(patches, key=lambda p: vkey(p["to"])), "full": latest.get("full", FULL)})
     if o.dry: log("dry run - latest.json would be:\n" + json.dumps(latest, indent=2)); return
     os.makedirs(os.path.join(REPO, "manifests"), exist_ok=True); os.makedirs(os.path.join(REPO, "release-notes"), exist_ok=True)

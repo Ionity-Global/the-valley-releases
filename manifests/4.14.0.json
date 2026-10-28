@@ -1,0 +1,2605 @@
+{
+"version": "4.14.0",
+"files": {
+"HOW-TO GUIDE.pdf": {
+"size": 283858,
+"sha256": "ce82b9dddab90c40c7ee8f05cb684bfe103ee3794969e997976f5e8958bacdac"
+},
+"SETUP.txt": {
+"size": 4968,
+"sha256": "88109d612e8311e7208c4837fb854b47ba8205ddb1a24b92555ea4b3f6fac785"
+},
+"The Valley Server.exe": {
+"size": 244224,
+"sha256": "1f757f9025ac3cd96a50dbaae188daf80d0585858b23f7444d009ca62f41e0c3"
+},
+"The Valley.exe": {
+"size": 240128,
+"sha256": "b0973a0b37f0cf468fb4f68954fb2ad5fc258139ccd0a312061fc930d74ab67f"
+},
+"ValleyAI.txt": {
+"size": 869,
+"sha256": "071dcf8e7d81417136b4fed5dc531e536c79a87f2020bd6a9c52052485b0c9c9"
+},
+"ValleyRunner.ini": {
+"size": 264,
+"sha256": "bb3db0b739afeb771bf26e3da2e91cadc649530d5cd0e1fb73ee9e56b563bd41"
+},
+"ValleyServer.ini": {
+"size": 1018,
+"sha256": "e57c3aea879a65b93bd31be45a971f769bc0c0f190cdf93bc228f415b364571c"
+},
+"version.txt": {
+"size": 6,
+"sha256": "200beeb3a705276483bd54cd10e4f8ebc936bed0eadcd9454f982558036daed3"
+},
+"art/btn.png": {
+"size": 50176,
+"sha256": "899079e61201e2fda4752995a354ab24e32c09cd125dcaa83bea8c9eb40ab80b"
+},
+"art/btn_on.png": {
+"size": 52231,
+"sha256": "ca299ac028e37af54388040f241b33852b8d00734e5f011d257a0befe2a736a9"
+},
+"art/Cinzel-Bold.ttf": {
+"size": 33788,
+"sha256": "9cfd94b6895f8bd6e7a97ee408d09504bef89b16a98c08ac97bd80783bbf468e"
+},
+"art/crest_ashclaw.png": {
+"size": 16172,
+"sha256": "c40a04c05f4c67f566d90ca4e02f0ad82cdbc5996b57a3d778acb89f674b85f7"
+},
+"art/crest_kernel.png": {
+"size": 18277,
+"sha256": "a22c14143bd8a2fab470f292f31619be3b8a5a8c7d8c6866dbea07d3b690f9c3"
+},
+"art/Marcellus-Regular.ttf": {
+"size": 30980,
+"sha256": "5c94ae8098a34bd55528c0af013cb6b1c9098b49bd1823674bc5a0f87ca554c8"
+},
+"art/runner_bg.png": {
+"size": 239337,
+"sha256": "321c0d303500000b5b15f27849dc7fada7b48579c231af3ee811c2da9d64867f"
+},
+"art/server_banner.png": {
+"size": 124031,
+"sha256": "7ec1305a061ac74ae09164e441352bd59e0c7a91631ec64a9927260be4bfaebd"
+},
+"Docs/CHANGELOG.md": {
+"size": 9256,
+"sha256": "e8bce210299edfca6d0bdfe3b87a43280490f756b07808ac2bebb235d6306513"
+},
+"Docs/MISSING_AND_ROADMAP.md": {
+"size": 3160,
+"sha256": "92234cabcb2a8080c817ae16ee9b7e2c65de160b00245eee2b5a4ae68686a076"
+},
+"Docs/README.md": {
+"size": 11145,
+"sha256": "d8b50bc11a299afee3378b4ec2d61310a039e8528e7c905c47ee26da2c2bf236"
+},
+"Docs/SYSTEM_REQUIREMENTS.md": {
+"size": 2760,
+"sha256": "c06d5c47c73e14d738401c1e9b402799791d43bbca228bfb830726ec092c550f"
+},
+"Docs/TheValley_v4.11_HowTo_Guide_DOC-2026-10-058.pdf": {
+"size": 283858,
+"sha256": "ce82b9dddab90c40c7ee8f05cb684bfe103ee3794969e997976f5e8958bacdac"
+},
+"Docs/TheValley_v4.12_Together_Notes.md": {
+"size": 1604,
+"sha256": "e06bf1ec81a156c2f7355b82779d54aa1b31d29ad651e352f87bd931875291f3"
+},
+"Docs/TheValley_v4.13_Gathering_Notes.md": {
+"size": 2098,
+"sha256": "9f942991cac8012f352dd657a6b5e61830f2685d606087988c117bef3f3097d3"
+},
+"Server/Dockerfile": {
+"size": 782,
+"sha256": "b78c6986a5b3b5c1120e6f5d2785c7dda85b4f1393b717e26a9cf6733561421b"
+},
+"Server/README_SERVER.md": {
+"size": 2428,
+"sha256": "d929090f67a59f8f6acce8a4ca6490612cdb10883fe7b8f1b19801af42fa517c"
+},
+"Server/test_server.py": {
+"size": 5216,
+"sha256": "6820fd2f44268e1c11a4c26b4a62dd16a6d8d7cde719d3131fa0c47bb89292ea"
+},
+"Server/ValleyRunner.cs": {
+"size": 40358,
+"sha256": "3ddef932ddf01c969d137b1860b490394da86edd477e6b56f31394b007b9a452"
+},
+"Server/ValleyServer.cs": {
+"size": 57687,
+"sha256": "08bf1b9f268c88601b9364367f929ed859969f0c60b1f3b0525faaeb50d7a517"
+},
+"Server/ValleyUpdater.cs": {
+"size": 14864,
+"sha256": "5de870ada0e74ce085406e9a2a98693942b8b63477a6e9b0dc809d7a09567e1e"
+},
+"Windows/Manifest_DebugFiles_Win64.txt": {
+"size": 435,
+"sha256": "fc29a3069ff08111c4a70c52c1daec16c5894889261128024cf635843bea202d"
+},
+"Windows/Manifest_NonUFSFiles_Win64.txt": {
+"size": 43491,
+"sha256": "2f8e1c2810f8911e140249001beabf22d1d0c732e596487468a82dd4f05654a3"
+},
+"Windows/Manifest_UFSFiles_Win64.txt": {
+"size": 8162049,
+"sha256": "edcbb7a95d7752134f2aab2087ca950197f423d3ad3b0ce826cb5f46effd8fcd"
+},
+"Windows/NOTICES.txt": {
+"size": 111,
+"sha256": "ba49ae5586f817b36a2772269f71f899cb1f54b5f2720fad951319edd5e140b8"
+},
+"Windows/TheValley.exe": {
+"size": 171520,
+"sha256": "6b7cdc814c863bdaabed507050bc4eb52c559d137d00e46c8a95fa3156482d1c"
+},
+"Windows/Engine/Binaries/ThirdParty/DbgHelp/dbghelp.dll": {
+"size": 2232688,
+"sha256": "441a7ccee2f854352366e783fcb79fe895d09ad4c577689319e1a664f296c4a3"
+},
+"Windows/Engine/Binaries/ThirdParty/MsQuic/v220/win64/msquic.dll": {
+"size": 2547080,
+"sha256": "27c231d80310ea9005a6b0c17054f28887272723477e7292a7f9d63b6d1579ee"
+},
+"Windows/Engine/Binaries/ThirdParty/NVIDIA/NVaftermath/Win64/GFSDK_Aftermath_Lib.x64.dll": {
+"size": 5799016,
+"sha256": "ce49be4194706417ccdc57833aec478faa1e08646157688c879fe616d43abd65"
+},
+"Windows/Engine/Binaries/ThirdParty/Ogg/Win64/VS2015/libogg_64.dll": {
+"size": 59832,
+"sha256": "c719a5f165e4afe29e92a7eee9762c2e9f301a177885ab1ab8d2c7f57d4a86bf"
+},
+"Windows/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbisfile_64.dll": {
+"size": 48568,
+"sha256": "6d0e4395bc4d0ef501c3f7f7b4e63fa0cf2ab2ca80328560b7cb10e6d5a171cf"
+},
+"Windows/Engine/Binaries/ThirdParty/Vorbis/Win64/VS2015/libvorbis_64.dll": {
+"size": 1724856,
+"sha256": "b8a3e31a6c2d401809bae7aa0fd29f49c2114eeccfba4dc5c7ac8eddbd4b7a98"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.dll": {
+"size": 8161680,
+"sha256": "583db3d1acd76363f0f67d9da414dd147ca9ffab4a47824027351b063fe66aea"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_api_dump.json": {
+"size": 13848,
+"sha256": "9e55221c225dce4b5448bac7dadb7e39fd216f51354dde02e58f950f4a0dd80b"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.dll": {
+"size": 2890128,
+"sha256": "8e080a40ac452c4b249b9060e2f4c208af9159afba9e75e91d1c55d85e387d04"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_crash_diagnostic.json": {
+"size": 23055,
+"sha256": "578bde354874789671dee1a96468c965619c9f3ba16cfa65f850e81a80674087"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.dll": {
+"size": 8166288,
+"sha256": "780c4bcae69a50e38181edfd20a58780fa02539f4ff302c8c4a0e2899ee7a0cb"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_gfxreconstruct.json": {
+"size": 28099,
+"sha256": "71d4e243a2af74874f4f61378bdfe3753cb01ce5eb9b98400d83612bf882a815"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.dll": {
+"size": 1485200,
+"sha256": "9682f7f508855980b9c31147493c962d43a0798c4596870cd7c5dee009859ea2"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_profiles.json": {
+"size": 66696,
+"sha256": "6095c28691757e083a8c1bef3c69ca76a8b5017e21acaf55d1bc7e82221a0fbe"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.dll": {
+"size": 415632,
+"sha256": "7026da236cecadd40b6a1723d0881349d9471592d98cabd60994f99dc2db3e53"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_shader_object.json": {
+"size": 4455,
+"sha256": "18ecafc9a65e1b7af8cd0e36dc936026cdb3aed333c4ea5a7c17d6d9465cfaf4"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.dll": {
+"size": 397192,
+"sha256": "485eb9b7f0320bd1af3af03dbe3a052d6f5e9cda14496bbe1a062d626d501eae"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_synchronization2.json": {
+"size": 1910,
+"sha256": "a1e980a24be9a16a826b00c27d61b85ee0e2e17226dc9c4e8eec031879e5f26a"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.dll": {
+"size": 19509136,
+"sha256": "27fc6a4ca52244f18337a652db638865abd679f6e1d129bf4770fd3e6c4f1a60"
+},
+"Windows/Engine/Binaries/ThirdParty/Vulkan/Win64/VkLayer_khronos_validation.json": {
+"size": 95917,
+"sha256": "5c464b84457776d92a674de506f7b7a489294583a7d7609f78fcc52bc4406d09"
+},
+"Windows/Engine/Binaries/ThirdParty/Windows/WinPixEventRuntime/x64/WinPixEventRuntime.dll": {
+"size": 69056,
+"sha256": "f5f6f69210cc958b92285ff444e2ef48f5c46b4d6470b07960739dbcb6554b54"
+},
+"Windows/Engine/Binaries/ThirdParty/Windows/XAudio2_9/x64/xaudio2_9redist.dll": {
+"size": 858152,
+"sha256": "e6ae545b31a5453f1b1002d434cc802a6088cf05c5faa414d7ebe00264161506"
+},
+"Windows/Engine/Config/StagedBuild_TheValley.ini": {
+"size": 3,
+"sha256": "f1945cd6c19e56b3c1c78943ef5ec18116907a4ca1efc40a57d48ab1db7adfc5"
+},
+"Windows/Engine/Content/Renderer/TessellationTable.bin": {
+"size": 259568,
+"sha256": "edc4f3b628a139c5e185bbaeca661c95c1f427368d3b92892c5cff36c56dd941"
+},
+"Windows/Engine/Content/Slate/Cursor/invisible.cur": {
+"size": 326,
+"sha256": "fef3980fa567e9c45d5d8dcaa432a2c1a3f3bb17fe67d7ab198164f56c142aa1"
+},
+"Windows/Engine/Content/SlateDebug/Fonts/LastResort.tps": {
+"size": 930,
+"sha256": "0f775fa99d05e21d43d2d06d55982b23dcdccdb512a9a5a07aff674f212c41b8"
+},
+"Windows/Engine/Content/SlateDebug/Fonts/LastResort.ttf": {
+"size": 5395052,
+"sha256": "fff0f8de0b868b964950fe97c9b60f893e9bc85a4f90b3629c5693db058b97b9"
+},
+"Windows/Engine/Extras/GPUDumpViewer/GPUDumpViewer.html": {
+"size": 195428,
+"sha256": "eb599b5171e99d7c2e35732abf9525baeb39b9c2ac86619522f307c57cc90384"
+},
+"Windows/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.bat": {
+"size": 879,
+"sha256": "e8f7ef9c88697041bd87902b76e52558979ca866c7450b1da108a94a027f441b"
+},
+"Windows/Engine/Extras/GPUDumpViewer/OpenGPUDumpViewer.sh": {
+"size": 2165,
+"sha256": "1b222b5d5aad6dd9b5b9f0a1c72d38635149540f2c7a368600ec76c1d304390a"
+},
+"Windows/Engine/Extras/Redist/en-us/vc_redist.arm64.exe": {
+"size": 11751688,
+"sha256": "ebc1b8dc6731b2c7e791dd619aba19d5554b9e678364f3c2a35f125baafc0f54"
+},
+"Windows/Engine/Extras/Redist/en-us/vc_redist.x64.exe": {
+"size": 18569648,
+"sha256": "6ffdeeff6aae9f5dcd52217571b2c2a47de367af8aa3db953542bf25c4c29a0d"
+},
+"Windows/Engine/Plugins/NNE/NNERuntimeORT/Binaries/ThirdParty/Onnxruntime/Win64/onnxruntime.dll": {
+"size": 17339384,
+"sha256": "eacc4d935137d67ab0cc1b896472d1de551dfc6545ed9ad74ab842400272e036"
+},
+"Windows/TheValley/ValleyAI.txt": {
+"size": 869,
+"sha256": "071dcf8e7d81417136b4fed5dc531e536c79a87f2020bd6a9c52052485b0c9c9"
+},
+"Windows/TheValley/Binaries/Win64/tbb12.dll": {
+"size": 342456,
+"sha256": "c489b6bd4dd2be18d4f8778e3f86caa7672ec8a206c9a54228b3bb60e2923f76"
+},
+"Windows/TheValley/Binaries/Win64/tbbmalloc.dll": {
+"size": 117176,
+"sha256": "aca208101bba1e440e6fae6580eedd45508ec405c9674063baf7ca23d29316bd"
+},
+"Windows/TheValley/Binaries/Win64/TheValley.exe": {
+"size": 334577152,
+"sha256": "13e48890f4182efec739aa60fdb415792852da588cd1892d1704f6caf9487104"
+},
+"Windows/TheValley/Binaries/Win64/D3D12/x64/D3D12Core.dll": {
+"size": 4831768,
+"sha256": "f0cbdba3043bc30e2a17dfd7d6c05e61c9c4098eb1d5ee8ccd2ab3f4696e8e20"
+},
+"Windows/TheValley/Binaries/Win64/D3D12/x64/d3d12SDKLayers.dll": {
+"size": 4943344,
+"sha256": "180a630861dc88d26db517da787009edf75e4c83309b819814b84b86f8db36c1"
+},
+"Windows/TheValley/Binaries/Win64/DML/x64/DirectML.dll": {
+"size": 18538488,
+"sha256": "4e357e48c3fb00e5ac868f2b33ba5576873c013349e2cc1d7a9be0071253ac62"
+},
+"Windows/TheValley/Content/Movies/TheValley_Intro_Camp.mp4": {
+"size": 15355180,
+"sha256": "2279659e91b4781dcdc06618275950645aedd2407e52c33af23addfa41d65eeb"
+},
+"Windows/TheValley/Content/Movies/TheValley_Intro_Champion.mp4": {
+"size": 14405096,
+"sha256": "a5699c1e3e179a910096ea408146fc3a36c89aef69e5bc5b6dca4de918c51ede"
+},
+"Windows/TheValley/Content/Movies/TheValley_Intro_Crest.mp4": {
+"size": 14510542,
+"sha256": "25ded34c2c94db75c55da0577576fef4a82ee3c2fa10c779f59492d455dad495"
+},
+"Windows/TheValley/Content/Movies/TheValley_Intro_Meadow.mp4": {
+"size": 13709785,
+"sha256": "ba80bcbc9dd058047bd3189a74d50fc263bc3885057ff2227505080725b1e7c1"
+},
+"Windows/TheValley/Content/Movies/TheValley_Intro_Ridge.mp4": {
+"size": 17448135,
+"sha256": "5ac0cf583a1140c4e308ba3b4bbca90d326d9dcc1bdcaa18948072ac8339ce93"
+},
+"Windows/TheValley/Content/Movies/TheValley_Intro_Vista.mp4": {
+"size": 16268731,
+"sha256": "39febeef6a9ccaf6c3ec59a6344d5dfefd4657f73ec9ee7b5edbe69e84896692"
+},
+"Windows/TheValley/Content/Paks/global.ucas": {
+"size": 3213968,
+"sha256": "e4e08fb4dcd97b0098fda00f9a4de9cfaace3a67deaa4a907fce70e0740c5895"
+},
+"Windows/TheValley/Content/Paks/global.utoc": {
+"size": 794,
+"sha256": "a0781f09ff13c78d0dcbfb800744b24151e65158d586c1e53ce59f281068db6a"
+},
+"Windows/TheValley/Content/Paks/TheValley-Windows.pak": {
+"size": 12986197,
+"sha256": "2e7c5473fe1f72a3dc2f8dfba526b7a20c93ff8d9babc10158d2b4b472673bf5"
+},
+"Windows/TheValley/Content/Paks/TheValley-Windows.ucas": {
+"size": 27186730416,
+"sha256": "e5a752183a320ebc543fa35b9fd49c36e80e1ceb13145a1b5a968fa9404785e5"
+},
+"Windows/TheValley/Content/Paks/TheValley-Windows.utoc": {
+"size": 17498660,
+"sha256": "8a05311da3dfd7ff3e3bd87c5ec625b1ceb02c0cf089c1629e3d4e44c7be528f"
+},
+"Windows/TheValley/Content/Splash/Splash.bmp": {
+"size": 799254,
+"sha256": "6d7303b244de4c7c83ff464f51958873039ce3fffa28550c17e6d0dd6ef9ec0c"
+},
+"Windows/TheValley/Content/Valley/Data/scatter_v40.csv": {
+"size": 881094,
+"sha256": "407f4ce72609574b5323e871aa93c208f0e620ccfeeb6f36fd5405f8b4a65ee2"
+},
+"Windows/TheValley/Content/Valley/Data/ValleyBase_v40.r32": {
+"size": 4072324,
+"sha256": "f876ad128ed625d1687491a24e0c9d7d56feb9c507a1c725bd06f78bf6cd8e81"
+},
+"Windows/TheValley/Content/Valley/Data/ValleyBase_v41.r32": {
+"size": 4072324,
+"sha256": "45f8c550821a5bc27187d1d5484d20370f9131f8e8c33b322fe6577adf40174b"
+},
+"Windows/TheValley/Content/Valley/Data/ValleyBase_v41_compare.png": {
+"size": 1461903,
+"sha256": "21cf506f481c7442a75d4bdc09be2e8783b96965210cdec9193bc687157b6ef9"
+},
+"Windows/TheValley/Content/Valley/Data/ValleyBase_v48.r32": {
+"size": 4072324,
+"sha256": "aa7634f4d5d4b2d582c33291999404b0800e968330c394372d07ee258e5f9c18"
+},
+"Windows/TheValley/Content/Valley/Data/ValleyBase_v48_compare.png": {
+"size": 1208076,
+"sha256": "39ce74f74d1b314fef22d2428be6338f645404d8bdea87ea89d31a6ae9f51f03"
+},
+"Windows/TheValley/Content/Valley/Data/ValleyEco_v40.rgba": {
+"size": 4194304,
+"sha256": "322be8b9d70fed674b9f072bcd4de88f72633a1ebf05edf95c9d5c6b2b2ef9af"
+},
+"Windows/TheValley/Content/Valley/UI/Fonts/Cinzel-Bold.ttf": {
+"size": 33788,
+"sha256": "9cfd94b6895f8bd6e7a97ee408d09504bef89b16a98c08ac97bd80783bbf468e"
+},
+"Windows/TheValley/Content/Valley/UI/Fonts/CinzelDecorative-Bold.ttf": {
+"size": 36172,
+"sha256": "ddf0f2c282ce77c5a5961397127fe2389ec2d056778a91ba9206b1ea3889170b"
+},
+"Windows/TheValley/Content/Valley/UI/Fonts/Marcellus-Regular.ttf": {
+"size": 30980,
+"sha256": "5c94ae8098a34bd55528c0af013cb6b1c9098b49bd1823674bc5a0f87ca554c8"
+},
+"Windows/TheValley/Content/Valley/UI/Fonts/OFL-Cinzel.txt": {
+"size": 4382,
+"sha256": "f5a242cf68ad6ebd0603b3359a74c593ca080318a681035be5296ba2c6b04ae6"
+},
+"Windows/TheValley/Content/Valley/UI/Fonts/OFL-CinzelDecorative.txt": {
+"size": 4618,
+"sha256": "2ab9c7f245b3bdb23c2b7857aca2738bc164e7e9bec5567d18ccfb6b498c0a36"
+},
+"Windows/TheValley/Content/Valley/UI/Fonts/OFL-Marcellus.txt": {
+"size": 4430,
+"sha256": "a015677ab0010a8c14729226613516401d56e7c0f929ae54f1549eada2bab12c"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/bar.png": {
+"size": 78962,
+"sha256": "47a33b0b2e81a4d9f92f9b68586054129d2f4fa54926e8e0da5efdb1244f9f44"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/cap.png": {
+"size": 55691,
+"sha256": "546ee7b6b37c47748b730271c6e15554e54662805212fd9dce8cd2f2f1aa5c2a"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class_cleric.png": {
+"size": 115671,
+"sha256": "7ab62710fd472fc41ca436649e59f23c5fc0fb2801e3f8a97e1898e3c7358cbf"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class_mage.png": {
+"size": 118120,
+"sha256": "c390212869f1254d09ce82f150e9329c8c782469153d35302c37b465e2444100"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class_paladin.png": {
+"size": 126115,
+"sha256": "7e06e9eee242d6945d63554486662c7315fa75a81fdb428a808c501dc9e580f8"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class_ranger.png": {
+"size": 99270,
+"sha256": "3b32935796ed0e9d047fc978d8d0b20c7ce1f464f241f3936c6727a1d339e891"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class_rogue.png": {
+"size": 114236,
+"sha256": "1b95b8b77f6e3073ca08b83d08c5932cbecd1f5dd9e89dd095e19ebc7bb4f76b"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class_shaman.png": {
+"size": 127201,
+"sha256": "a326ad2e5275a3fcad80b96b555e6da544f72e383724beadc312be6fd2752c95"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class_warlock.png": {
+"size": 137568,
+"sha256": "02e81bde431db656cd9c3331b594f8554d6a656e0951c09421cafc1f46bf1c53"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class_warrior.png": {
+"size": 118911,
+"sha256": "1f3ea5ae3914b91ff011b8776fd626666068477bf2af2c2dffbc5e1ad8c7e674"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/crest_ashclaw.png": {
+"size": 104963,
+"sha256": "f8d78baf1e997924dc1c467c16d37680b8c68404586c461e0718b4ef211af90f"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/crest_kernel.png": {
+"size": 129454,
+"sha256": "fd1ef015cf72763b4ae18fd1b5f1301bed01e02b4acb24b20e22be640adc04b7"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/disc.png": {
+"size": 7491,
+"sha256": "14a917d2d847fc6a955112edca9cff423e05078856031880361445d93e824116"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/elite.png": {
+"size": 59948,
+"sha256": "69a6822bc3ffcea897d5d5783ea47c5bef61599525a4bba1a167cefbe93144c5"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/gloss.png": {
+"size": 9352,
+"sha256": "ad3187e741bbbef1f253c0451e43c05a71536265e2e0c854c1be3ec7d3f97b43"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/glow.png": {
+"size": 15599,
+"sha256": "72f771c742532b02880767b30375f3256218b01e4accfd6d0758b70bce358351"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/micro.png": {
+"size": 21357,
+"sha256": "23c1bef97561a332fb52a5e05d48db4850c8574c85f52308b6783d444fe60d99"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/panel.png": {
+"size": 238127,
+"sha256": "04bec4c5dd339a558694539153c82922a430313150fa44ad4bba7990ae4a6277"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/plate.png": {
+"size": 44195,
+"sha256": "e8161181a65683ea26a9e55d6cf632e60c7016e1fe76378a6fff0fd284ed9846"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/ring.png": {
+"size": 50604,
+"sha256": "69eeeecb68cf4acf6315ec14baf20d3cf9d890e3adbdf0756892c409e8c24bcc"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/ring_map.png": {
+"size": 108928,
+"sha256": "85b2d8394a1fc227a7bb15aef5bb2b0d995b9892028623cf08354791a384b5f7"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/ring_small.png": {
+"size": 21081,
+"sha256": "b9f5c708a0935680b3f56b23b1b1795a00f9877c90f8ddcade3fade100afec7c"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/slot.png": {
+"size": 7379,
+"sha256": "bad51f4e0a16f8d9d43a28fdcaaff3bef95bdc352b65ff1d5502c7514fa897c1"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/spark.png": {
+"size": 7499,
+"sha256": "6f4be2e26ae4dd8526e8e0f06f4ec61a7d72adbf598954420d3e3a025c1f4f49"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/swords.png": {
+"size": 7765,
+"sha256": "c128a1f12248f5f94253e660f299c732fb2c4564bf32f64f33eb34cf9b99f3d9"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/ui_btn.png": {
+"size": 50176,
+"sha256": "899079e61201e2fda4752995a354ab24e32c09cd125dcaa83bea8c9eb40ab80b"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/ui_btn_on.png": {
+"size": 52231,
+"sha256": "ca299ac028e37af54388040f241b33852b8d00734e5f011d257a0befe2a736a9"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/bar_cleric.png": {
+"size": 91193,
+"sha256": "f70302b6deeb6a65d7d87c5bb73db130a59b42a0c8af6b447c754deffe07eb70"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/bar_mage.png": {
+"size": 95770,
+"sha256": "9157136639258938552d39b5901ba7a6288cc6291112aa4549603649442ab7b4"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/bar_paladin.png": {
+"size": 111175,
+"sha256": "bec04ed7d76f472a6d4201e44e735505503912667280e963a7f65ca29abfd549"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/bar_ranger.png": {
+"size": 95305,
+"sha256": "db4ad5c75806516939ecbcd7ab8b4f75c8dcec803203a8caa6adb5a1d7b106e0"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/bar_rogue.png": {
+"size": 91350,
+"sha256": "cbeb27e27a63070f3eddbbd4c2ac6a2660b14246d37181c2b781c04c0699de7e"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/bar_warlock.png": {
+"size": 92267,
+"sha256": "795650651eb93558bfe06c8a131360d42b7a570150cd94f12331b8bed1172a51"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/bar_warrior.png": {
+"size": 104517,
+"sha256": "1b7c19c6b36b97b328be5d58cc308c6bf13f83924ad5342c64fc498f57a60f4f"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/panel_cleric.png": {
+"size": 273134,
+"sha256": "2e394dfe44cb65246e6b1519f2a03f096e3d3587ebf0463f87f64d2b620b67e0"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/panel_mage.png": {
+"size": 275959,
+"sha256": "522213c197099d9cb865cdb54f9ee1fcc80b5d8db32552319f33b805987bc7e9"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/panel_paladin.png": {
+"size": 316168,
+"sha256": "6f83f1588a6b12befbe4cd1273adcd4b4b01093ac8f3309cf0627f91c7bc7384"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/panel_ranger.png": {
+"size": 282165,
+"sha256": "4778be7df60f4952adac61b181cbe76414c37bcd472d623442ef9e81f768a33f"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/panel_rogue.png": {
+"size": 266708,
+"sha256": "99b3376a02517292466c99693de5b5a911af9964095d203855f16db7adfe067a"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/panel_warlock.png": {
+"size": 268945,
+"sha256": "dccb3466035beea44c445ac9719f8feac92663088985660a9bf6c9b6be21a445"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/panel_warrior.png": {
+"size": 303588,
+"sha256": "b2a24b22ea06d4e5666b9b21fe911562af7459d1db341e38403c13a2a98f3e4d"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/plate_cleric.png": {
+"size": 68875,
+"sha256": "ac6616f5d3686cbfb4c5416deb32209cd8b1124dafcab12315f0640b69702b1b"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/plate_mage.png": {
+"size": 72922,
+"sha256": "fe27d4cb0bb3bca6967c05fd871c5f985f58f098da6fc8f0d196ae03605f24c9"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/plate_paladin.png": {
+"size": 79049,
+"sha256": "828fa74d5edc9e8761114be9649e1b01ca7c65f6694a79498a2893c9de2e44b6"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/plate_ranger.png": {
+"size": 73251,
+"sha256": "02c6a180ec63640b229d448a10e4f716ed657510ec9e6bdc2772775ac82422da"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/plate_rogue.png": {
+"size": 68042,
+"sha256": "87889bd9a8287c14f23018daba725c464a875bcec97a7c2cdcdee1b6c589a07a"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/plate_warlock.png": {
+"size": 70234,
+"sha256": "62edb6119e323d0f946156fdefe9be554308e06e3769e9314b5c235b057e55a3"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/plate_warrior.png": {
+"size": 74499,
+"sha256": "594ad76786240d18d83d5deac3197188339836f6fce6759df50cd829d59ffeda"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_cleric.png": {
+"size": 76589,
+"sha256": "1793a53de5420e7aa0ea2a3ef7111eb619f04d38e18940c0cb49ce41beb90fe5"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_mage.png": {
+"size": 77217,
+"sha256": "8e5f2c5c77664a0d391325286f91cf3486ca97e864e673e8e735d09e7b6a35d3"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_map_cleric.png": {
+"size": 178759,
+"sha256": "ec17da43178dd4546fe2035f130bc6d8d4ed17e6438e36441f212240c0df456f"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_map_mage.png": {
+"size": 183736,
+"sha256": "28c4002c43b172a574c03b01ea2f81cc22caf537f024e4a01def1894fb4ace66"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_map_paladin.png": {
+"size": 188184,
+"sha256": "c7ebce8c435722e2d99ed3441b7d4e3409da429737d6297c75d134a6323744f0"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_map_ranger.png": {
+"size": 171164,
+"sha256": "ee649368754b2f3adb0941151c926526ece6c233b544becae23ad59859d5cca5"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_map_rogue.png": {
+"size": 172136,
+"sha256": "279b4afa817422b88ced74cb9a875d3efc4f0821228210e29b77b6e97ee2137e"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_map_warlock.png": {
+"size": 179083,
+"sha256": "23246ffab68855f0688abc2e8dcd13519626f7dcd774c10ac3b45f1389898a0f"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_map_warrior.png": {
+"size": 179494,
+"sha256": "5b4b2754243fa49a13856353a33933ad7a89c908901817638ab6a87d034e23b4"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_paladin.png": {
+"size": 77600,
+"sha256": "9847d6c4746d70ad707da06bb3d4e4fdf26ada82bd457dcfcd5f87bd6130785f"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_ranger.png": {
+"size": 72011,
+"sha256": "16814c690053187bb82a544183ef47d08e833f1dae8dc42670dff275645b3691"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_rogue.png": {
+"size": 73283,
+"sha256": "40aa672a0ae8e43847aa7b16ba828d3dc81abd6a8164100781e1929858f38b85"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_small_cleric.png": {
+"size": 23652,
+"sha256": "830635651ef3ec8ba1d752e82fb15d33be8289f023d707b54cf48f2e120fd238"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_small_mage.png": {
+"size": 23934,
+"sha256": "5b45eb89e1bf0f1f732d57bd73b85a945c8ecd4de3e9807afb7bc868629b9c6d"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_small_paladin.png": {
+"size": 23813,
+"sha256": "6b88c49f918757b4308e0fd6d3dd6254293ee6d84202c9a1d89453f990d4891e"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_small_ranger.png": {
+"size": 22755,
+"sha256": "a24173892c7ab7cedf35e0ac82723fc696e39a0a8954b07ab87443bfb32a38ed"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_small_rogue.png": {
+"size": 22044,
+"sha256": "756b802e374868b63d76e1613fa62a8ced3ce70e5fd16ab7734d4a7da86dd4cb"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_small_warlock.png": {
+"size": 22538,
+"sha256": "e7cbff992f2d413e0172e20e6bf6c00a55a6198be2b4c9537a1bcb144d598c56"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_small_warrior.png": {
+"size": 22479,
+"sha256": "43f02d52774e80a726ada920ba22f4252037f24c8d3bfcec173b8ecf2c589821"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_warlock.png": {
+"size": 74201,
+"sha256": "019324929958ca183b55607fbac7aa5f6272fd41de5a888086ccafb383382572"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ring_warrior.png": {
+"size": 73574,
+"sha256": "a8ddc0ff350ddbb4c0fb3f4bd80b2f2e5b54b1baf2cb350f986443c8ef88f275"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/slot_cleric.png": {
+"size": 17723,
+"sha256": "be57df5c44084ee7a1e89aca92d7bf08dc7a71094aa1b1da90822ac4b498ea4e"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/slot_mage.png": {
+"size": 19114,
+"sha256": "6b7098c3ee2158d2b8d88596fa8436a28d80ded5902313888246a49ce559eb80"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/slot_paladin.png": {
+"size": 19075,
+"sha256": "5c6d688168f4aa687d356850cd6f7a864a0a8e9aef9e1bbd0173116a43fdcb81"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/slot_ranger.png": {
+"size": 18368,
+"sha256": "f11b3c3e8fee8f97d11af02b8924ff8a1ea37eaad94f985ee7f3ce3cf5d7b662"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/slot_rogue.png": {
+"size": 17365,
+"sha256": "42ddc57eb59643e129dd94c2223075c7e5eafbde06bc39e172a69bd46d1f4438"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/slot_warlock.png": {
+"size": 18312,
+"sha256": "17b876affe74bb9f48ee60f0d3aa06ca559d2142152a7e795308b9291a06919a"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/slot_warrior.png": {
+"size": 17659,
+"sha256": "18e360d4fa0333bb375d452d46397a72f52a06fcf44198553d139c27cca73bba"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/spec_cleric.png": {
+"size": 45798,
+"sha256": "7942b27f8eef9e2f5114cfc7c06cff95e428ae4191c81fe72e0a518636e882a0"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/spec_mage.png": {
+"size": 42884,
+"sha256": "98751b060412e280db508e766cf56e8facb15f75fcb848ea6c97f0be8b3027dd"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/spec_paladin.png": {
+"size": 43465,
+"sha256": "c92d611ca82332631e2d3df67e5302b8cae5e491247accbc65bd48aee621e506"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/spec_ranger.png": {
+"size": 43717,
+"sha256": "a287687ac2b74daf45fa9e9d4bfa5c4ec9f586cd4a0d3ad8bde3fdaae8891c5a"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/spec_rogue.png": {
+"size": 37124,
+"sha256": "2575270a0266677162793b2a761e1277fec1b6b0f717a4c05c6cd296e7d015d5"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/spec_warlock.png": {
+"size": 41827,
+"sha256": "aaab91fea28409aeff7e9930f09cf896598c411c0200287a3404cfef96e2813c"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/spec_warrior.png": {
+"size": 38836,
+"sha256": "a3f425c4350dac707c4210ec6144780f14f69cf4dbc55461c371523e65632c3b"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ultframe_cleric.png": {
+"size": 24510,
+"sha256": "89ec15aa04246242cc112fefee41d268d7f626afbc1a67eb89481b560cf9feb0"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ultframe_mage.png": {
+"size": 27521,
+"sha256": "b0d54663a96583cf9d4b147fa9c1b7f47eb60b534d9c52252218b5bd1d4ee040"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ultframe_paladin.png": {
+"size": 26958,
+"sha256": "10c3cc73c123a69eeb760358cfe4b6140f8463183863eb2212f1777b6edc151b"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ultframe_ranger.png": {
+"size": 25916,
+"sha256": "9973f947fe9d54f3815b58810d980cd42be729b6155c96c6ca57d324d7a2d7b2"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ultframe_rogue.png": {
+"size": 24993,
+"sha256": "48c940f9b3d4b9ccc971d405b87ae94d9213ea044def56dde2c9a0d32be8c77a"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ultframe_warlock.png": {
+"size": 25817,
+"sha256": "c65ef9b8b4277646af4ef84af09a4113dd8b6a00d389177a123b29b0bf1a32c0"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ultframe_warrior.png": {
+"size": 25808,
+"sha256": "811bf773bfd910ed2963383fe5f349a359ac42875562f98c76af7e68a0b41faa"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ult_cleric.png": {
+"size": 43730,
+"sha256": "802f3e5a4f4c50cbcc7a2e3f78d95b163f035bd0b56e1da97ca108128df084fa"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ult_mage.png": {
+"size": 34988,
+"sha256": "7045992a180c3643e686ff046ee27cf7d8a9917900e904e4eae2487c88484dae"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ult_paladin.png": {
+"size": 42495,
+"sha256": "154286dead65de0873a49cc6786841db46897c0520139a6266ccca12e2affa96"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ult_ranger.png": {
+"size": 40970,
+"sha256": "f500df9f03e0c230108e87ba3b74bce0c4e447abd30f86a497f6e808a6a13132"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ult_rogue.png": {
+"size": 42254,
+"sha256": "858a539c6ee935cf4a0873046ee27fc88edeb6ae1ac94958d4e61720d9e5a586"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ult_warlock.png": {
+"size": 39429,
+"sha256": "6cd5bc006a498444a9bd42b9a5b5a05b582a6bcc777e1f8b3765289bef48ec7d"
+},
+"Windows/TheValley/Content/Valley/UI/Hud/class/ult_warrior.png": {
+"size": 43110,
+"sha256": "809b6cfad37254fbbb2e00df315bfa39ec4fb7a8120ae154ff8ab86b220d4a5d"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/aimedshot.png": {
+"size": 35546,
+"sha256": "f5de33da1762f9e2472837319a0ecc797f826ffc24844947854a5abaa5d24f63"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/alekeg.png": {
+"size": 34337,
+"sha256": "becb611e052a5b56479c686ab443740a3d0130e8ca7d4f8f1fb3da218e319555"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/arcanebarrage.png": {
+"size": 40604,
+"sha256": "61f6ed2dbdfc4e8d311d9c2db9ab0fec3dc7961a951caf3af11303d7b6ff0c82"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/backstab.png": {
+"size": 34352,
+"sha256": "42a21898ab209bc2589b603d80e88d6a695c97495cd9c0ff41928c0c734066fa"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/bladestorm.png": {
+"size": 40778,
+"sha256": "6a04646a194b8d9c8737323a892501a806580775ea69ba34e7134426adc8aeaa"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/blink.png": {
+"size": 39857,
+"sha256": "4cc600a7fc02d6d6a9be872fd22503f058c07356cd6c9aac6935288e8101b4ef"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/blizzard.png": {
+"size": 42237,
+"sha256": "50172a972e5e4e400b9631a2cf2be07e7ad96057d471914d399a5493024707df"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/charge.png": {
+"size": 40312,
+"sha256": "5a86da6b797ef531c91b8c5823aefc047b7877b7663713460bac247f535262ea"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/cleave.png": {
+"size": 35369,
+"sha256": "7356bac4d1a7ff675433a4db8b3fadbee750561a7fa579462613356cc0d4085f"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/consecration.png": {
+"size": 36370,
+"sha256": "2b4154b9c7ddad1220d231887a8eb62dfad48d7b391428498b06f31d2d7bcfee"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/corruption.png": {
+"size": 37705,
+"sha256": "5dc5ed6ac8912abcfb0bd9163631e4441dbc696d8418dc600bdb7e875121dfae"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/crusaderstrike.png": {
+"size": 40327,
+"sha256": "5453f3fea96c240090d120f81d91a02defd19c5ae2259fcfb499275ecfe605cc"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/darkpact.png": {
+"size": 39898,
+"sha256": "0f90bb8e534ce11efd1a68ecda9c26bc9fe1728b362c1090d540810e32a8436b"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/divineshield.png": {
+"size": 40968,
+"sha256": "7efaa2b47ae7f7750b7173a821628d5bbb2a3bb9c04e04f1b9c4639157882148"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/dodge.png": {
+"size": 39212,
+"sha256": "c7afa534977ffe52f2e15c818cd5f3672e388077e82a0f00b78ea1ae0eb02368"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/drainlife.png": {
+"size": 32122,
+"sha256": "87e66795b024d8dfab4f71ec196561eadaf9bb2d93bd4f6c97b55be348d5b812"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/earthquake.png": {
+"size": 37836,
+"sha256": "a3f772448e2f17521468e9e6d1c69e765428035d87038d92452078722bef544e"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/entangle.png": {
+"size": 33577,
+"sha256": "8e44af0b0fffdd923688b838e2e888d56cdbf04765658e39a2f02983f688e46a"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/evasion.png": {
+"size": 35063,
+"sha256": "74c590af453033c7d7ce98586a9648b0fa97f5166dfb4bac7f2932ba94e837be"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/eviscerate.png": {
+"size": 37494,
+"sha256": "09e8ac30dd032b887e0f8c0b9b29455e652de2acd9cd2af25b7aea0b9defaf45"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/explosivetrap.png": {
+"size": 37851,
+"sha256": "02e8b395f328faa85f6dcb979ec0aa122ccd7ebf4f37824d6ca290f4390b564d"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/fanofknives.png": {
+"size": 39342,
+"sha256": "2cc951f485193263a206753eaba26e407c346f16414d575d434e090a725bfcc3"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/fireball.png": {
+"size": 34211,
+"sha256": "727f0b4151fcb666b552e32630dfa9558c030ecc6373efa1e09725a9b2006082"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/frostnova.png": {
+"size": 43229,
+"sha256": "d30f0aafb0d5f7ef0442bc9bbf0f7c3f516e41072865ef87193142d2a8756852"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/hammerofdawn.png": {
+"size": 40789,
+"sha256": "cb5e662cb39754bcc21ae453e65a5e74978f29d064ca1b39a57ccb5e34f524f7"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/healthpotion.png": {
+"size": 32967,
+"sha256": "327eb4f0d8e1c17e3fbec1a5e66576aeed5dc397424754c0a84e31b48151367f"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/hurricane.png": {
+"size": 41431,
+"sha256": "916df5976309de08067517f50f2cb476130d9d1fa4178f7f530b04c7b542c8fe"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/judgment.png": {
+"size": 38539,
+"sha256": "69261fa94fdd7ff8c0ebd0bd64e24bb7c780e0baa01b74ff2f2ed96d56ad06ce"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/layonhands.png": {
+"size": 39289,
+"sha256": "63e89f0ed6dea0d4cb21336319692c66b8d1064c196a932914d96429542681c2"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/manapotion.png": {
+"size": 34275,
+"sha256": "58c817e39c03aae6dd7b6826b8025af9e7884db6d4d49cf702c0fbe4deee883e"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/meteor.png": {
+"size": 36115,
+"sha256": "741a5deee62a2f309a80b7a29eb97211670bf7af7ae224712de0c3dea885120e"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/multishot.png": {
+"size": 36153,
+"sha256": "94db04010193c65d3a40402ea4fcba1566c8bdd24885c7f26c67578df61317b4"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/parry.png": {
+"size": 40185,
+"sha256": "6d4e4caebb68c53a43cb925ab2546bde4b12c60824936c70035dd5705dd3ac1f"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/rainoffel.png": {
+"size": 35333,
+"sha256": "6e9bc6921bbf93dd632a44bb99a4638a52a85282f1bcc07695d60a118050fc72"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/rejuvenation.png": {
+"size": 40407,
+"sha256": "a1a113bbf928d72f5ff75e3b393b9cda9a20344ee6bf3246cb4852bcdd632ad1"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/rested.png": {
+"size": 30959,
+"sha256": "6c78dc046350e28bd5e9fe59357b920012261f7ca367655ab89cff0c814e71a2"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/riposte.png": {
+"size": 38316,
+"sha256": "32b7adcae1a4edee1f208d8569beb9fb4596a15c041f04754d10913eb683785c"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/shadowbolt.png": {
+"size": 37714,
+"sha256": "09ed521071f708044783e17fe1979f9d50dbee5d97fcb90d20d9a87ae3c205c4"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/shadowfury.png": {
+"size": 39747,
+"sha256": "61fcebcb85b230e92e7d51a9fd66c359c8b67ec1ec1f3dd240f3fac3dfb8237d"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/shadowstep.png": {
+"size": 36628,
+"sha256": "7cbf661124f019b0b47af2e39de24142cf895e2fed33929f84cea68da1eca34e"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/shieldwall.png": {
+"size": 38044,
+"sha256": "ffd5d851e3e809dea0622e7354aaba8b2a545b4a2a4cc82d2dd6b70a66744cea"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/sinisterstrike.png": {
+"size": 36309,
+"sha256": "fedcc78e885ec48f52dba30514de06b6314127721187a1cee9a1daed9306e0c0"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/spiritwolf.png": {
+"size": 39465,
+"sha256": "704c8325e0d2bdd2cafc7d03f0788c50c01ba6ebdb9ecab359afb060730baf1b"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/starfall.png": {
+"size": 37008,
+"sha256": "108dd894197f4e410407f742247b9e73918a061edec60525e4cdc753f8a4b44d"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/thunderclap.png": {
+"size": 43015,
+"sha256": "c5907f88c778259fe2173df435635655ac1223d7c40b2302e30fc390c8a8a1ec"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/tpscroll.png": {
+"size": 39705,
+"sha256": "e327872d4cb439fbd71af768abd3f72c63e3a7085d0641df3069025322739373"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/wardform.png": {
+"size": 42207,
+"sha256": "928d884924364bdd521c11b01ad2ef74db9766b533fc746eed925c2df0d3ef49"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/wrath.png": {
+"size": 38938,
+"sha256": "08ad72b3b903da186b9cdcf9a33926bfa37a5d33a84a0ee1579697454fc65b6e"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/hud/bar_gothic.png": {
+"size": 208400,
+"sha256": "6acf97268eb4cf10f27219415ddd68f52aca7f0bd5eea4f648eec2e4aa434f4a"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/hud/micro_gothic.png": {
+"size": 107097,
+"sha256": "c6671f4914c7d9f049b99274756fba19c4107f2bc7c55a3924fb63621c5ce6f9"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/hud/orb_ring.png": {
+"size": 57730,
+"sha256": "5553ebe6320d05e9de5aa826a2a7ff4347d0de59d7a55928b0e72825889b47ab"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/hud/panel_gothic.png": {
+"size": 377499,
+"sha256": "f5582218608296745898f1737a7ebd9dc45ad2c97ffdac00068362006b074538"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/0.png": {
+"size": 31843,
+"sha256": "b735c7a622eb8665560ea8debc9df1a0f7f4560adc85ed5177ff9e512532b2bf"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/1.png": {
+"size": 32842,
+"sha256": "e5409a827ccbe115430fa32920dc914722400c0db128d272519533dd4d4867f0"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/10.png": {
+"size": 29735,
+"sha256": "a27d9c9f98df205ce80cd7303a15de174a3c384112c4e9979d7a4c445c7ae736"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/11.png": {
+"size": 31253,
+"sha256": "017d8bda4b5408eaf1931d40738d0ce6ffb34d2c389e30921ab74641aa1053ac"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/12.png": {
+"size": 33717,
+"sha256": "07884d0d2a5d1b62a9a01e94111060ff69418adc8c4df324fdafd719fff4a4db"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/13.png": {
+"size": 34345,
+"sha256": "f9714286b1adf8b1050d844bc44db9e2c2d633ce097fcebaf491c1820b5e07bb"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/14.png": {
+"size": 32024,
+"sha256": "4c4e1b306f78f0eb9fc71ea9b46d67ed2ba9fc0afa3e59493813cd83c86615a0"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/15.png": {
+"size": 35013,
+"sha256": "8bbbf15ef143fc5f1d5b06814effd20cb41df180a7f8d43763386bbabf55da62"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/16.png": {
+"size": 32392,
+"sha256": "8876f46ce7c52c089732d3bbc8d5799c5b347871cfa159f458fd05bc402c91f4"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/17.png": {
+"size": 28063,
+"sha256": "af8d2c734127c1ee07ca5148b068d475b495f2f4bcf006389349804a85d267a0"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/18.png": {
+"size": 33494,
+"sha256": "bf3f07879020df3225afb75166adfe46f4c03c6cbbe9767d89edc35edbb34739"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/19.png": {
+"size": 28999,
+"sha256": "709b64e98268cac827a9b9ffb332ad18e9a6ce5778f9e63ae2e598a41c9ee7ad"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/2.png": {
+"size": 33557,
+"sha256": "3cd32a7abf87e35b70a4412d7453557443f0663dd3575f5ee7be834c198f4930"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/20.png": {
+"size": 30512,
+"sha256": "c1010b98c156b8742d54e033c045627499aa1488bfe2985d16da9bbef6a81821"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/21.png": {
+"size": 28565,
+"sha256": "0819afed4597a28c54cd83094243095f4e83f78f29642cc0f133bb52ca6421a8"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/22.png": {
+"size": 29941,
+"sha256": "3a7c10a875641590c7aedc0f8dc06ff459773e729d057a5417a97527d10ecd55"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/23.png": {
+"size": 30713,
+"sha256": "67bc305c16739c2d720e49c692f2f34b8cb9bd6e57f9ef2c0938a38c19dd42da"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/24.png": {
+"size": 31201,
+"sha256": "f95e3cdfe79da7618db48daca31f22dcbd1ef6ea4ca0236eb0ab0d21f3ea42b6"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/25.png": {
+"size": 34531,
+"sha256": "22f7499584cb2d94c795ab79030c5d8a7160fbc04724f9979cf0560123121729"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/26.png": {
+"size": 35628,
+"sha256": "ab2746587e20e67542c767294804b5734ae359881135b53f768212a2e8f564c4"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/27.png": {
+"size": 30371,
+"sha256": "da092b6cf391f8affd075ebf35fabbdbed2aa048bc18078be1250f4ef89eb44c"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/28.png": {
+"size": 37260,
+"sha256": "87005f9ffdbd4712e947094d4a8fca5fcf32872041774de557cbc5cf1f598db7"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/29.png": {
+"size": 33981,
+"sha256": "9e586be07ef8c7f5f601d8dbd2d7c007e1d3510a35337b97f1254194515f288b"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/3.png": {
+"size": 31825,
+"sha256": "bdb43c43434cb5c8d842518ba714edfd6300e7f1573c140484cbb210414d5f1b"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/4.png": {
+"size": 32495,
+"sha256": "a97432319be607b477a8fc498e93fa435ed219622574a0b20bfef813fc534f15"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/5.png": {
+"size": 29250,
+"sha256": "45057f04304947dec8058f49b18aeaac6c2d8e0e7726856babb24a3e386863a2"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/6.png": {
+"size": 34283,
+"sha256": "c667be392ac344f7d37a6329e82d1d1345d4e3d9d20964e7f6cdd04a4f57383c"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/7.png": {
+"size": 35340,
+"sha256": "4b21ff9f3b84ec12c292342423f1d23afb60c6d0290d3c4d7a67e008acc45af7"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/8.png": {
+"size": 34389,
+"sha256": "ad09b08cfd47b127fb1d00a94404e50e6368e0b2492614fada2440e5bebf40bd"
+},
+"Windows/TheValley/Content/Valley/UI/Icons/talents/9.png": {
+"size": 33659,
+"sha256": "d86915d8755478d2c66024744b8af16e6576094f035dd452b1a2e52b83c0dfea"
+},
+"Windows/TheValley/Content/Valley/UI/Loading/ionity_glow.png": {
+"size": 137514,
+"sha256": "7418b2b349d885417d8837921f4829e462d7ca9c1a3fbad44bde6e0176e5be61"
+},
+"Windows/TheValley/Content/Valley/UI/Loading/ionity_white.png": {
+"size": 40618,
+"sha256": "703c531c57f181f8cb2fc61c8e48a9a25291b14025ad35936b7951936e3194bb"
+},
+"Windows/TheValley/Content/Valley/UI/Loading/ue_badge.png": {
+"size": 101499,
+"sha256": "b6be7addf5a00e7b0d3a278948f770a9d5f302cd793d13a1ddaecea32a826ff9"
+},
+"Windows/TheValley/Content/Voice/MODEL_CARD.txt": {
+"size": 279,
+"sha256": "0ccde6927e5bb4d743f4ea39618a9387ba18cca3351220a8a9cfdbc68b30fcb9"
+},
+"Windows/TheValley/Content/Voice/MODEL_CARD_nl.txt": {
+"size": 225,
+"sha256": "73d70ff5a8501a80335498135bd773cd9ae01133cf0ac33916538f4d51e13e6e"
+},
+"Windows/TheValley/Content/Voice/voices.onnx": {
+"size": 78580914,
+"sha256": "10bb85e071d616fcf4071f369f1799d0491492ab3c5d552ec19fb548fac13195"
+},
+"Windows/TheValley/Content/Voice/voices.onnx.json": {
+"size": 20123,
+"sha256": "b471dc60d2d8335e819c393d196d6fbf792817f40051257b269878505bc9afb3"
+},
+"Windows/TheValley/Content/Voice/voices_nl.onnx": {
+"size": 76584246,
+"sha256": "88312e0fbf505b87caf2373d94c1384892e86b1bf2ee482cf65dc8ba179cc7d3"
+},
+"Windows/TheValley/Content/Voice/voices_nl.onnx.json": {
+"size": 5856,
+"sha256": "6ddb215d38f1392ab935ad45441b82ada1eeae0452a2d6849ed71ea4f2e0aa63"
+},
+"Windows/TheValley/Content/Voice/voice_census.json": {
+"size": 55677,
+"sha256": "a712b9c5b5d901612df2fc6ea508f074660974e9b19e1ff98caee3968587da11"
+},
+"Windows/TheValley/Content/Voice/voice_census_nl.json": {
+"size": 2879,
+"sha256": "94f50116bf80497ed9c1dc3b91978f226f31e30fa9c22d8e878dbabfaac4c39f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng.dll": {
+"size": 380928,
+"sha256": "9588480f8197df62fd8461a8431f8eaec6e8e7749c5ffcbe7fee656fe40a2189"
+},
+"Windows/TheValley/Content/Voice/piper/libtashkeel_model.ort": {
+"size": 10261536,
+"sha256": "9f27090af3e0f661913af048a739632a3f577b3233512551d8c90580ccad4aa8"
+},
+"Windows/TheValley/Content/Voice/piper/onnxruntime.dll": {
+"size": 9271704,
+"sha256": "a630f67f4a82b6689e4178bf81d362d945522dd907b2a92cb43cebf72c83a06f"
+},
+"Windows/TheValley/Content/Voice/piper/onnxruntime_providers_shared.dll": {
+"size": 22424,
+"sha256": "71705b9bd76baced583eb37fe5ec2101946b4de50f1e9bdb156109f7e8082980"
+},
+"Windows/TheValley/Content/Voice/piper/piper.exe": {
+"size": 509952,
+"sha256": "96f3da3811151580073e40bb4dd20eb0fb8115f5f5f76e2fb54282b3edfa5c1f"
+},
+"Windows/TheValley/Content/Voice/piper/piper_phonemize.dll": {
+"size": 407040,
+"sha256": "4b5f344b2f31204a8a94a0bf485f93e4971671e81188a0d67f326e113bfb0b2e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/af_dict": {
+"size": 121473,
+"sha256": "25729d3bf4c4a0f08da60aea9eb5a0cf352630f83fab1ab0c3955b7740da1776"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/am_dict": {
+"size": 63878,
+"sha256": "9954365860682c756c8c4459577d3aa0ab77ad0cba6798b746033ada5c3d4bea"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/an_dict": {
+"size": 6691,
+"sha256": "6cf38cedb6693aade49e5a5d27a3c92516a5335125bf85fcae58282e66fb82fd"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ar_dict": {
+"size": 478165,
+"sha256": "72316426e797777fe4df9420935a3b6a79b37d7e3f3948537ba71cd7b21b2541"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/as_dict": {
+"size": 5005,
+"sha256": "39e52fd47507660fced36db407b12c6325498dc71fa9d3379d28b303506753ac"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/az_dict": {
+"size": 43773,
+"sha256": "e352b2dcf811662d79f4beaaa0c7750706cf669c0409fd815a9bd0244b1adfc7"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ba_dict": {
+"size": 2098,
+"sha256": "246c8c655ceed43d9ff44a65de5f933f16255489d0b181b1a46a83e1fd5a0354"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/be_dict": {
+"size": 2652,
+"sha256": "232fb0debfc8fdca9b8f2494770ff23535f7f887bbebb0178abffc243490e798"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/bg_dict": {
+"size": 87051,
+"sha256": "8fa3adec8e18a3e695b2bbea1d4780182e17222d8b9f8da9908a237828f6b063"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/bn_dict": {
+"size": 89979,
+"sha256": "562a64ec5ea319622ec2286c103d4110222a1712129a3a9f07f2ea14a660038a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/bpy_dict": {
+"size": 5226,
+"sha256": "a4321d9ba80bd60f49e0bee5aae57f1ae9c49b7a1c3d4ba384338fe9bf3b6a92"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/bs_dict": {
+"size": 47068,
+"sha256": "d5df564f511af082884719685db86ec4df23467cf012ce25e898540baf9de65b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ca_dict": {
+"size": 45566,
+"sha256": "1be203855ecb0bdfe66578ef5552f83289e39972d78c52714d061b7f7493df4a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/chr_dict": {
+"size": 2859,
+"sha256": "cc9bc3447852e1dd49578956588d71987509e5aa8fa1995a4fbab0f71add3be2"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/cmn_dict": {
+"size": 1566335,
+"sha256": "109aaa7708d3727382acb3ae41d8e2094a7e2bb9f651a81835be22a6f08071fe"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/cs_dict": {
+"size": 49645,
+"sha256": "5ec02aba90465007f20a5c8aeb889275834cfa8c8f621c3d9bee1ca90d21788d"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/cv_dict": {
+"size": 1344,
+"sha256": "8260837c8f18fbe5870905ebb2850dfd18e252150ad6c868b96d9d2c6398ea8a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/cy_dict": {
+"size": 43130,
+"sha256": "31d74ccad218ab80b79566caeb8d21bcf0fe43326ed7c437fa736d39b85e603e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/da_dict": {
+"size": 245287,
+"sha256": "ae6c2dd4f0f4d38342918a776a9e2c46d919572f02336c864f843ff7b262caf8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/de_dict": {
+"size": 68276,
+"sha256": "e9ac048df5cde03b74907d591c7b29b45ee9ec5fcd4592b0b894f0083572fcfd"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/el_dict": {
+"size": 72841,
+"sha256": "5d9f759750131da777d2fd4f06aa602ed746d38f27b84dd9a2d4a550f2cd452e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/en_dict": {
+"size": 166944,
+"sha256": "71bd330ba8a2e3e8076e631508208ef49449d6147c17b7bd2b4b1e1468292e35"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/eo_dict": {
+"size": 4666,
+"sha256": "849f061abddd5388bac112b32e6f7bf747e15e1b3ae53fe91079381effff4cc9"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/es_dict": {
+"size": 49252,
+"sha256": "3fa93e251eab80838a2d6207ee58c9c847270a65fe3fae98850e0185b5a2186c"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/et_dict": {
+"size": 44263,
+"sha256": "1a6734b4e6bc9de9a4c94cfb434873e0a7f4ae4ec89549b3137ae5491cf655da"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/eu_dict": {
+"size": 48841,
+"sha256": "762a6eff63552ef72cd88bf1e92dc5a823eb378d50cb85c7917e8c5bba079137"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/fa_dict": {
+"size": 292423,
+"sha256": "f92f35ce7eb1d97360016617d97786412a94af55b776a18f1c280dab4f43befd"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/fi_dict": {
+"size": 43928,
+"sha256": "dda999437bd4b37a7f7400a2230aace1200a52906ab0b1ff3507d44ab19d64b1"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/fr_dict": {
+"size": 63727,
+"sha256": "e399ab924c4d10beef1fc310b30ea56e4ddfd8b4b64b8ed978e9c65394d49b2d"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ga_dict": {
+"size": 52673,
+"sha256": "b2db03d21f7900b697d7dbb8bec855cd1117e9867f19884faf11c4df626659f5"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/gd_dict": {
+"size": 49121,
+"sha256": "e92b47dcf9a001363ffee1e62863faf264ff5f16e10cd9cf1f1e83ca89ca14aa"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/gn_dict": {
+"size": 3248,
+"sha256": "7640df272b192a68ba401294bf9197ab46d0b141da7a358ad1986e7f77e7f29a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/grc_dict": {
+"size": 3433,
+"sha256": "488779493993d221b09e713e104a221ac1bb35765f826acc26d3d3c1aa3a35ed"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/gu_dict": {
+"size": 82480,
+"sha256": "cb1fbfb53bab2ec6d9e44cd9d12ccb9b80de49f274d772314389c477eef530fd"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/hak_dict": {
+"size": 3335,
+"sha256": "e3075c7d281f95a2ce2264c01edbd09e962cb3ed29400766c5d2116a08a185c8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/haw_dict": {
+"size": 2443,
+"sha256": "2b4e77b61cadfc5ee622aa8b1d23941e36101d9bdbf8d809e0fa1b442d2c3f74"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/he_dict": {
+"size": 6963,
+"sha256": "a8bf0d939d630e9e5097ad361a7765297baf297fd7d06e89f48a79ead980869e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/hi_dict": {
+"size": 92143,
+"sha256": "5a68c9532624e57ac845b26ce1e2e5034c4f6353bede46ecbe57e583ec8effd6"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/hr_dict": {
+"size": 49388,
+"sha256": "5f98fcf05f97335a5436a8a9643677da6f158f2a9ee1d41bdda1725b1bb3527e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ht_dict": {
+"size": 1803,
+"sha256": "d577219d15c29396db254aed958358456ec1501cdf62cb4ca5413752f2ee7cc1"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/hu_dict": {
+"size": 153785,
+"sha256": "055d563b839d599db40be5b1cc2af9d31793795b328eb8d4f389ec7d38fe7e81"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/hy_dict": {
+"size": 62263,
+"sha256": "8b808ad8f1d4cae32b3b785b96d1e27b3af28e32f4dddfed7c93e129d63b2587"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ia_dict": {
+"size": 331275,
+"sha256": "1c665603a82beb81e0cef2878c9b44642ae6d519e301fbbd06326e03325febf3"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/id_dict": {
+"size": 43458,
+"sha256": "8fb3f23f80f71f023219cee7032223f3f6886cc5040eb4c8c507f79d1b84e98d"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/intonations": {
+"size": 2040,
+"sha256": "3f8af65fd3eda9759a10f021d61361c120871f463515229c925995c7f90918cc"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/io_dict": {
+"size": 2165,
+"sha256": "0d9d6995fead1ccdd5512f7909ec8f9efc8ccc97f5c9d23ecae6b3ba77ffadbf"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/is_dict": {
+"size": 44354,
+"sha256": "8eeab5b1ca3f75362881fae3de3316fcaff281179a4c51fceb0098f11ead96e0"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/it_dict": {
+"size": 152889,
+"sha256": "111f968359c9ebe36b107a2565ba9f258bab337d3cbe37e44871980a8f21ce6b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ja_dict": {
+"size": 47652,
+"sha256": "64a4ec3b422dcfcd5109e39e35e0f8a499e98347b7948e04777354378aabb384"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/jbo_dict": {
+"size": 2243,
+"sha256": "71298417de1e5fd07df275270a5d47ca8820cb8c9f5dc2156c070b7a3ae7999c"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ka_dict": {
+"size": 87775,
+"sha256": "c8624947110a13bee72d4fc15b06026004df3f40c16c7b917d27e369ca122a32"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/kk_dict": {
+"size": 1859,
+"sha256": "88dc0106629a57d0aca5073afb11db1a044799185355088a7ad4331c836affd3"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/kl_dict": {
+"size": 2838,
+"sha256": "ec441964d7fbd4622bb628327903d5c6c999c95d539b2e061884decf95ac30e3"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/kn_dict": {
+"size": 87828,
+"sha256": "c51e0385937b407b36c02fd2c85dfecdc5cac411398ee8a74eca15b35617af64"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/kok_dict": {
+"size": 6394,
+"sha256": "aef3783d335b8e893767b9c26d1b93af1f3c6eca75f87a511f109c1170798d64"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ko_dict": {
+"size": 47523,
+"sha256": "c79e6f90ad4a5eb8e80c3861c0192b7cd814bb346c193f98524dea2f9b8b6c26"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ku_dict": {
+"size": 2265,
+"sha256": "65de1c5429e8d193775b36fcf169a60fbbb9964ef13a4a1bab7ff0ce855cad20"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ky_dict": {
+"size": 64977,
+"sha256": "def4427fd4070673c073b892c7b229f8c3f17eb1df36bea2ec7188ddcfb4d0ea"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/la_dict": {
+"size": 3806,
+"sha256": "17818dd567936fde032404fbbd6177844b9f5fc5a915480f567272147936f917"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lb_dict": {
+"size": 687931,
+"sha256": "d819a062b9722334f187540d3530fac1de365cd200d4a466f5ecccd7e3c05772"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lfn_dict": {
+"size": 2793,
+"sha256": "10281bc404f429165a330b800eb64674e37a135d1b4c689e57fb1d9e827d6924"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lt_dict": {
+"size": 49890,
+"sha256": "68ef55aba9545d27ce73e7d4aca1c2fa51d2c3d3d626152fbc22bf5a90fbff11"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lv_dict": {
+"size": 66337,
+"sha256": "3e246c76b7da924235ffb75925070865e669da2ce3e41e98395e99be1f8db9f7"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/mi_dict": {
+"size": 1346,
+"sha256": "401621fdf61da47d0513e80279134a3515ced898aaadd5205b82cced0f2df042"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/mk_dict": {
+"size": 63859,
+"sha256": "e4960ff4e74e1096ff1c3bccab62ce0429fa4faa725e546cd5d33e43f45225be"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ml_dict": {
+"size": 92345,
+"sha256": "b12687557c38f9bcd17417854253ddde3781e3b0c16f9470d732205818e7cd38"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/mr_dict": {
+"size": 87391,
+"sha256": "f712a7525db108ef9769aee53fdd1cd141f0df372778924691b89623aa6fc22f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ms_dict": {
+"size": 53541,
+"sha256": "74b01897385ba1f018de44c0268048fa5be588bbbb702a900bb35c691a466707"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/mto_dict": {
+"size": 3960,
+"sha256": "6d51cb6be959dba045d41d3d63ff662a7363e1287cce2c633b071295ce55d560"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/mt_dict": {
+"size": 4384,
+"sha256": "1f76761bdfd481a984b15d07522df23c9444f4ac21ea9671917e08bbffa7f8d3"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/my_dict": {
+"size": 95948,
+"sha256": "9d1bdeb8b68a3ed7ab96d8c62b91014300ec26aca0837de90423bfb369ff3b57"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/nci_dict": {
+"size": 1534,
+"sha256": "38c7201e7726c8d508f8f8611349cbc44fcc4684a0fee4db7285d83e808a5b69"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ne_dict": {
+"size": 95377,
+"sha256": "43831c3f53ea6e939cac37b5ae5bd7a2ea8237aa46f0e7f2441ab772a3c51dba"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/nl_dict": {
+"size": 65979,
+"sha256": "d28641049f98c76b460c3dddde3e2edecb7782c4eb9a3f242391301ff526c83f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/nog_dict": {
+"size": 3294,
+"sha256": "8b921398a2f1907b43c07b96a72277d8d3d8545e385955eebae5f340aae33bd2"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/no_dict": {
+"size": 4178,
+"sha256": "43b828f8c1709e7abb23a0cc6416fb32e4814e3f1ff1db4baf2935bf7c77c9ff"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/om_dict": {
+"size": 2302,
+"sha256": "3624e67ef8d9c20d894db0adccaccc61ee852977cb77d5fe5801e7b4a528fcf5"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/or_dict": {
+"size": 89246,
+"sha256": "e0dd737e9104da63a27d86cd464cf7764837625b1513169b8d28fca1bd3c8c3b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/pap_dict": {
+"size": 2128,
+"sha256": "770039bbf4ea8c5a3ffddd98c4831ca02c9f39e1ff6b3de7729fa71a8f3bc0f1"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/pa_dict": {
+"size": 79953,
+"sha256": "cee0e2a2bfb166e602ff84e185351a8ac311571ccdf46e1831c7a25245563c10"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/phondata": {
+"size": 550424,
+"sha256": "4e0288957874029a8c3c9f41a8f517ad4bf18127046decbdd4b9d1d6807ce3a3"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/phondata-manifest": {
+"size": 22808,
+"sha256": "3187abb77531275530234293c7294e3b0743fda4392e03007c57ec22c03e7a2b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/phonindex": {
+"size": 39074,
+"sha256": "3ca7b8fa3b42624e4b0f152707e7a39245fce569aa99ea47c055d9e622fcf0c4"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/phontab": {
+"size": 55796,
+"sha256": "886f3fa402cb0ba73d483aa8ad000af47a6b7cc06293c75a97913fba68a530f6"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/piqd_dict": {
+"size": 1710,
+"sha256": "33004a36210c33291aef8a838d477667eed7af52ff5093152891379b1774188d"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/pl_dict": {
+"size": 76730,
+"sha256": "0e0ce6cfe4eba41a1223362a046390dca359a3e597af8243adaac84d624ef18f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/pt_dict": {
+"size": 67817,
+"sha256": "7e8398f15fa4a21db39a213381f28ec0d302b22663c644e865abb61a09c1b004"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/py_dict": {
+"size": 2409,
+"sha256": "2255348879547940e8b49e0ca1b80452748f142cb6e267e49cab0560c720129a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/qdb_dict": {
+"size": 3028,
+"sha256": "c9b7f307ffe54f4aaf323290eca1c620572919035b0eb268e5c94f5d7a430058"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/quc_dict": {
+"size": 1450,
+"sha256": "458c1ca6dcfa288ea2584915d206c5127512501174d82655de2cf031378e6dfd"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/qu_dict": {
+"size": 1919,
+"sha256": "2a35508b6d98457910847cbbacfcfdcde36fa79341cc4ab8cc3b03d9b403b597"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/qya_dict": {
+"size": 1939,
+"sha256": "e56ae297ebac26ed6c77a9718812e087f0bd198241dac3c0d964f36510984783"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ro_dict": {
+"size": 68538,
+"sha256": "b14f68866b0440c4b0d95fb7da3b7ffd3c59b693e8593d188474fabfc9a1117d"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ru_dict": {
+"size": 8532392,
+"sha256": "f0f6181bbbf9e53cd1e8f9d26bde8fc62119c4f78181948f961cb29866e5e585"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/sd_dict": {
+"size": 59928,
+"sha256": "95cf1a258896d836101d27f50beb78f1c2cf1af7e26db69d0c0a82c6198a729f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/shn_dict": {
+"size": 88172,
+"sha256": "369847e6d45db63b3eee9b73d6eaaf0aff692195d1666d345aa287447ea53a4f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/si_dict": {
+"size": 85384,
+"sha256": "a241437d4b64fd328ac4a3e786c9465c60488f6fa31cbba04153f628cdc61f27"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/sjn_dict": {
+"size": 1783,
+"sha256": "eb70510144230f6791574d86bae0918b4191b076dd66c555e6ae3d5637daadf7"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/sk_dict": {
+"size": 50002,
+"sha256": "58b9bc11c9a95d81e96966242367009f8d02ab7a3f8f4fd77e3581ed4159f0a8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/sl_dict": {
+"size": 45047,
+"sha256": "9cb2bcbf616a5e7dd7ca769e7d222a48c613299ef1d76e44c08b002f8c22861a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/smj_dict": {
+"size": 35095,
+"sha256": "815270ce38a59c192ef5aa8801119d9b3ed973d9e23dfa6da8d5d27ded5a9cd6"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/sq_dict": {
+"size": 45003,
+"sha256": "6b74bef94c3319407c27e44d944e765d036a88b30b4c17f30bbc182dbffcc4ce"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/sr_dict": {
+"size": 46832,
+"sha256": "770cae9c516e48af7896629faf4abefaf041e1fd4ae184011aad07b97196f613"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/sv_dict": {
+"size": 47836,
+"sha256": "565f058b14f1c89c6bfa44fc3700793886a39c7818f1037ad1f4961fa7517509"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/sw_dict": {
+"size": 47804,
+"sha256": "375fab2ccd0d669177ad406b20b0cdb5851a1e86f093672f24f72c29fec8a815"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ta_dict": {
+"size": 209553,
+"sha256": "8f3d855c8d7a35ad0e2b22bc7c15a8830e5fc235492894e5db40458655076ecd"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/te_dict": {
+"size": 94837,
+"sha256": "640407c66a5bb975671243325de616c221f90bb2842d3a36278facb68c0772f8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/th_dict": {
+"size": 2301,
+"sha256": "edf7ea9bf45606da18305082ab35b842642941946b5c2ea4203238a0be646a2e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/tk_dict": {
+"size": 20868,
+"sha256": "b3cd4a246f014f0564ec9efae79731c0fe73ffe1cd1617359dd8d5344ee3f9c8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/tn_dict": {
+"size": 3072,
+"sha256": "67f68dc336e7c65b946c95414cc8ae96cd10d241783bf857b3f990ac73221b2b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/tr_dict": {
+"size": 46793,
+"sha256": "311b0557059f2dab5ee2faabb51361f5033368f0e2a54c4bdfe45e730674f26e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/tt_dict": {
+"size": 2121,
+"sha256": "60d138d38330e44a78b4224cbea452bfca22bce6734c8ce3f640c0216ce14001"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ug_dict": {
+"size": 2070,
+"sha256": "7c4567ffe6bd8d5224b6b3fd8fab65b1343254636e6228d738ae3a708428e8e7"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/uk_dict": {
+"size": 3492,
+"sha256": "a779bb0f51ce5cebb650a4e2282162fc8c44609210a2baa700f81f3e83e6e10c"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/ur_dict": {
+"size": 133556,
+"sha256": "c9b152fbfb134f6281de8565bd4f41aef006f57b278c03c557dd5feff6e0dbec"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/uz_dict": {
+"size": 2540,
+"sha256": "790d42ac417b26dd7b1bbfed4be72329c16ed1839dd75f55f7c962eb7bd5857a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/vi_dict": {
+"size": 52608,
+"sha256": "9c108de08a16543f97441af6e4ad8652f7f0e86f578c91bfaf21d4826ce72e87"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/yue_dict": {
+"size": 563571,
+"sha256": "1d26afa203034698772107abfff1b53acbee30434700a4d2b75dee98951588f8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/eu": {
+"size": 54,
+"sha256": "a16e4e4d9b910a6e25a2a55913c812badc4fc3cbece0b8d49a64af112782d5a5"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/ko": {
+"size": 51,
+"sha256": "c2dfbf88d9aa2ac9bf2f30e92e260120e4f2c21123a02265014ae98d59d5774e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/qu": {
+"size": 88,
+"sha256": "3069e443ecf3421bcb3b35b864e1a89fa9465af072f86eedd46a415990aba6e6"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/aav/vi": {
+"size": 111,
+"sha256": "3199c980f9e23a88a2aa693cd631bf4fcb0f3408c4272bc01b7ac0ff8e79d778"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/aav/vi-VN-x-central": {
+"size": 143,
+"sha256": "b351f13c6ed0da37561df25f45579872ff9863920ad66b94e27327a2c611755b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/aav/vi-VN-x-south": {
+"size": 142,
+"sha256": "c0a0a2c894cd57b0bbacf9ef4efb8d89bfaf9feb164830e1539f599e7cc4e021"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/art/eo": {
+"size": 41,
+"sha256": "0254b93c8af79d9666a7667ca8b33b21a5453012da4ea0acd79660a9695f89d4"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/art/ia": {
+"size": 29,
+"sha256": "8fb11718030f8b29146f773ca462b838a6c660f166933eb6f1498c361f2e958b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/art/io": {
+"size": 50,
+"sha256": "8e8391c7f40b7f9d2307faff8018a40dd2b448df4bd581a2950ee8393a00cebf"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/art/jbo": {
+"size": 69,
+"sha256": "d9529de82dccbd95f83c1de401f4ea661609bde644546e9ef421241b7043c00e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/art/lfn": {
+"size": 135,
+"sha256": "394874fd9022e37cdc307c3386e81f1c0c133a8e9c5fdff74888b519f2c6d648"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/art/piqd": {
+"size": 56,
+"sha256": "d1a559b714cd8dd0ea9e46c4574e06c4f451957fb17bf39b945a89b9586f8b97"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/art/py": {
+"size": 140,
+"sha256": "59e54b95e8571417f43db37a7fd7e351af4e22a8c250cfb66af394f8ed6c4e9c"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/art/qdb": {
+"size": 57,
+"sha256": "52b83fc4f294580ebabd71df641ab5beec6b308758a3458b497124737589a7d8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/art/qya": {
+"size": 173,
+"sha256": "78ae3f4d70208a9f69e2c26a6a3b5db28d7e6a58740fae937f51dd7fc9faeb1b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/art/sjn": {
+"size": 175,
+"sha256": "61d85974b6841dfbfcc8cb92ad0742696cb87a6a85d5a28fe99895e46ef9de6f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/azc/nci": {
+"size": 114,
+"sha256": "7bf70cb18e969398f74428b91c694a4483eaebd6733ecc437eb8714bbf7fff76"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/bat/lt": {
+"size": 28,
+"sha256": "7691c7ca1e79fc9728c70a0d22830eb113a0124bf96807e2a1ace3c6bf0c2f89"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/bat/ltg": {
+"size": 312,
+"sha256": "be716cbbdcb5fe319eed88abd4a44c3329a06e1dc468c8363d3f43cca2683a11"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/bat/lv": {
+"size": 229,
+"sha256": "f08a801dacccace62f5b90166428e90e088818d92dd5f9333ebbe834b0f21c16"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/bnt/sw": {
+"size": 41,
+"sha256": "271dd28b3ec41adeea53f1146249ba6cab61572963ab2743041114d95784e368"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/bnt/tn": {
+"size": 42,
+"sha256": "2243a1fc208dfdc37e154e837c0e782afc325d4acfbacc22718b7f05583ace92"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/ccs/ka": {
+"size": 124,
+"sha256": "68788b99dba7b82cdf8fc9dd05134bd72cf21f0b4c07b13b67b6f036e6294cba"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/cel/cy": {
+"size": 37,
+"sha256": "67bc33b4a66041e6343dfb98e1950d1089eecb68731f346fcc4f47cd07e79970"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/cel/ga": {
+"size": 66,
+"sha256": "29c2cc5736ceb2bd9ef745694d4abf7ed363a33569dfbe745811d4703b7b6cce"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/cel/gd": {
+"size": 51,
+"sha256": "7da0ba464579c367089109826ec15c2584a17417cca4a2c66dae0318d33e3128"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/cus/om": {
+"size": 39,
+"sha256": "b7c563f1effd83c08f3d229fb5a13d074513b85165ce4359a674ef30ca71786b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/dra/kn": {
+"size": 55,
+"sha256": "c988a5226fa27ee6768b45566ce999ced9a4b68f8e79232b323d5903f4bb2258"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/dra/ml": {
+"size": 57,
+"sha256": "aa7e1f1f239ba55a8a79ed1f3544e9a51b94efe53925de60d4ff737273660b5c"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/dra/ta": {
+"size": 51,
+"sha256": "5bc213eb163bbf069cbfe4f2e9f7e7db71a719d8c0a96e95401d94c992960ed7"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/dra/te": {
+"size": 70,
+"sha256": "176ca4a81feb2181393edff3e2d5c0253cb52239392c4b809c61501d60c69811"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/esx/kl": {
+"size": 30,
+"sha256": "d08cf6ff60b99e6c2ceda549bcbb1a57580915d6a4d50c7f0f5d75289d9fb45a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmq/da": {
+"size": 43,
+"sha256": "e8dd5e0d30ff0694a7ee839faa8ed35c015eb927a737aba1f120c00005692eaf"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmq/is": {
+"size": 27,
+"sha256": "16c077e6222acfc7702046fa3579bb5d6b57ece98646229e13be2233f9fdcbd7"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmq/nb": {
+"size": 87,
+"sha256": "d47966621312fb95570539f446982f6deb98fd46d9b71fec4a0005a6bace8f46"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmq/sv": {
+"size": 25,
+"sha256": "02727d3b25fc82409bd2cd1ebb444fdb2d5d3f3de7f76b95fc9ed9164c3e59c3"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmw/af": {
+"size": 123,
+"sha256": "fb8ccc05f5eae1754b5aa7e92cb919defdd0810b70eec19f7c77cf836e51db09"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmw/de": {
+"size": 42,
+"sha256": "f3cca92f94b70f8c25a29ee0a4c9ce4c7f1022241532e0647fa2b7f698bf104e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmw/en": {
+"size": 140,
+"sha256": "4605d5330801de3641c6e366d15f129ea1f5ffbce8722642aba01ace07ab9c83"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmw/en-029": {
+"size": 335,
+"sha256": "faeb8cb201056775f733acbd908c66555fe57bf01cb063920f178f389cbf85d3"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmw/en-GB-scotland": {
+"size": 295,
+"sha256": "1ce4282c1f4385dbaf0035e799b2ab1ee9e9a3ab4829100594a3047727b52353"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmw/en-GB-x-gbclan": {
+"size": 238,
+"sha256": "2040e176f1f7f27bdce81c32d7e2b1662449d54d264afd3c0ed871b8e42b6e46"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmw/en-GB-x-gbcwmd": {
+"size": 188,
+"sha256": "927a5ab891c65b30b4426b151d1623a01024f6b773a38497ba1c90cd77a95747"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmw/en-GB-x-rp": {
+"size": 249,
+"sha256": "d0625af7f58561b1b8cf96fd7f93eee6553bcb3eadb9020ae0757bf96e5115e5"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmw/en-US": {
+"size": 257,
+"sha256": "41534c2a22df5dd4f1052ff9e1a33a3ea7bff5a26b5c02bdad5ba8ddb7524704"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmw/en-US-nyc": {
+"size": 271,
+"sha256": "e8ee9168376d1f7d9e7dcda7c4644c36c529a8bea816e6380895364db46ea2e3"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmw/lb": {
+"size": 31,
+"sha256": "071beb0e769afeba32177796fc0f1386bdc89a3234bed2bf720e76cbf73f5b99"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/gmw/nl": {
+"size": 23,
+"sha256": "56ae04fae28ae9371ed6db28193189e4ee962ba8236f0bcdeef6a06ea4dee374"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/grk/el": {
+"size": 23,
+"sha256": "0b529c998af07c72bf516b5750709464f6258c56c6916b8b8f0c843be9836fca"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/grk/grc": {
+"size": 99,
+"sha256": "319f950b1ad7b1f37efaa390540bf957bddac16d0557a6c3adaff27e0c64e12e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/inc/as": {
+"size": 42,
+"sha256": "3f58f5628f792b00a5ae6e8fe3bf8696f64af2838e5723799ddbab6027a0b378"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/inc/bn": {
+"size": 25,
+"sha256": "bc3ce23384b9d0bb3bac06a09d90f690fae32a492dcbb030f0e56ba67b5d656c"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/inc/bpy": {
+"size": 39,
+"sha256": "e528d1189b995b94966cef4cc182469cc54f7da8efc5860375c4ecf186ce6146"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/inc/gu": {
+"size": 42,
+"sha256": "f938a755d270745188c2cf2aacba06642a96bb73ba2a0325384121b9d5ec5407"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/inc/hi": {
+"size": 23,
+"sha256": "3c1c3f916f57f2d6d6cbf7923c0f39a36ac2140e2a69ddffce917d7b8bf3ccab"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/inc/kok": {
+"size": 26,
+"sha256": "810ee23fbbe9c186a036bc12f4e5c0de674a132e2e099c9b3dece2a1c9cdb28a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/inc/mr": {
+"size": 41,
+"sha256": "29063ff3a5257d0d3d7c215dfd4c14deed39e1d48f15894202e6712459720efd"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/inc/ne": {
+"size": 37,
+"sha256": "d53fda082ec174ef33ed3c3468fc973c43b4ef71aca8c1a28cb344668f4838dc"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/inc/or": {
+"size": 39,
+"sha256": "9b52ede7d19659f884854de3dff12597a96f4d6ec7cb4146d2f8dad1453c742f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/inc/pa": {
+"size": 25,
+"sha256": "eed3cf477f81d13559dbb367256f9532b20dad1432c15b206c777217b8f570ca"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/inc/sd": {
+"size": 66,
+"sha256": "65bfe0e37799029d42a370eb627cca5aa4108b967fba6c8141878d693c903619"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/inc/si": {
+"size": 55,
+"sha256": "8f0993b35ba5b075c38ae76640971256e560abfbd721b608d16a48588932596d"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/inc/ur": {
+"size": 94,
+"sha256": "5b7af7474fac265c7bd7d269111994a09610f954690698f55a8613f3fa973318"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/ine/hy": {
+"size": 61,
+"sha256": "b6ad6129079c49ca915c3005ecb74a02bf5d69cbbc8ec3f8e0f6b949cb3a768f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/ine/hyw": {
+"size": 365,
+"sha256": "26f8a863c74b3d19c9c42fcf16ae5151c12ac52ef8fab36cae1e5f0d4ad30e6a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/ine/sq": {
+"size": 103,
+"sha256": "865fde9017b5af82acb844e5f9793998fed422a208ad8aaf9dedacad3bf27af1"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/ira/fa": {
+"size": 90,
+"sha256": "0dc7e93be4d1fbdf7ff52de2fe8bcdc23304e6d86e012b4ab8276d626b5d980c"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/ira/fa-Latn": {
+"size": 269,
+"sha256": "a04cf8efed8db1ac33b306f1f8c6f42733dace87c9fc9f34a2d227b3bb291e28"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/ira/ku": {
+"size": 40,
+"sha256": "57db3a210d73412a49e961dbed9b27077f5c7b967a19a0eb9f9363ea4b16cea5"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/iro/chr": {
+"size": 569,
+"sha256": "f0e2fb8549306c07f571d3e77c89b1d3e9022d448d58e5d424441e01ccce88be"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/itc/la": {
+"size": 297,
+"sha256": "b70d13a264352eba2d22a5d0ef21730849509d18f7277320b008a56decc6efc2"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/jpx/ja": {
+"size": 52,
+"sha256": "6fd980445bc52e0f593062929f5b62831448abaae2a92739beba49df27a79743"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/map/haw": {
+"size": 42,
+"sha256": "b19f22efb6714354d8d1360f449e05f0f84d50d6fa3c98fcfd619ea1b4ba8996"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/miz/mto": {
+"size": 183,
+"sha256": "e33aba5e8159730f62004b22518d627c796f7d039431e5d9217b498f10341976"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/myn/quc": {
+"size": 210,
+"sha256": "76a75b77c672c432b56b84d517310d6aa75c4b3f9de580e290199804366174ea"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/poz/id": {
+"size": 134,
+"sha256": "ce1fcddab3e756a7cdba3dd009ad24cd57e1fde29ce395698355da24e32a6075"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/poz/mi": {
+"size": 367,
+"sha256": "2146cf3868c79b853bb5e41ddbf611d51b4b0a14087199f16194313562b98987"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/poz/ms": {
+"size": 430,
+"sha256": "8a965182ee0c5a41357197c05cf047d21b96744775a57a344d831a961e30351b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/roa/an": {
+"size": 27,
+"sha256": "ff8aa97c55286cc90531cad5df3cd36165abba11502a84d53b0fcd923f965f23"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/roa/ca": {
+"size": 25,
+"sha256": "787df034320467236292bb46f1f8781a2998a185f117d350c018b6cfcf360854"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/roa/es": {
+"size": 63,
+"sha256": "966aa015ea5646d79f0ca4807cf5da7339aabd3782b55cfa5eb0d8c3fc8fc588"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/roa/es-419": {
+"size": 167,
+"sha256": "ff0f84457ac40e3bcf61d6de58028312be74e0e6cbc3b742f31b3ce729c2aa0c"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/roa/fr": {
+"size": 79,
+"sha256": "95f44834b48c075dad13eace54d2c98ff79b81aa0074dd67eebaf66c2909eef8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/roa/fr-BE": {
+"size": 84,
+"sha256": "72496a316e47b997f893500b8953dc01a10b86a2d4238e13c1260f50b47d792a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/roa/fr-CH": {
+"size": 86,
+"sha256": "b449b0fd99d9cd93261fe1c6b816448b99b4a10420bee3f301e669568ad0de55"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/roa/ht": {
+"size": 140,
+"sha256": "389bdf3e984a2f93b7060baad82452dac65b83bf4482d3884525a176ae0e0524"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/roa/it": {
+"size": 109,
+"sha256": "0d9069eb9a96db1c55c131b2bb7d1f5255c68fbddc2199ffd3295b52519a3256"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/roa/pap": {
+"size": 62,
+"sha256": "41a5b5e91482a5498a66711c05873a634bbd418786b0ba037032df846344cfc1"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/roa/pt": {
+"size": 95,
+"sha256": "a44060072f790e41912c57b7d52f7b6438c4383e0dabdb052f6fdb7aacc23493"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/roa/pt-BR": {
+"size": 109,
+"sha256": "84dd4e34c970fadbe32211eadecfdfaab52432479c0911e43300da88a33398ba"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/roa/ro": {
+"size": 26,
+"sha256": "b12af10ffc3f89cb87767ca701c6fea0def8a712de63426a9c3d0bf2432467f8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/sai/gn": {
+"size": 47,
+"sha256": "ff82d2d163d3e06adb580254d89012e689b2615c46579883562838ab401fb5d5"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/sem/am": {
+"size": 41,
+"sha256": "5970b16bf865528ee96a78c08498244bc8f54218fc2add499716b0e0c09969fb"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/sem/ar": {
+"size": 50,
+"sha256": "43f418f8140e5a7bd7096963da20ccba9247f6be1fcdb08cb53dd7967dd72eee"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/sem/he": {
+"size": 40,
+"sha256": "de9195e743b91fb7fbef7493bd5ddccad14c380a58d5aeb7c1d11d3419ef3b86"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/sem/mt": {
+"size": 41,
+"sha256": "d23f38fae3253b6fb42e3336760ab482e676893692455465448bc9fbc0ac3e83"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/sit/cmn": {
+"size": 686,
+"sha256": "a130a38e3b622735c2401cb37f6719f46995e84a133729185cef9a543ec0b072"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/sit/cmn-Latn-pinyin": {
+"size": 161,
+"sha256": "14c2fc097db280416b688c2bf97de2e5da532c279754020fde7bf6cd624cdd10"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/sit/hak": {
+"size": 128,
+"sha256": "c03c30b43e0b0abdfa689445baf9f442664a0373154a5d0ca75a33d30f46aeed"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/sit/my": {
+"size": 56,
+"sha256": "4b5ae2566cbf30aa59207020469e09832e66a7883818788f253996c534303dca"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/sit/yue": {
+"size": 194,
+"sha256": "83f3dac92af5b4aaecc119515698a6979524be236b28ea8f1024ec707d99ea5b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/sit/yue-Latn-jyutping": {
+"size": 213,
+"sha256": "c56d45bb9a9cd97efb38edabe31c7dd3feb0518cc900aac6a891dcb6bd8eb428"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/tai/shn": {
+"size": 92,
+"sha256": "f16bf2de219d3ae9a6aec263ce9c684d9cd3e61258d04c7948db0757c67e2c96"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/tai/th": {
+"size": 37,
+"sha256": "6c8ac809868de659e06673f1fc2b56dbf4637ff9980da7a4726b846478b4cfe6"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/trk/az": {
+"size": 45,
+"sha256": "52b424332de4c443f3e9c5ce4de5aed6fbfd421269fc825756dfc6bcbd7e1ad8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/trk/ba": {
+"size": 25,
+"sha256": "a0cc3a06293962093c66533f9c1cffbccf083a2eb666751f2778a02a5316d98c"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/trk/cv": {
+"size": 40,
+"sha256": "94baf6bacf581cc20337471c599f85ecbbe211f0b8476351ff19450c6541ea92"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/trk/kk": {
+"size": 40,
+"sha256": "2219f4d6de0fbb1dc9982157c6f3cc5f4c8abe5fcb605908a9d1054b9880cd51"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/trk/ky": {
+"size": 43,
+"sha256": "8239dfe8bdc6d4725880f5192b4eaf645f839e40cadfd145a4409c8387ac2d59"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/trk/nog": {
+"size": 39,
+"sha256": "e0e27fe61d406b6f4a4879fb8f81a14bc65997106666933991b818c7d79fabc1"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/trk/tk": {
+"size": 25,
+"sha256": "d78263398c135119909ad63a3ecb6ffe3aff08383212934dd03695222a9786d0"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/trk/tr": {
+"size": 25,
+"sha256": "490eb5a2f777a2f3396f3a824ed8021bd77a94be801214411461bde6689738c9"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/trk/tt": {
+"size": 23,
+"sha256": "8b9617a9b6c56f4a2fe2f59d9ce55426837196567962716f9330f70948f8f9b0"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/trk/ug": {
+"size": 24,
+"sha256": "65d0cdbc96efab4d9e3cd0095440752a31dc7f425edd3ba0a53c4dd33eac5d63"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/trk/uz": {
+"size": 39,
+"sha256": "04fd711dfda1e00d17dc8b1b250c24d70cc3c498b27e35d31065ac47441a6759"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/urj/et": {
+"size": 237,
+"sha256": "59c77747c4774e54a63ab74d2c6a95bc3c5b5b0a50d3781f187bd1fc3a613de5"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/urj/fi": {
+"size": 237,
+"sha256": "61f58ec3bba5b55a392aff7ecf8a84d024200aeaa404b5553fcfb47770936928"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/urj/hu": {
+"size": 73,
+"sha256": "c575421d2ae397065d35af0eb4f79dff4e85f3435ccf45da874f46b3fee1338b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/urj/smj": {
+"size": 45,
+"sha256": "3d709dec77bb633af0d57b89668dbaaa72d9be8688118d6909f7d457bec12a50"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zle/be": {
+"size": 52,
+"sha256": "5beb002d15a36bf3d0d764ed0d483c75a1df6909eaa3b10fe5f6546700c9bfec"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zle/ru": {
+"size": 57,
+"sha256": "9f52d00a279aaeaa45a786b4fd3a98b34e95fedbf823f8cdb9fecc1339751d3a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zle/ru-cl": {
+"size": 91,
+"sha256": "200ea345b505ec9e7b8838490aeaf1822af41033429aeae4ea68159047f59f90"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zle/ru-LV": {
+"size": 280,
+"sha256": "980e379667ccb94abe33b9c9c660c08800e3f31e36fe4a939551398ab98457ae"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zle/uk": {
+"size": 97,
+"sha256": "df3d1a9f77bac0531e72f87be398d9eb1e903bd6f839d4f04ffec5abb4e34634"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zls/bg": {
+"size": 111,
+"sha256": "9b91accccb0d53bb2a7bf21922846ba58c74bc082ba71ae32bf12cb0d092f853"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zls/bs": {
+"size": 230,
+"sha256": "0820e7c78b68fbdaf86d83c782cdde1901b642d1cdbeae4181c6f5f5e21e5e89"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zls/hr": {
+"size": 262,
+"sha256": "cef3ef0411c66f154e6c82f7decd95beffa8cbfbe953335658df9f125bdd6096"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zls/mk": {
+"size": 28,
+"sha256": "6dbc2cfb8999141bd0782cd463d4880468161088190c6b4c9412f43552dc39e2"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zls/sl": {
+"size": 43,
+"sha256": "e1c2bd1f75c0eeb86f64182472d5f597ce23e64ad7478c248c2f75b694655942"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zls/sr": {
+"size": 250,
+"sha256": "0e076528d3566f6e59b807e16e274dee505e88a6d477da188ab8ec442eae44f4"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zlw/cs": {
+"size": 23,
+"sha256": "1477cdba5ba3bce85db559accbbd8a24b86b3f6d9d9988bc587e89357c1c4431"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zlw/pl": {
+"size": 38,
+"sha256": "83c586a2b724b24b9f98d21ade5022112c465ac446ca09930286980ceae1c781"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/lang/zlw/sk": {
+"size": 24,
+"sha256": "f46ff673c7d58c1646096c174d58da34047d893d0d2993dbca260ce54abe77ef"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/adam": {
+"size": 75,
+"sha256": "b21efbf56fd7d58470e7ce4759c6ef9f23949706b269f2d777832204658ee0dd"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Alex": {
+"size": 128,
+"sha256": "1cf9874567f4fa8109329f084e9ad9ed788fb2362298921d0a04a57b24f1141f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Alicia": {
+"size": 474,
+"sha256": "6d3f60ec866706e9d4ab7da2a79eedb8c11b50f63620f87e58317f316ea3d58e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Andrea": {
+"size": 357,
+"sha256": "6ca52734ec2cf7c419d2d3ad7c3449cd1a1776342c4d152ea12c5b1e72801e89"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Andy": {
+"size": 320,
+"sha256": "0e13ba1a940cd9df7e65358c36445c9740f3d75f1360c7f7c71ab9f74b45edca"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/anika": {
+"size": 493,
+"sha256": "228771ce84cad16a089e0b23efe2e69edf25f1ab7c0cb3a50d366ac70e82fbbd"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/anikaRobot": {
+"size": 512,
+"sha256": "3ba724be6aab2fc1a084b25cdb16f469250eb9de4c6c0924a18788d0246fc32f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Annie": {
+"size": 315,
+"sha256": "40f0f829c5c6e7abf4a02a21f128a572756d6f6693014c26d09a5c29ede5ec33"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/announcer": {
+"size": 300,
+"sha256": "4af6a6748c720cbbaac1e3dcac17bb3bc7a4c553499ec7ee69e054db51a50de3"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/antonio": {
+"size": 381,
+"sha256": "c90477080cd9aa9c384770c0ec18901d01e9851f1bc7d15526a2565a3b0c4da5"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/AnxiousAndy": {
+"size": 361,
+"sha256": "7dfe126f517b76cc78269618dbee2c30d324bea9460b400938756ec93995eaf8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/aunty": {
+"size": 358,
+"sha256": "0aede4d1ca614f32c348f3d728eab58322ccd016e8531234fdc3dfcf00e32bf1"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/belinda": {
+"size": 340,
+"sha256": "9bd791b7115820e25ada82b4911134d5116e8238b4fd4d214dfccf162576141c"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/benjamin": {
+"size": 201,
+"sha256": "3fa10b0d865fc751fd9c8ed1dabac4bb9b011ea2b95064d4d25a8c719f7785d8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/boris": {
+"size": 224,
+"sha256": "f23d0a6ee2eeb7e3340506d61d422b691fb04f4e98977ea15c1e0ee5715846d5"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/caleb": {
+"size": 57,
+"sha256": "bcde145ec713eae6d3451a6f25dbbdc0b6756fd44e9e092b7aef89f2cff25be8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/croak": {
+"size": 93,
+"sha256": "2906a2c6f7b7687db2f1c862164a9b80435d5afc3ba16d74619728bf8c3a8ca7"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/david": {
+"size": 112,
+"sha256": "50b5cb5f61a50f5ff5299dd22e5d645446746dbc36909595f6ae47bac0bda9c3"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Demonic": {
+"size": 3858,
+"sha256": "241b0e78362bd3208bb586b65bdf52330e1e8322f8f226c4790c4abeb47cfb09"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Denis": {
+"size": 305,
+"sha256": "a09fe9f7a4e478d2ba1e139c2995633e2b99de9abdaaa82307954599b0e3d6fd"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Diogo": {
+"size": 379,
+"sha256": "a4a17c453d13242b48783c247816bff8d2cf7bc8931c3f8237887d88a2881b18"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/ed": {
+"size": 287,
+"sha256": "12ddb6355b40a2e39a3b6cef66a2bf4db15a25045769b330a9a3b344a608026d"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/edward": {
+"size": 151,
+"sha256": "b7a12bcb2af280c40e4be4280b675001024619ed529262dbf3e819db53b5b310"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/edward2": {
+"size": 152,
+"sha256": "59d166f7adfee4515a492993405e95432889050aaa47b6cd7eaeeb457fbca227"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/f1": {
+"size": 324,
+"sha256": "7cdef453c6b0391d50a02b8f35392e6f41249cea65df1021affd68a64917b85f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/f2": {
+"size": 357,
+"sha256": "62b17f6c8f94add0310db032f5e463c13510c5ff83ef1f21e8894ccbf00b00e3"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/f3": {
+"size": 375,
+"sha256": "d0342ee8ceebe3047831774634d234e90281ec73ce2aed8dd0bdd915ccf500fc"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/f4": {
+"size": 350,
+"sha256": "ff9e2907a818920e3b976232c90eabaf270fff0de0b8a479af9a3633e9b7921f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/f5": {
+"size": 432,
+"sha256": "6c76406d94540d59dee16de11520c37124a1f6dfc236981e483877075f0271b3"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/fast": {
+"size": 149,
+"sha256": "fa2f9c2918f351499037f6bffb25294d9b781b2785d9772a8ae3293c0c0037fe"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Gene": {
+"size": 281,
+"sha256": "06258dae680cde2122a4939dbd4f23ed4ea145b7475068bf7dd4d466090afd2a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Gene2": {
+"size": 283,
+"sha256": "bcdb3039296eea37398e4423dc9bb6849cda9c5c812b83702ebc49682c649f57"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/grandma": {
+"size": 263,
+"sha256": "e033d57ba9b098971fdb995c13830f9c709206add081c586daaec323ff69a392"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/grandpa": {
+"size": 256,
+"sha256": "f25627887b95e8bccac5e6ce99cb97c6e34290ff0bf919febe64a9987138796d"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/gustave": {
+"size": 253,
+"sha256": "5fa89cf8625cd460b9309748eca019ab5b325a04dccbd29f1a9b2a00caa2e848"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Henrique": {
+"size": 381,
+"sha256": "5c6bf1cf5b6bc7c7d48f2a8368ae348c6ff64232c047f40f9d9a6e6824b4ce6a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Hugo": {
+"size": 378,
+"sha256": "906acbef890dc4da67cb54b5b0ddc2cab7ee308a95d350c899f0b0cb6a83dd5f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/ian": {
+"size": 3168,
+"sha256": "c0722c7954d3e6582e3f5b3f584140675ab060ac3c6cac5dd11a74592db5550a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/iven": {
+"size": 261,
+"sha256": "10ab9de8365ff7bf5a20621d08f1a2019d4bf5521f3c6f65447c9256057406c8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/iven2": {
+"size": 279,
+"sha256": "f94830e5abe118dc4c0909630d66637ba2a7c94957279c31fd78e313374054cd"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/iven3": {
+"size": 262,
+"sha256": "27ccf2d2f7bb8f1ff28c705c39cf6ff575eb2458c39a518ed33741ad9c1af252"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/iven4": {
+"size": 261,
+"sha256": "11b3d46c01d4307eedcb60bd8dbcc73a40f3eb86c289176d6fd5bb418223b92f"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Jacky": {
+"size": 267,
+"sha256": "41884ed9b66160aeb5a0dc418370a59fe39ead0013d93e023e6d607ef01c1a6e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/john": {
+"size": 3186,
+"sha256": "bfbcc1cec33ef0581fdeb4955fbcd0d824a5d4be5493d731e4a2ef7f8f3ba670"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/kaukovalta": {
+"size": 361,
+"sha256": "b9f6016145835c3999bcd5872b8a53442729bd903591781ea3340746b3b4956b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/klatt": {
+"size": 38,
+"sha256": "9abb6d05d0ca354831c570e14323dd4e821459b53166d96395875a48bacdbde2"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/klatt2": {
+"size": 38,
+"sha256": "afab662a55953532ff8d6f9c615b824ecec87f7aef6790a58c4ccbc4505a742a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/klatt3": {
+"size": 39,
+"sha256": "f1c0cd147bd656f6c4830b3341c9694483438c43aea15c982dcc1945dbb334b9"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/klatt4": {
+"size": 39,
+"sha256": "3459c15aa8fa7d7218ac34388dfc0833c850ffc923013949308c2f643f3daad2"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/klatt5": {
+"size": 39,
+"sha256": "44397d8282454a2974078d25509caa470bceb093e484e727843a5147b4193e60"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/klatt6": {
+"size": 39,
+"sha256": "7d3930cd97ef7a0732f2e19f53f84e480f2d441d263390647b92bb0b4c645d05"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Lee": {
+"size": 338,
+"sha256": "a1584887cddb40c10e04992fb770025b52e66b70504656094f80975f1d6bbf6b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/linda": {
+"size": 350,
+"sha256": "df06b4c29f5953034e7815ea7062e356917266f8fab576f76c036045525c8e28"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/m1": {
+"size": 335,
+"sha256": "7f2de023bdfe18651d2d0453d2e7ff5e8ade9f094912a79247336ddc90fd7783"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/m2": {
+"size": 264,
+"sha256": "6eb925eb6691621a6de66c87596c6ed879c80a04215a9a8437dffc28fcfa14dd"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/m3": {
+"size": 300,
+"sha256": "7a4ac872387439814ddd65f5e1ff73017122975911df6b5dc62c5709e6fdb611"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/m4": {
+"size": 290,
+"sha256": "6bef82cea3538da1246b7a2c203206e90155cbb4af86faa8ef03366c3119ceee"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/m5": {
+"size": 262,
+"sha256": "08590ef7ce37630a6875d9cbe200dc473a9054b4184287808a4fd1c8e27dd02a"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/m6": {
+"size": 188,
+"sha256": "fc0e01af458a96d43f55878010d3abcbbda85e846922b25361a78d27c3a9ca00"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/m7": {
+"size": 254,
+"sha256": "bdfc54a3558ca98f9ca082479c5211034a824d8721db91804f9d77867db6fab3"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/m8": {
+"size": 284,
+"sha256": "060130540e2fae5f8acfb19bcd4ef3dc5dc8f8d2134c502bb57af277fd4cc491"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/marcelo": {
+"size": 251,
+"sha256": "3238a933a17c40c61cdd385c0e742bf54c42c008f4110d4b0353a6ae72a5d1a0"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Marco": {
+"size": 467,
+"sha256": "04025677360c0270f094bbb6716b83c8284902f6da9b496bedbbf590963835fb"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Mario": {
+"size": 270,
+"sha256": "a94ac65d132030df496e8aa364d5cde5f2eafa4b6b3ae361a2901d512c6029d8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/max": {
+"size": 225,
+"sha256": "c88f70a60a19e76a6774dfbd7664be639b9aa8aa587c680834c305ffa434aaaf"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Michael": {
+"size": 270,
+"sha256": "4409be23ef5fedf4c8bffbfaa8a802a342824d7e97f1d92938336a25f92f0ebe"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/michel": {
+"size": 404,
+"sha256": "c0068ad9cb792dfb78aedbdff9c3cec68e5083736bae0c33bf19088186101087"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/miguel": {
+"size": 382,
+"sha256": "9c8c2bbe9fba6d1f06eb63ee67d98d7ebb8846b2bf13847a9b359c90ba9fa8fe"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Mike": {
+"size": 112,
+"sha256": "8999b264606c0af23d346a877e10ca05aa757f7ea433e6cfcb3bef50a56ba2cf"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/mike2": {
+"size": 188,
+"sha256": "274ebc5df252b3258e8996f1276137b2cf9d6e5006e1145a5172997284f1dba0"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Mr serious": {
+"size": 3193,
+"sha256": "794abd78deb07ce9b03419d20f7744df4c0151d5abff7981217e9d0926a2f240"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Nguyen": {
+"size": 280,
+"sha256": "4f3d557d9c045080f56022a96e5b3659c4d1caa5fa1d702e12d3ef6bec2e3a45"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/norbert": {
+"size": 3189,
+"sha256": "35b9923e15caf36280542270282bd2392c6d86ef5db9a8be7be92ce2241a46cb"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/pablo": {
+"size": 3142,
+"sha256": "053a85c8a6d7e7a0f6432a3158fe73fa9accf06202e5d69c273d4e5bae8bafc8"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/paul": {
+"size": 284,
+"sha256": "75fb8098bea28859513de6ce033092307382d6f20455e71b051193dfc0793d5e"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/pedro": {
+"size": 352,
+"sha256": "7429792ba833fa2446bec6db790068f5862b9ed099392002cd0e724ec6ab2a66"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/quincy": {
+"size": 354,
+"sha256": "e9945bee7b4f3240221866f497bf2511a886ed7702d8389688a03c2ea120caf0"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Reed": {
+"size": 202,
+"sha256": "727dbc3f6bff0be4dd7d0438f66d3bb82cff68ed148cf52cb58e73314aaec1e4"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/RicishayMax": {
+"size": 233,
+"sha256": "7ddc7a57711ccd7a736540f14271adadf1e2e0422941ecaa7cc43ab87f8e2017"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/RicishayMax2": {
+"size": 435,
+"sha256": "3de5e414d4b2ef082a7b974bb7ede94937e93b5b873d2b2f7928b19d30745180"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/RicishayMax3": {
+"size": 435,
+"sha256": "36d20550b68a8c229d34d956657b7d642929962f7e5d4fddd6396af9e5378b56"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/rob": {
+"size": 265,
+"sha256": "fbfffcdb0afb2e3b70f886c02282feae22509d77fe6e7103daf907f7a356595d"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/robert": {
+"size": 274,
+"sha256": "72604f85afe5bb52a5ce7e3427b196e1e3e426a14a64e2d93b6617e248a46417"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/robosoft": {
+"size": 451,
+"sha256": "ce2820edd349f3fbc734bfe94095518f10ecbefdb304560109f37106f9f4d2fa"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/robosoft2": {
+"size": 454,
+"sha256": "249a44f4069b323640e6b532ff6a9bc30dca35f5f9a5f666b647937cbc58c685"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/robosoft3": {
+"size": 455,
+"sha256": "f8543efe18019c735ebad99d1cab4e06e0efd565ac269a895415dfebf342c383"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/robosoft4": {
+"size": 447,
+"sha256": "d5f728e0d0a9d27f604f34e835e059590fd01411fd467c91328b573c7597bb2d"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/robosoft5": {
+"size": 445,
+"sha256": "39da0efe1768e14eefe05a7019fab416795bbffb222fce23ad7f963991447f7b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/robosoft6": {
+"size": 287,
+"sha256": "46426971d76c34266580133fad2c26ab829395a71c1713e6205d9d46b0871672"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/robosoft7": {
+"size": 410,
+"sha256": "e19c1045259d9cfb078c229d5d1372f7c5af971d0e2536a41b89c40ca3e23ede"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/robosoft8": {
+"size": 243,
+"sha256": "389230461647836c1b66c51939c0a493e3fbc81e2b7afc01c6f88b8f9da21e2b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/sandro": {
+"size": 530,
+"sha256": "1b8c36a3ce35a27cbbabf4679df0264cd37f4c79b66aa1f4c310eb31b9c80490"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/shelby": {
+"size": 280,
+"sha256": "5e96565045bcdd5b42e7ad0eab2bbd670c67cf5c9e3f2ac6b50b30580fb92be4"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/steph": {
+"size": 364,
+"sha256": "78186aeddce4c449348f368046b2665375b1a492e948d739249b0c964f082861"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/steph2": {
+"size": 367,
+"sha256": "ca88414b48553fed1fd409389548a94ea90cf282d6340e3cb968c8538a2ac2ec"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/steph3": {
+"size": 377,
+"sha256": "a7d796211b6969ba92213f89de54b053890306af774424ee38fb02ace45e852d"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Storm": {
+"size": 420,
+"sha256": "e817c7d1ce10de527ebc19c0835f580cb584c3ae7d36d30a4f414482602e7b89"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/travis": {
+"size": 383,
+"sha256": "7d5a34be05778ee850d97b0491a62db7683c058d660ff2afc71c08c87360f30d"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/Tweaky": {
+"size": 3189,
+"sha256": "c34d1c1d8b7922ceb886b95ad6ab534ca048f9c47e19698ec2aae5cf0c32cdbc"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/UniRobot": {
+"size": 417,
+"sha256": "23dba52c2d1cb332db6225304818d85488f110a668ddcdbfd7f0438afe37794b"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/victor": {
+"size": 253,
+"sha256": "a880a8083ac5eaadf94f71c63b51f34c1426d4bfe0a26f6761ddec5c6e9a5c76"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/whisper": {
+"size": 186,
+"sha256": "1e3534c843768898cea47a3f83b2fd91720c0775b438ea5c0134676940a66e96"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/whisperf": {
+"size": 392,
+"sha256": "7fea42b10114f1bfd2004181e6b0eb626997cca987893e23d24b5c616aac89d7"
+},
+"Windows/TheValley/Content/Voice/piper/espeak-ng-data/voices/!v/zac": {
+"size": 275,
+"sha256": "edaf508b2cfbfd6088a163dcc78d5f6a26850a7d39a5a0e5128b09526f56b6db"
+}
+}
+}
