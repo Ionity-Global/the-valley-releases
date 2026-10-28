@@ -14,6 +14,7 @@ using System.Text.RegularExpressions;
 using System.Threading;
 using System.Windows.Forms;
 using System.Diagnostics;
+using System.Collections.Generic;
 
 public class SetupForm : Form
 {
@@ -23,6 +24,7 @@ public class SetupForm : Form
     readonly Button go, browse;
     readonly CheckBox keepZip, launch;
     string folder, baseName; string[] parts = new string[0];
+    string updatedTo = "", updateNote = "";   // v4.14
     static readonly Color Ink = Color.FromArgb(12, 14, 20), Gold = Color.FromArgb(232, 196, 110), Txt = Color.FromArgb(225, 225, 220);
 
     public SetupForm()
@@ -44,7 +46,16 @@ public class SetupForm : Form
         go.Click += delegate { Start(); };
         Controls.Add(dest); Controls.Add(browse); Controls.Add(keepZip); Controls.Add(launch); Controls.Add(bar); Controls.Add(go);
         Find();
+        // v4.14 unattended: TheValley_Setup.exe -install "<folder>" [-quiet]  (tests, admins) - installs, updates, closes
+        string[] av = Environment.GetCommandLineArgs();
+        int ix = Array.FindIndex(av, x => x.Equals("-install", StringComparison.OrdinalIgnoreCase));
+        if (ix > 0 && ix + 1 < av.Length && go.Enabled)
+        {
+            dest.Text = av[ix + 1]; launch.Checked = false; quiet = av.Any(x => x.Equals("-quiet", StringComparison.OrdinalIgnoreCase));
+            Shown += delegate { Start(); };
+        }
     }
+    bool quiet;
 
     void Say(string s) { if (InvokeRequired) BeginInvoke((Action)(() => info.Text = s)); else info.Text = s; }
     void Prog(int v) { if (InvokeRequired) BeginInvoke((Action)(() => bar.Value = Math.Max(0, Math.Min(100, v)))); else bar.Value = Math.Max(0, Math.Min(100, v)); }
@@ -104,16 +115,34 @@ public class SetupForm : Form
                 }
                 if (!keep) try { File.Delete(zip); } catch (Exception) { }
                 string exe = Directory.GetFiles(target, "The Valley.exe", SearchOption.AllDirectories).FirstOrDefault();
-                Prog(100); Say("The Valley is installed in " + target + (exe != null ? "." : " (The Valley.exe was not found in the zip)."));
+
                 if (exe != null)
                 {   // v4.14 the updater reads version.txt beside the runner: a zip without one is the version in its name
                     string vt = Path.Combine(Path.GetDirectoryName(exe), "version.txt");
                     Match vm = Regex.Match(baseName, @"v(\d+(?:\.\d+)*)", RegexOptions.IgnoreCase);
                     if (!File.Exists(vt) && vm.Success) { string v = vm.Groups[1].Value; while (v.Split('.').Length < 3) v += ".0"; try { File.WriteAllText(vt, v); } catch (Exception) { } }
                     MakeShortcut(exe);
+                    // v4.14 bring the fresh install up to the newest version straight away (the same updater the runner uses)
+                    string dir = Path.GetDirectoryName(exe);
+                    try
+                    {
+                        Say("Checking for the newest version of The Valley...");
+                        string key = "", proj = "the-valley-mmo";
+                        try { foreach (string l in File.ReadAllLines(Path.Combine(dir, "ValleyRunner.ini"))) { int i = l.IndexOf('='); if (i <= 0 || l.TrimStart().StartsWith(";")) continue; string k = l.Substring(0, i).Trim(), v = l.Substring(i + 1).Trim(); if (k == "apiKey") key = v; else if (k == "project" && v.Length > 0) proj = v; } } catch (Exception) { }
+                        string err, have = ValleyUpdate.LocalVersion(dir);
+                        ValleyRelease rel = ValleyUpdate.Fetch(key, proj, out err);
+                        if (rel != null && ValleyUpdate.Compare(rel.Version, have) > 0)
+                        {
+                            List<ValleyPatch> chain = ValleyUpdate.Chain(rel, have);
+                            if (chain != null) { string nv = ValleyUpdate.Apply(dir, chain, delegate (string t, int pct) { Say(t); Prog(pct); }); updatedTo = nv; }
+                        }
+                    }
+                    catch (Exception ex) { updateNote = " (the runner will offer the latest update: " + ex.Message + ")"; }
                 }
+                Prog(100); Say("The Valley " + (updatedTo.Length > 0 ? updatedTo + " " : "") + "is installed in " + target + (exe != null ? "." : " (The Valley.exe was not found in the zip).") + updateNote);
                 if (run && exe != null) Process.Start(new ProcessStartInfo(exe) { WorkingDirectory = Path.GetDirectoryName(exe), UseShellExecute = true });
-                BeginInvoke((Action)(() => { go.Text = "DONE"; }));
+                try { File.WriteAllText(Path.Combine(folder, "setup.log"), DateTime.Now.ToString("yyyy-MM-dd HH:mm:ss ") + info.Text + "\r\n"); } catch (Exception) { }
+                BeginInvoke((Action)(() => { go.Text = "DONE"; if (quiet) Close(); }));
             }
             catch (Exception ex) { Say("Setup stopped: " + ex.Message); BeginInvoke((Action)(() => { go.Enabled = true; browse.Enabled = true; dest.Enabled = true; })); }
         }) { IsBackground = true }.Start();
