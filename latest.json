@@ -1,100 +1,164 @@
 {
-    "schema":  1,
-    "product":  "The Valley",
-    "publisher":  "Ionity (Pty) Ltd",
-    "version":  "4.14.1",
-    "minVersion":  "4.13.0",
-    "title":  "Field of Honour",
-    "notes":  "**THE VALLEY v4.14.1** - Ionity (Pty) Ltd\n\n- Fixed: champions load from your account again (an account rule added with the updater blocked the champion list).\n- The title, footer, credits and loading screen show v4.14 FIELD OF HONOUR; NEWS has the v4.14 and v4.13 entries.\n- The runner says when you already have the newest version.\n",
-    "released":  "2026-10-28T16:23:04Z",
-    "patches":  [
-                    {
-                        "from":  "4.13.0",
-                        "to":  "4.14.0",
-                        "file":  "TheValley_patch_4.13.0_to_4.14.0.zip",
-                        "size":  131076100,
-                        "sha256":  "2188e4b8fe078632dd471b77bb38c444cf81623e022439b7d23543049f8b2f12",
-                        "urls":  [
-                                     "https://drive.usercontent.google.com/download?id=1tmBH32WU1DVqXJdImuvAaSchRV7xOQrv\u0026export=download\u0026confirm=t",
-                                     "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.0/TheValley_patch_4.13.0_to_4.14.0.zip"
-                                 ]
-                    },
-                    {
-                        "from":  "4.14.0",
-                        "to":  "4.14.1",
-                        "file":  "TheValley_patch_4.14.0_to_4.14.1.zip",
-                        "size":  124824690,
-                        "sha256":  "ad730f544af8052991417313ab7b6965154e0c076f159f20cf7b03f8dfe11153",
-                        "urls":  [
-                                     "https://drive.usercontent.google.com/download?id=1pVsihFgq7UHpjtb4dmM0k_AlORhxP3DE\u0026export=download\u0026confirm=t",
-                                     "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_patch_4.14.0_to_4.14.1.zip"
-                                 ]
-                    }
-                ],
-    "full":  {
-                 "version":  "4.14.0",
-                 "setup":  "https://github.com/Ionity-Global/the-valley-releases/releases/latest/download/TheValley_Setup.exe",
-                 "folder":  "https://drive.google.com/open?id=1ZQvrCKguXWNNnwHkBtP8XAP2iHAdHmKg",
-                 "parts":  7,
-                 "size":  27495227542,
-                 "files":  [
-                               {
-                                   "name":  "TheValley_v4.14_Client.zip.001",
-                                   "size":  4294967296,
-                                   "md5":  "141d83da740f22e1a69fb3e43d419b7f",
-                                   "urls":  [
-                                                "https://drive.usercontent.google.com/download?id=1DUO8gzK-dXV0K50SY7-x850gKoSOXc4p\u0026export=download\u0026confirm=t"
-                                            ]
-                               },
-                               {
-                                   "name":  "TheValley_v4.14_Client.zip.002",
-                                   "size":  4294967296,
-                                   "md5":  "bd450bd97f43d4023a154cef03c6df6f",
-                                   "urls":  [
-                                                "https://drive.usercontent.google.com/download?id=1eJ7mJ3kw5j0sSapI0mj6AHiiLTnQzvH9\u0026export=download\u0026confirm=t"
-                                            ]
-                               },
-                               {
-                                   "name":  "TheValley_v4.14_Client.zip.003",
-                                   "size":  4294967296,
-                                   "md5":  "6afa657cdec8a39f0f6da64f0254ebb5",
-                                   "urls":  [
-                                                "https://drive.usercontent.google.com/download?id=1xQiCaDFrsCPIldD6KLN0a7SKTPHorqTd\u0026export=download\u0026confirm=t"
-                                            ]
-                               },
-                               {
-                                   "name":  "TheValley_v4.14_Client.zip.004",
-                                   "size":  4294967296,
-                                   "md5":  "ee0a8a4a849859c4ce1eb469c649e7ea",
-                                   "urls":  [
-                                                "https://drive.usercontent.google.com/download?id=1p3HW2PIoN0PaFnM11LfawIElIiw6TVJK\u0026export=download\u0026confirm=t"
-                                            ]
-                               },
-                               {
-                                   "name":  "TheValley_v4.14_Client.zip.005",
-                                   "size":  4294967296,
-                                   "md5":  "bfe986c17e860380d938bc8766fdc525",
-                                   "urls":  [
-                                                "https://drive.usercontent.google.com/download?id=1nTbb12nY5gfTa70lzVKms4yiQKCojNFE\u0026export=download\u0026confirm=t"
-                                            ]
-                               },
-                               {
-                                   "name":  "TheValley_v4.14_Client.zip.006",
-                                   "size":  4294967296,
-                                   "md5":  "97de9f62df559844ccd9f34b063f5b49",
-                                   "urls":  [
-                                                "https://drive.usercontent.google.com/download?id=1T9ed08p40e24qHCF-d7M4cXvdbsNTVm6\u0026export=download\u0026confirm=t"
-                                            ]
-                               },
-                               {
-                                   "name":  "TheValley_v4.14_Client.zip.007",
-                                   "size":  1725423766,
-                                   "md5":  "0326ce580dd29ec0dffcf2f3db6cd841",
-                                   "urls":  [
-                                                "https://drive.usercontent.google.com/download?id=1MlgRe4gWbAhiY-j8qNMC09nAlt0KuvvO\u0026export=download\u0026confirm=t"
-                                            ]
-                               }
-                           ],
-                 "setupDrive":  "https://drive.google.com/open?id=1ckkOcVtetVPZPnzoYZG2tnXbbRtfQega"
-             }
+  "schema": 1,
+  "product": "The Valley",
+  "publisher": "Ionity (Pty) Ltd",
+  "version": "4.14.1",
+  "minVersion": "4.13.0",
+  "title": "Field of Honour",
+  "notes": "**THE VALLEY v4.14.1** - Ionity (Pty) Ltd\n\n- Fixed: champions load from your account again (an account rule added with the updater blocked the champion list).\n- The title, footer, credits and loading screen show v4.14 FIELD OF HONOUR; NEWS has the v4.14 and v4.13 entries.\n- The runner says when you already have the newest version.\n",
+  "released": "2026-10-28T16:23:04Z",
+  "patches": [
+    {
+      "from": "4.13.0",
+      "to": "4.14.0",
+      "file": "TheValley_patch_4.13.0_to_4.14.0.zip",
+      "size": 131076100,
+      "sha256": "2188e4b8fe078632dd471b77bb38c444cf81623e022439b7d23543049f8b2f12",
+      "urls": [
+        "https://drive.usercontent.google.com/download?id=1tmBH32WU1DVqXJdImuvAaSchRV7xOQrv&export=download&confirm=t",
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.0/TheValley_patch_4.13.0_to_4.14.0.zip"
+      ]
+    },
+    {
+      "from": "4.14.0",
+      "to": "4.14.1",
+      "file": "TheValley_patch_4.14.0_to_4.14.1.zip",
+      "size": 124824690,
+      "sha256": "ad730f544af8052991417313ab7b6965154e0c076f159f20cf7b03f8dfe11153",
+      "urls": [
+        "https://drive.usercontent.google.com/download?id=1pVsihFgq7UHpjtb4dmM0k_AlORhxP3DE&export=download&confirm=t",
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_patch_4.14.0_to_4.14.1.zip"
+      ]
+    }
+  ],
+  "full": {
+    "version": "4.14.1",
+    "setup": "https://github.com/Ionity-Global/the-valley-releases/releases/latest/download/TheValley_Setup.exe",
+    "folder": "https://drive.google.com/open?id=1ZQvrCKguXWNNnwHkBtP8XAP2iHAdHmKg",
+    "parts": 15,
+    "size": 28405415304,
+    "files": [
+      {
+        "name": "TheValley_v4.14_Client.zip.001",
+        "size": 1992294400,
+        "md5": "3236e6c7a932ba3724d63c09500ef3db",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.001"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.002",
+        "size": 1992294400,
+        "md5": "cc0ec0187203e1b29c5649636c71a9d2",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.002"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.003",
+        "size": 1992294400,
+        "md5": "d5adb3475f0051259163a148d0e62a63",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.003"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.004",
+        "size": 1992294400,
+        "md5": "9a51ba9dc41d98d992ecb34d17befdcf",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.004"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.005",
+        "size": 1992294400,
+        "md5": "92d04aa3abccd8ee61bf6086fd34534f",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.005"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.006",
+        "size": 1992294400,
+        "md5": "d20d58129bfc8cdd3b3d6a32713e59c7",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.006"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.007",
+        "size": 1992294400,
+        "md5": "484ecbee7e9f3716da463afc68402018",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.007"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.008",
+        "size": 1992294400,
+        "md5": "d30d412f41913f4e975168d1af9b6829",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.008"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.009",
+        "size": 1992294400,
+        "md5": "dc340197d9d68e7575356bfda61f7952",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.009"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.010",
+        "size": 1992294400,
+        "md5": "d30af9e99575aeb4382ec97ecdf9550f",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.010"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.011",
+        "size": 1992294400,
+        "md5": "9c96b3aa34113a697fe79c03363b52b6",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.011"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.012",
+        "size": 1992294400,
+        "md5": "d691ae17aa6db38957d46aac6e07735f",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.012"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.013",
+        "size": 1992294400,
+        "md5": "99749601e0bdbe79c961fa505e952427",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.013"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.014",
+        "size": 1992294400,
+        "md5": "cf7d66baa486524549fbb1eee8a439bf",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.014"
+        ]
+      },
+      {
+        "name": "TheValley_v4.14_Client.zip.015",
+        "size": 513293704,
+        "md5": "84d9e2d358ea22abded689a4870a390b",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.015"
+        ]
+      }
+    ],
+    "setupDrive": "https://drive.google.com/open?id=1ckkOcVtetVPZPnzoYZG2tnXbbRtfQega"
+  }
 }
