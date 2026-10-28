@@ -1,0 +1,10 @@
+**THE VALLEY v4.14 "FIELD OF HONOUR"** - Ionity (Pty) Ltd
+
+- Kill feed (left), SCOREBOARD + MVP beside the minimap (a player kill = 5 points), SLAIN BY plate and your killer's laugh.
+- Death costs a level. Battle barks for champions and troops (Kernel camp folk speak Afrikaans).
+- The top of the screen is one centred, framed column; the titan's boss bar hangs under it.
+- Titans every 4-6 minutes with warnings to both sides, the Mega Titan Oerklou every 25 minutes; titans on the minimap; titan pathing fixed.
+- Male ranger: a longbow in the outstretched hand. Female paladin: an upright mace. Ashclaw war-woman: an orc-green Terra.
+- Ranger "Wolf Shot" (was Spirit Wolf). Drain Life heals 100%. Draw distance setting. Roads are open, with no palisade stakes.
+- Story folk no longer stand inside walls or doors.
+- The runner now updates The Valley by itself (UPDATE button). A newer World Server asks you to update first.

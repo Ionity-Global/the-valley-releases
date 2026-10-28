@@ -1,0 +1,38 @@
+# THE VALLEY - release CI (c) 2018-2026 Antwerp Designs | Ionity (Pty) Ltd | Policy 986 AED | Author: Johan Wilhelm van Antwerp
+# Every push of a release record is validated (schema, patch chains, mirrors answer). With the FIREBASE_SA secret set
+# (a service-account JSON of the-valley-mmo with Firestore write), the record is also synced to Firestore release/client,
+# so GitHub is the source of truth and Firebase follows it.
+name: Valley release
+
+on:
+  push:
+    branches: [main]
+    paths: ["latest.json", "manifests/**", "release-notes/**", "tools/**", ".github/workflows/**"]
+  workflow_dispatch:
+
+jobs:
+  validate:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Validate latest.json
+        run: python tools/validate_release.py latest.json
+      - name: Probe every patch mirror
+        run: python tools/validate_release.py latest.json --probe
+
+  firestore:
+    needs: validate
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-python@v5
+        with: { python-version: "3.12" }
+      - name: Sync release/client to Firestore
+        env:
+          FIREBASE_SA: ${{ secrets.FIREBASE_SA }}
+        run: |
+          if [ -z "$FIREBASE_SA" ]; then echo "FIREBASE_SA not set - the local release tool writes Firestore; skipping."; exit 0; fi
+          pip install --quiet google-auth requests
+          python tools/sync_firestore.py latest.json
