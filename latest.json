@@ -32,8 +32,10 @@
     }
   ],
   "full": {
-    "version": "4.13.0",
-    "setup": "https://drive.google.com/open?id=1M3gTJeHkbuXCyHQpR2Re0N-qQjP8uqnu",
-    "folder": "https://drive.google.com/open?id=1pWhlsx7gwKH53fpulbngL6OW34IVnQ1U"
+    "version": "4.14.0",
+    "setup": "https://drive.google.com/open?id=1TKx3Mj_Hg75ne66N72Uh1HWSLxzM0xbH",
+    "folder": "https://drive.google.com/open?id=14fLi6HxCEQRL4WLVchU1gGD9Pr0wTZu4",
+    "parts": 7,
+    "size": 27495227542
   }
 }
