@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.14.0",
+  "version": "4.14.1",
   "minVersion": "4.13.0",
   "title": "Field of Honour",
-  "notes": "**THE VALLEY v4.14 \"FIELD OF HONOUR\"** - Ionity (Pty) Ltd\n\n- Kill feed (left), SCOREBOARD + MVP beside the minimap (a player kill = 5 points), SLAIN BY plate and your killer's laugh.\n- Death costs a level. Battle barks for champions and troops (Kernel camp folk speak Afrikaans).\n- The top of the screen is one centred, framed column; the titan's boss bar hangs under it.\n- Titans every 4-6 minutes with warnings to both sides, the Mega Titan Oerklou every 25 minutes; titans on the minimap; titan pathing fixed.\n- Male ranger: a longbow in the outstretched hand. Female paladin: an upright mace. Ashclaw war-woman: an orc-green Terra.\n- Ranger \"Wolf Shot\" (was Spirit Wolf). Drain Life heals 100%. Draw distance setting. Roads are open, with no palisade stakes.\n- Story folk no longer stand inside walls or doors.\n- The runner now updates The Valley by itself (UPDATE button). A newer World Server asks you to update first.\n",
-  "released": "2026-10-28T15:17:39Z",
+  "notes": "\ufeff**THE VALLEY v4.14.1** - Ionity (Pty) Ltd\n\n- Fixed: champions load from your account again (a Firestore rule from the updater blocked the champion list).\n- The title, footer, credits and loading screen show v4.14 FIELD OF HONOUR; NEWS has the v4.14 and v4.13 entries.\n- The runner says when you already have the newest version.\n",
+  "released": "2026-10-28T16:23:04Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -17,6 +17,17 @@
       "urls": [
         "https://drive.usercontent.google.com/download?id=1tmBH32WU1DVqXJdImuvAaSchRV7xOQrv&export=download&confirm=t",
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.0/TheValley_patch_4.13.0_to_4.14.0.zip"
+      ]
+    },
+    {
+      "from": "4.14.0",
+      "to": "4.14.1",
+      "file": "TheValley_patch_4.14.0_to_4.14.1.zip",
+      "size": 124824690,
+      "sha256": "ad730f544af8052991417313ab7b6965154e0c076f159f20cf7b03f8dfe11153",
+      "urls": [
+        "https://drive.usercontent.google.com/download?id=1pVsihFgq7UHpjtb4dmM0k_AlORhxP3DE&export=download&confirm=t",
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_patch_4.14.0_to_4.14.1.zip"
       ]
     }
   ],

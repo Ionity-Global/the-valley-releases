@@ -1,0 +1,5 @@
+﻿**THE VALLEY v4.14.1** - Ionity (Pty) Ltd
+
+- Fixed: champions load from your account again (a Firestore rule from the updater blocked the champion list).
+- The title, footer, credits and loading screen show v4.14 FIELD OF HONOUR; NEWS has the v4.14 and v4.13 entries.
+- The runner says when you already have the newest version.
