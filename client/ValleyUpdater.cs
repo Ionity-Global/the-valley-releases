@@ -84,7 +84,7 @@ public static class ValleyUpdate
                 if (f != null && f.ContainsKey("latest")) { Dictionary<string, object> v = f["latest"] as Dictionary<string, object>; if (v != null && v.ContainsKey("stringValue")) { json = (string)v["stringValue"]; src = "Firebase"; } }
             }
         }
-        catch (Exception ex) { error = "Firebase: " + ex.Message; }
+        catch (Exception ex) { error = "update server: " + ex.Message; }
         if (string.IsNullOrEmpty(json))
         {
             try { json = Get(GitHubLatest + "?t=" + DateTime.UtcNow.Ticks, 10000); src = "GitHub"; }

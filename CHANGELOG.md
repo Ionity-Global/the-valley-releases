@@ -46,7 +46,7 @@
 **Roads, grips and setup (p–u)**
 - Roads are never walled: 86 palisade stakes standing on roads are cleared at load, and town gates are as wide as the road.
 - Drain Life heals the caster for 100% of the damage done. DRAW DISTANCE slider in the settings.
-- The runner is server-only: PLAY ALONE and HOST A WORLD SERVER are gone (account data comes from Firebase through the server).
+- The runner is server-only: PLAY ALONE and HOST A WORLD SERVER are gone (account data comes from your Valley account through the server).
 - Portable `TheValley_Setup.exe` on Drive: joins the 4 GB parts, unpacks the game, makes a desktop link and starts it (no .bat).
 
 **Titans (s–v)** A titan rises every 4–6 minutes, one at a time, with warnings 30 s and 10 s ahead sent to both sides. Every 25 minutes the Mega Titan "Oerklou" rises (4x size, 60x health, 5 Epics + a Legendary). Titans show on the minimap (on the rim with their distance when out of range) and on the map. Titan pathing fixed: they walk the terrain and no longer catch on walls.
@@ -66,7 +66,7 @@
 - **Fix:** the bow and tusk parts no longer reuse stale engine assets or component names (a crash when switching callings in the forge).
 
 **Updater (client)**
-- The runner checks Firebase (`release/client`), then GitHub (`Ionity-Global/the-valley-releases/latest.json`), for a newer Valley.
+- The runner checks the Valley update server, then GitHub, for a newer Valley.
 - UPDATE downloads the patch chain (Drive first, then GitHub Releases), checks each SHA-256, and installs only after the whole patch is verified. It then restarts itself.
 - A World Server running a newer version, or a client below `minVersion`, must update before PLAY.
 - `version.txt` beside the runner records the installed version (the setup writes it). The release tool `tools/valley_release.py` builds and publishes patches, and the GitHub Action validates every release.
@@ -90,12 +90,12 @@ them, parry for every class (12% cap) with Riposte / Deflection, PARRY text and 
 war resources with income per second at the top centre, early end at 0, world reset with levels kept, auto-continue
 into the next round. Scrolls of Travel (75 gold) for fast travel and the road home; SHOP and ARMOUR badges over
 vendors; Piet and Gorrum sell armour.
-**Accounts (b)** Firebase sign-in, cloud saves for four champions (every 60 s and on quit), local saves uploaded on first
-sign-in, session refresh. Offline mode removed from the title screen. Firestore rules deployed.
+**Accounts (b)** Valley account sign-in, cloud saves for four champions (every 60 s and on quit), local saves uploaded on first
+sign-in, session refresh. Offline mode removed from the title screen. Account security rules in place.
 **Chat (c, d)** Chat line on Enter or `/`; `/s` `/w` `/p` `/help`; nine emotes using each model's own clips.
 **Settings and title screen (e–h)** Per-group graphics, GPU page (AA method, render resolution, frame limit, texture
 memory, Lumen, motion blur, FPS counter), display (resolution, gamma, FOV), HUD size 70–160 %; NEWS / SERVERS / LOBBY
-column with live server list and lobby chat; lobby Firestore rule; menushot covers every new page; footer v4.10.
+column with live server list and lobby chat; lobby security rule; menushot covers every new page; footer v4.10.
 **HUD layout (i)** Top-centre column stacked (compass → war bar → wave strip → town panel) and kept between the target
 frame and the minimap; HUD scale capped to the screen width; FPS counter above the menu bar.
 
