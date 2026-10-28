@@ -1,4 +1,4 @@
-﻿#!/usr/bin/env python3
+#!/usr/bin/env python3
 # =====================================================================================================================
 # THE VALLEY - RELEASE TOOL  (valley_release.py)
 # Document: GME-2026-10-043 | Version 1.0 | 28 Oct 2026 (SAST)
@@ -193,17 +193,17 @@ def main():
     open(os.path.join(REPO, "release-notes", ver + ".md"), "w", encoding="utf-8").write("# The Valley %s%s\n\n%s\n" % (ver, (" - " + o.title) if o.title else "", notes))
     if os.path.exists(CHANGELOG):
         import shutil; shutil.copyfile(CHANGELOG, os.path.join(REPO, "CHANGELOG.md"))
-    env = dict(os.environ, GIT_AUTHOR_NAME=AUTHOR[0], GIT_AUTHOR_EMAIL=AUTHOR[1], GIT_COMMITTER_NAME=AUTHOR[0], GIT_COMMITTER_EMAIL=AUTHOR[1])
-    subprocess.run(["git", "add", "-A"], cwd=REPO, check=True)
-    subprocess.run(["git", "commit", "-m", "The Valley %s%s%s" % (ver, (" - " + o.title) if o.title else "", TRAILER)], cwd=REPO, env=env)
-    subprocess.run(["git", "push", "origin", "HEAD"], cwd=REPO, check=True)
-    if gh_ok:
+    if gh_ok:   # the release (and its asset) exists before latest.json is pushed, so CI's mirror probe finds it
         notes_file = os.path.join(REPO, "release-notes", ver + ".md")
         r = subprocess.run(["gh", "release", "create", "v" + ver, zpath, "--repo", REPO_SLUG, "--title", "The Valley %s%s" % (ver, (" - " + o.title) if o.title else ""), "--notes-file", notes_file], capture_output=True, text=True)
         if r.returncode != 0:
             subprocess.run(["gh", "release", "upload", "v" + ver, zpath, "--clobber", "--repo", REPO_SLUG], check=True)
         log("GitHub release v%s published" % ver)
 
+    env = dict(os.environ, GIT_AUTHOR_NAME=AUTHOR[0], GIT_AUTHOR_EMAIL=AUTHOR[1], GIT_COMMITTER_NAME=AUTHOR[0], GIT_COMMITTER_EMAIL=AUTHOR[1])
+    subprocess.run(["git", "add", "-A"], cwd=REPO, check=True)
+    subprocess.run(["git", "commit", "-m", "The Valley %s%s%s" % (ver, (" - " + o.title) if o.title else "", TRAILER)], cwd=REPO, env=env)
+    subprocess.run(["git", "push", "origin", "HEAD"], cwd=REPO, check=True)
     # 6. Firestore release/client
     if not o.no_firebase:
         token = run("gcloud auth print-access-token")
