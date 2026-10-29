@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.15.0",
+  "version": "4.16.0",
   "minVersion": "4.15.0",
-  "title": "Wild Karoo",
-  "notes": "**THE VALLEY v4.15.0 \"WILD KAROO\"** \u2014 Ionity (Pty) Ltd\n\nInstall or update with one small file: **TheValley_Setup.exe** (below). It downloads the game itself and never re-downloads what you already have. Every piece is verified when it arrives and every installed file is verified as it is unpacked (\"Verifying items ...\"), so a damaged file stops the setup instead of breaking the game.\n\n**Play together**\n- PvP between players: Kernel against Ashclaw, every blow checked by the World Server.\n- Duels: `/duel <name>` \u2014 a banner drops, a 20 m ring, 3-2-1, fight to 1 HP. No death, no level lost; the Valley hears who won. Leave the ring for 5 s and you forfeit.\n- Line of sight: ranged spells and shots need a clear line \u2014 hills, cliffs, walls and buildings block them.\n- Rejoins the World Server by itself once you are signed in. Ping shown bottom-right.\n\n**The Wild Karoo**\n- Vegetation packs across the whole valley; real zebra, cow, fox and more; photoscanned pebble fields.\n- Ore veins with real copper, iron, gold and mana-crystal ore.\n- Draw distance by object size (DRAW DISTANCE slider) \u2014 big help on weaker PCs.\n\n**Classes**\n- Rogues use Energy (starts at 30 of 150, refills 10 a second); Rage builds 1:1 from damage taken and 1:2 from damage dealt.\n- New spell effects, casting animations and hit effects; champions talk (\"I need more mana!\", \"Ouch!\").\n- Towers have less HP and grow stronger for every town your side holds.\n\n**Feel**\n- Controls no longer stick: mouse smoothing off, no more micro-freezes on heavy hits, full speed straight after a cast.\n- Resolution is a dropdown in settings.\n",
-  "released": "2026-10-29T08:15:52Z",
+  "title": "Iron & Ale",
+  "notes": "**THE VALLEY v4.16.0 \"IRON & ALE\"** \u2014 Ionity Global (Pty) Ltd\n\nThe launcher shows **UPDATE 4.16.0** and fetches it by itself (no full download). New players simply run **TheValley_Setup.exe** below. The World Server now needs 4.16 \u2014 an older game is told to update.\n\n**Fixed: nobody could join the World Server**\n- The game knocked on the server before you had signed in, was refused, and the retry after the sign-in never reconnected. Now it waits for your Valley account and joins by itself \u2014 you and your friends finally stand in the same Valley.\n- A server that is newer than your game tells you to press UPDATE.\n\n**One shared Valley at war**\n- The ten towns belong to the whole server. Stand inside a town's ring with no enemy in it to take it; a bar shows who is taking it and how long is left. Hold every town (all but the landings) for 15 minutes and your side wins; then the map resets.\n- Town buffs for your side: Rooiklou Kraal (brewery) +7 % melee dodge, +5 % spell resist \u00b7 Wesstroom Houtmeule (lumbermill) rangers shoot 10 % faster, melee +7 % \u00b7 Ysterkrans Steengroef (smithy) +15 % attack power \u00b7 Sneeuberg Goudmyn gold.\n- Orbs on the roads: Madness, Stoneskin, Haste, Clarity, Battle Fury, Second Wind \u2014 first touch wins.\n- **One clock for everyone:** the server owns the round, the horn, the hour of the day and the weather. Every player hears the horn at the same moment and stands under the same sky. The HUD shows ROUND n.\n- A town sends at most 3 reinforcement packs every 2 minutes.\n\n**Social**\n- Right-click a player (or click the target portrait): **DUEL \u00b7 WHISPER \u00b7 INVITE TO PARTY**.\n- A duel challenge pops up in the middle of the screen with ACCEPT / DECLINE and the seconds left.\n- Chat has two tabs: **General** and **LOG** \u2014 the LOG keeps every kill, capture, titan and server notice.\n\n**Sterkfontein Grotte**\nA cave in the lower Valley: ghosts, wailing wraiths and the Ghost of Mrs Ples in a torch-lit chamber, crocodiles in the pool. Clear it and drink from the well: +11 % regeneration for 10 minutes.\n\n**Fixes and feel**\n- Titans walk on the ground (they floated and flew).\n- Every Fab animal moves again \u2014 the cow, zebra, lion, elephant, rhino, fox and the rest stood frozen in the packaged game.\n- The female ranger rests her bow between fights.\n- The top of the screen (compass, war bar, wave strip, town panel, boss bar) is exactly centred.\n- Settings \u2192 RESOLUTION really applies (borderless is always your desktop size; a chosen size goes fullscreen).\n- EXIT GAME under RESUME in the pause menu \u2014 it saves first.\n- Warrior: Charge 50 yd, Thunder Clap slows 30 % for 3 s, Shield Wall 15 s and shields allies within 25 m for 10 %.\n- The one you talk to stops and faces you; camp gates swing; timber posts; cliff rock on steep walls.\n",
+  "released": "2026-10-29T10:22:07Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -28,6 +28,16 @@
       "urls": [
         "https://drive.usercontent.google.com/download?id=1pVsihFgq7UHpjtb4dmM0k_AlORhxP3DE&export=download&confirm=t",
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_patch_4.14.0_to_4.14.1.zip"
+      ]
+    },
+    {
+      "from": "4.15.0",
+      "to": "4.16.0",
+      "file": "TheValley_patch_4.15.0_to_4.16.0.zip",
+      "size": 124835544,
+      "sha256": "89fb98f37df2283ed655dbbe0e807fc4af0a6e3f6e1efb622dc7034bca008956",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.16.0/TheValley_patch_4.15.0_to_4.16.0.zip"
       ]
     }
   ],
