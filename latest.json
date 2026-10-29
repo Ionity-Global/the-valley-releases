@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.16.1",
+  "version": "4.16.2",
   "minVersion": "4.15.0",
   "title": "Iron & Ale",
-  "notes": "**THE VALLEY v4.16.1** \u2014 Ionity Global (Pty) Ltd\n\nA small patch on top of 4.16.0 (the launcher fetches it by itself).\n\n- **Nobody walks on the spot any more** \u2014 a champion, friend or creature that stands still stands still.\n- **ROUND plate shows TIME IN MAP and SERVER UP** \u2014 how long this round has run and how long the World Server has been up. Servers list their uptime and round.\n- **The gate at the turn of the hour is 10 s** (was 25). Joining mid-round never waits: the clock is the server's.\n- **Potions regrow:** one Health Potion and one Mana Potion a minute, each only while you carry fewer than 2.\n",
-  "released": "2026-10-29T11:01:28Z",
+  "notes": "**THE VALLEY v4.16.2** \u2014 Ionity Global (Pty) Ltd\n\n- **Chameleon is a camouflage everyone sees:** a rogue who turned to water looks like water to every other player too. It is only a camouflage \u2014 players can still target and hit a chameleon rogue; monsters leave them alone.\n- **Emotes everyone sees:** /dance /sit /sleep /laugh (/lol) /taunt /cheer /roar /bow /flex, new /wave /salute /kneel /no \u2014 on a World Server the players near you see your champion do it.\n",
+  "released": "2026-10-29T11:17:22Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -48,6 +48,16 @@
       "sha256": "17e60fa44ecced667b2a77d0bbeb5be3f7ab980a5d072f5448ea5e43400a801c",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.16.1/TheValley_patch_4.16.0_to_4.16.1.zip"
+      ]
+    },
+    {
+      "from": "4.16.1",
+      "to": "4.16.2",
+      "file": "TheValley_patch_4.16.1_to_4.16.2.zip",
+      "size": 124843152,
+      "sha256": "9075aa80b7113cc233dec253841d10bff1a1c76caf8f7b3540e30abf3d345020",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.16.2/TheValley_patch_4.16.1_to_4.16.2.zip"
       ]
     }
   ],
