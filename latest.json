@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.17.4",
+  "version": "4.17.5",
   "minVersion": "4.15.0",
   "title": "Shared Blood",
-  "notes": "**THE VALLEY v4.17.4** \u2014 Ionity Global (Pty) Ltd\n\n- **Nicknames:** type **/nick YourName** in chat \u2014 everyone sees **(YourName)** under your champion's name. **/nick** alone clears it. It is saved with your champion.\n- **BACK button in the champion forge** \u2014 change your mind and go back to the champion list.\n- **Quiet menus:** no more wind and rain \"swish\" over the music on the title, login and forge screens.\n- **Readable town line:** \"x of 10 towns\" and the town buffs sit on a dark plate in bigger type.\n",
-  "released": "2026-10-29T16:05:21Z",
+  "notes": "**THE VALLEY v4.17.5** \u2014 Ionity Global (Pty) Ltd\n\n- **Allies on the map:** your side's players are green dots on the minimap (on the rim when they are far away), and green dots with their names on the world map and the tactical map [M].\n- **The Spirit Wolf walks again** (it slid around frozen) and heals itself when it is out of a fight.\n- **Softer rain:** about half as loud, and it fades in and out instead of cutting on and off.\n- **Chameleon no longer glows white at night** \u2014 the rogue's water look is a faint dark shimmer now.\n",
+  "released": "2026-10-29T16:23:45Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -108,6 +108,16 @@
       "sha256": "f78fe4db4b6196bedf3c412ff3febeaa4e24c4375bb33942c604f0d1449beb48",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.17.4/TheValley_patch_4.17.3_to_4.17.4.zip"
+      ]
+    },
+    {
+      "from": "4.17.4",
+      "to": "4.17.5",
+      "file": "TheValley_patch_4.17.4_to_4.17.5.zip",
+      "size": 124860302,
+      "sha256": "b1d86d124b816f685d76fe0e0fe45123da19016ff373d2663fc6721dccbf074a",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.17.5/TheValley_patch_4.17.4_to_4.17.5.zip"
       ]
     }
   ],
