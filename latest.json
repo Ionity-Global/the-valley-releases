@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.17.1",
+  "version": "4.17.2",
   "minVersion": "4.15.0",
   "title": "Shared Blood",
-  "notes": "**THE VALLEY v4.17.1** \u2014 Ionity Global (Pty) Ltd\n\n- **The eagles fly properly.** They ride a smooth soaring path high over the Valley (no more jerking or snap turns), bank into their turns, and glide by slowing their wing beat instead of popping between two animations.\n",
-  "released": "2026-10-29T12:14:05Z",
+  "notes": "**THE VALLEY v4.17.2** \u2014 Ionity Global (Pty) Ltd\n\n- **The full THE VALLEY crest on the loading screen**, with the real version under it. The title screen, footer, credits and NEWS all show **v4.17.2 SHARED BLOOD** now (one version for every screen).\n- **Every wild animal on the Fab packs:** the hyena wears the wolf, the leopard and cheetah the lioness (in their own coats), the wildebeest the Realistic Cow in its blue-grey coat, and the eagle the crow's body with real flying clips. Jackal (Fox pack) and the cows (Realistic Cow) are animated.\n- **Creeps know when they are hit:** a struck creep turns on its attacker at any range and calls its packmates within 12 m.\n",
+  "released": "2026-10-29T14:31:44Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -78,6 +78,16 @@
       "sha256": "dc6be159e7fc957e7986bc383d701fac7d5cbbea44e45c219ad921793abe1b21",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.17.1/TheValley_patch_4.17.0_to_4.17.1.zip"
+      ]
+    },
+    {
+      "from": "4.17.1",
+      "to": "4.17.2",
+      "file": "TheValley_patch_4.17.1_to_4.17.2.zip",
+      "size": 126523270,
+      "sha256": "56b9fc306b778a0c1e979945195ee5fc114176a2e0c850a7b0020905e11619c2",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.17.2/TheValley_patch_4.17.1_to_4.17.2.zip"
       ]
     }
   ],
