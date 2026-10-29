@@ -97,12 +97,15 @@ public static class ValleyFull
     public static void Fetch(ValleyFullFile f, string to, Action<long, long> progress, Action<string> say)
     {
         if (File.Exists(to) && new FileInfo(to).Length == f.Size)
-        {
-            if (f.Md5.Length == 0 || Md5(to, null) == f.Md5) { progress(f.Size, f.Size); return; }
+        {   // v4.15.1b a receipt (<piece>.ok = md5) from an earlier run: trusted without re-reading 1.9 GB
+            string rcpt = to + ".ok";
+            if (File.Exists(rcpt) && File.ReadAllText(rcpt).Trim() == f.Md5 && File.GetLastWriteTimeUtc(rcpt) >= File.GetLastWriteTimeUtc(to)) { progress(f.Size, f.Size); return; }
+            if (f.Md5.Length == 0 || Md5(to, null) == f.Md5) { try { File.WriteAllText(rcpt, f.Md5); } catch (Exception) { } progress(f.Size, f.Size); return; }
             File.Delete(to);
         }
         string part = to + ".part"; Exception last = null;
-        for (int attempt = 0; attempt < 6; attempt++)
+        int notYet = 0;
+        for (int attempt = 0; attempt < 12; attempt++)
         {
             string url = f.Urls[attempt % f.Urls.Count];
             try
@@ -116,7 +119,7 @@ public static class ValleyFull
                     using (HttpWebResponse resp = (HttpWebResponse)r.GetResponse())
                     {
                         if ((resp.ContentType ?? "").StartsWith("text/html", StringComparison.OrdinalIgnoreCase))
-                            throw new Exception("the download server sent a web page instead of the game (it may be busy - try again later)");
+                            throw new Exception("this download server is busy (Google Drive daily limit) - trying the next one");
                         if (have > 0 && resp.StatusCode != HttpStatusCode.PartialContent) have = 0;   // no resume offered: start over
                         using (Stream s = resp.GetResponseStream())
                         using (FileStream o = new FileStream(part, have > 0 ? FileMode.Append : FileMode.Create, FileAccess.Write, FileShare.None, 1 << 20))
@@ -136,21 +139,27 @@ public static class ValleyFull
                 progress(f.Size, f.Size);
                 if (f.Md5.Length > 0)
                 {
-                    say("Checking " + f.Name + " ...");
+                    say("Verifying " + f.Name + " (checksum) ...");   // v4.15.1c verify
                     if (Md5(part, null) != f.Md5) { File.Delete(part); throw new Exception(f.Name + " arrived damaged - downloading it again"); }
                 }
                 if (File.Exists(to)) File.Delete(to);
                 File.Move(part, to);
+                try { File.WriteAllText(to + ".ok", f.Md5); } catch (Exception) { }   // v4.15.1b the receipt
                 return;
             }
             catch (Exception ex)
             {
+                WebException wx = ex as WebException; HttpWebResponse hr = wx != null ? wx.Response as HttpWebResponse : null;
+                if (hr != null && hr.StatusCode == HttpStatusCode.NotFound && notYet < 60)
+                {   // the piece is still being published (a release in progress): wait for it - not a failed attempt
+                    notYet++; attempt--; say(f.Name + " is still being published - waiting (" + notYet + ")..."); Thread.Sleep(90000); continue;
+                }
                 last = ex;
-                say(f.Name + ": " + ex.Message + " - trying again (" + (attempt + 1) + " of 6)...");
-                Thread.Sleep(Math.Min(30000, 3000 * (attempt + 1)));
+                say(f.Name + ": " + ex.Message + " - trying again (" + (attempt + 1) + " of 12)...");
+                Thread.Sleep(f.Urls.Count > 1 && attempt % f.Urls.Count != f.Urls.Count - 1 ? 1500 : Math.Min(60000, 5000 * (attempt + 1)));   // switch mirror fast, wait longer when all were tried
             }
         }
-        throw new Exception("could not download " + f.Name + ": " + (last != null ? last.Message : "unknown"));
+        throw new Exception("could not download " + f.Name + " from any server: " + (last != null ? last.Message : "unknown") + ". Run the setup again later - it carries on where it stopped.");
     }
 }
 
