@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.18.0",
+  "version": "4.18.1",
   "minVersion": "4.15.0",
   "title": "Shared Blood",
-  "notes": "**THE VALLEY v4.18.0** \u2014 Ionity Global (Pty) Ltd\n\n- **NVIDIA DLSS:** Settings \u2192 **NVIDIA DLSS** \u2014 OFF / DLAA / QUALITY / BALANCED / PERFORMANCE (RTX cards; other cards keep TSR).\n- **Sharp text everywhere:** the HUD fonts are drawn at their real size now (they were a stretched 24 pt image \u2014 blurry).\n- **GM MESSAGE** in the launcher: bold, crisp and fitted to its box.\n- **Paladin \u2014 Judgment:** stuns its target for 1.5 s; cooldown 10 s.\n- **Paladin \u2014 Crusader Strike:** a 15 % chance to strike again after each blow, up to 3 extra strikes.\n",
-  "released": "2026-10-29T18:13:38Z",
+  "notes": "**THE VALLEY v4.18.1** \u2014 Ionity Global (Pty) Ltd\n\n- **No more hanging cliff rocks:** before a rock is placed on a terrain wall, the ground under its whole footprint is checked. No rock hangs over a lower step or sticks out far past its wall any more.\n- **Line of sight for enemies:** archers and casters no longer shoot or cast through walls, cliffs or buildings. If they can't see you, they move in until they can. The flame ring also needs a clear line.\n- **No more walking on air:**\n  - You can no longer stand on the very corner of a terrace step with your body over the drop. You still step up anything to 55 cm.\n  - Your feet now sit properly on slopes.\n  - Creeps and beasts step down off ledges instead of hovering on the edge.\n  - Other players are no longer predicted upward into the air. When they walk, their feet are placed on the ground.\n- **Paladin tooltips updated:**\n  - Judgment: 1.5 sec stun, interrupt, +20% damage taken, 10 sec cooldown.\n  - Crusader Strike: 15% chance to strike again, up to 3 extra strikes.\n",
+  "released": "2026-10-29T19:15:35Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -138,6 +138,16 @@
       "sha256": "8a7497812f75693415bbd1378f6a4c58bf5c2feba513782ca08b9282f30888de",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.18.0/TheValley_patch_4.17.6_to_4.18.0.zip"
+      ]
+    },
+    {
+      "from": "4.18.0",
+      "to": "4.18.1",
+      "file": "TheValley_patch_4.18.0_to_4.18.1.zip",
+      "size": 125027499,
+      "sha256": "0ac85088dc89aa3b5fb080895752b0b2eded66d756976507f58f9c4ebcd539dd",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.18.1/TheValley_patch_4.18.0_to_4.18.1.zip"
       ]
     }
   ],
