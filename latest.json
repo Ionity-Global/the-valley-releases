@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.16.0",
+  "version": "4.16.1",
   "minVersion": "4.15.0",
   "title": "Iron & Ale",
-  "notes": "**THE VALLEY v4.16.0 \"IRON & ALE\"** \u2014 Ionity Global (Pty) Ltd\n\nThe launcher shows **UPDATE 4.16.0** and fetches it by itself (no full download). New players simply run **TheValley_Setup.exe** below. The World Server now needs 4.16 \u2014 an older game is told to update.\n\n**Fixed: nobody could join the World Server**\n- The game knocked on the server before you had signed in, was refused, and the retry after the sign-in never reconnected. Now it waits for your Valley account and joins by itself \u2014 you and your friends finally stand in the same Valley.\n- A server that is newer than your game tells you to press UPDATE.\n\n**One shared Valley at war**\n- The ten towns belong to the whole server. Stand inside a town's ring with no enemy in it to take it; a bar shows who is taking it and how long is left. Hold every town (all but the landings) for 15 minutes and your side wins; then the map resets.\n- Town buffs for your side: Rooiklou Kraal (brewery) +7 % melee dodge, +5 % spell resist \u00b7 Wesstroom Houtmeule (lumbermill) rangers shoot 10 % faster, melee +7 % \u00b7 Ysterkrans Steengroef (smithy) +15 % attack power \u00b7 Sneeuberg Goudmyn gold.\n- Orbs on the roads: Madness, Stoneskin, Haste, Clarity, Battle Fury, Second Wind \u2014 first touch wins.\n- **One clock for everyone:** the server owns the round, the horn, the hour of the day and the weather. Every player hears the horn at the same moment and stands under the same sky. The HUD shows ROUND n.\n- A town sends at most 3 reinforcement packs every 2 minutes.\n\n**Social**\n- Right-click a player (or click the target portrait): **DUEL \u00b7 WHISPER \u00b7 INVITE TO PARTY**.\n- A duel challenge pops up in the middle of the screen with ACCEPT / DECLINE and the seconds left.\n- Chat has two tabs: **General** and **LOG** \u2014 the LOG keeps every kill, capture, titan and server notice.\n\n**Sterkfontein Grotte**\nA cave in the lower Valley: ghosts, wailing wraiths and the Ghost of Mrs Ples in a torch-lit chamber, crocodiles in the pool. Clear it and drink from the well: +11 % regeneration for 10 minutes.\n\n**Fixes and feel**\n- Titans walk on the ground (they floated and flew).\n- Every Fab animal moves again \u2014 the cow, zebra, lion, elephant, rhino, fox and the rest stood frozen in the packaged game.\n- The female ranger rests her bow between fights.\n- The top of the screen (compass, war bar, wave strip, town panel, boss bar) is exactly centred.\n- Settings \u2192 RESOLUTION really applies (borderless is always your desktop size; a chosen size goes fullscreen).\n- EXIT GAME under RESUME in the pause menu \u2014 it saves first.\n- Warrior: Charge 50 yd, Thunder Clap slows 30 % for 3 s, Shield Wall 15 s and shields allies within 25 m for 10 %.\n- The one you talk to stops and faces you; camp gates swing; timber posts; cliff rock on steep walls.\n",
-  "released": "2026-10-29T10:22:07Z",
+  "notes": "**THE VALLEY v4.16.1** \u2014 Ionity Global (Pty) Ltd\n\nA small patch on top of 4.16.0 (the launcher fetches it by itself).\n\n- **Nobody walks on the spot any more** \u2014 a champion, friend or creature that stands still stands still.\n- **ROUND plate shows TIME IN MAP and SERVER UP** \u2014 how long this round has run and how long the World Server has been up. Servers list their uptime and round.\n- **The gate at the turn of the hour is 10 s** (was 25). Joining mid-round never waits: the clock is the server's.\n- **Potions regrow:** one Health Potion and one Mana Potion a minute, each only while you carry fewer than 2.\n",
+  "released": "2026-10-29T11:01:28Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -38,6 +38,16 @@
       "sha256": "89fb98f37df2283ed655dbbe0e807fc4af0a6e3f6e1efb622dc7034bca008956",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.16.0/TheValley_patch_4.15.0_to_4.16.0.zip"
+      ]
+    },
+    {
+      "from": "4.16.0",
+      "to": "4.16.1",
+      "file": "TheValley_patch_4.16.0_to_4.16.1.zip",
+      "size": 124841286,
+      "sha256": "17e60fa44ecced667b2a77d0bbeb5be3f7ab980a5d072f5448ea5e43400a801c",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.16.1/TheValley_patch_4.16.0_to_4.16.1.zip"
       ]
     }
   ],
