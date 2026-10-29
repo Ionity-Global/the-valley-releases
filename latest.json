@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.17.6",
+  "version": "4.18.0",
   "minVersion": "4.15.0",
   "title": "Shared Blood",
-  "notes": "**THE VALLEY v4.17.6** \u2014 Ionity Global (Pty) Ltd\n\n- **Choose where you rise:** when you fall, pick NEAREST TOWN, BASE CAMP or any town your side holds \u2014 you come back there when the timer runs out.\n- **Troop limit:** at most 16 of your recruited troops alive at once (4 deployments) \u2014 no more endless armies.\n- **No more label walls:** \"Elite Krygsheer\" only shows over enemy elites, not over your own troops.\n",
-  "released": "2026-10-29T16:31:06Z",
+  "notes": "**THE VALLEY v4.18.0** \u2014 Ionity Global (Pty) Ltd\n\n- **NVIDIA DLSS:** Settings \u2192 **NVIDIA DLSS** \u2014 OFF / DLAA / QUALITY / BALANCED / PERFORMANCE (RTX cards; other cards keep TSR).\n- **Sharp text everywhere:** the HUD fonts are drawn at their real size now (they were a stretched 24 pt image \u2014 blurry).\n- **GM MESSAGE** in the launcher: bold, crisp and fitted to its box.\n- **Paladin \u2014 Judgment:** stuns its target for 1.5 s; cooldown 10 s.\n- **Paladin \u2014 Crusader Strike:** a 15 % chance to strike again after each blow, up to 3 extra strikes.\n",
+  "released": "2026-10-29T18:13:38Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -128,6 +128,16 @@
       "sha256": "402e9cd94862b305af4fbcf50bd1af10180eb8494d4fb7a0f33cac8760cd91ab",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.17.6/TheValley_patch_4.17.5_to_4.17.6.zip"
+      ]
+    },
+    {
+      "from": "4.17.6",
+      "to": "4.18.0",
+      "file": "TheValley_patch_4.17.6_to_4.18.0.zip",
+      "size": 226748185,
+      "sha256": "8a7497812f75693415bbd1378f6a4c58bf5c2feba513782ca08b9282f30888de",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.18.0/TheValley_patch_4.17.6_to_4.18.0.zip"
       ]
     }
   ],
