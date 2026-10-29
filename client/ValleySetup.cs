@@ -32,24 +32,52 @@ public class SetupForm : Form
         Text = "The Valley - Setup"; ClientSize = new Size(640, 360); FormBorderStyle = FormBorderStyle.FixedSingle; MaximizeBox = false;
         StartPosition = FormStartPosition.CenterScreen; BackColor = Ink; ForeColor = Txt; Font = new Font("Segoe UI", 10f);
         try { Icon = Icon.ExtractAssociatedIcon(Application.ExecutablePath); } catch (Exception) { }
-        head = new Label { Text = "THE VALLEY", Location = new Point(24, 16), Size = new Size(590, 40), ForeColor = Gold, Font = new Font("Georgia", 20f, FontStyle.Bold) };
+        head = new Label { Text = "THE VALLEY", Location = new Point(24, 16), Size = new Size(430, 40), ForeColor = Gold, Font = new Font("Georgia", 20f, FontStyle.Bold) };
         info = new Label { Location = new Point(26, 62), Size = new Size(590, 66) };
         Controls.Add(head); Controls.Add(info);
+        try
+        {   // v4.15.1e Ionity Global logo (white, transparent), links to www.ionity.co.za
+            using (Stream ls = typeof(SetupForm).Assembly.GetManifestResourceStream("IonityLogo.png"))
+                if (ls != null)
+                {
+                    PictureBox pb = new PictureBox { Image = new Bitmap(System.Drawing.Image.FromStream(ls)), SizeMode = PictureBoxSizeMode.Zoom, Location = new Point(470, 20), Size = new Size(144, 40), BackColor = Color.Transparent, Cursor = Cursors.Hand };
+                    new ToolTip().SetToolTip(pb, "Ionity Global (Pty) Ltd - www.ionity.co.za");
+                    pb.Click += delegate { try { Process.Start("https://www.ionity.co.za"); } catch (Exception) { } };
+                    Controls.Add(pb);
+                }
+        }
+        catch (Exception) { }
+        Controls.Add(new Label { Text = "Ionity Global (Pty) Ltd  \u00B7  www.ionity.co.za  \u00B7  Building Tomorrow, Today.", Location = new Point(26, 330), Size = new Size(588, 22), ForeColor = Color.FromArgb(120, 128, 140), Font = new Font("Segoe UI", 8.5f), TextAlign = ContentAlignment.MiddleRight });
         Controls.Add(new Label { Text = "Install the game into:", Location = new Point(26, 134), Size = new Size(300, 22), ForeColor = Gold });
-        dest = new TextBox { Location = new Point(26, 158), Size = new Size(486, 26), BackColor = Color.FromArgb(28, 34, 48), ForeColor = Color.White, BorderStyle = BorderStyle.FixedSingle };
-        browse = new Button { Text = "...", Location = new Point(520, 156), Size = new Size(94, 30), FlatStyle = FlatStyle.Flat, ForeColor = Gold };
-        browse.Click += delegate { using (FolderBrowserDialog d = new FolderBrowserDialog { SelectedPath = dest.Text }) if (d.ShowDialog(this) == DialogResult.OK) dest.Text = Path.Combine(d.SelectedPath, "The Valley"); };
+        dest = new TextBox { Location = new Point(26, 158), Size = new Size(430, 26), BackColor = Color.FromArgb(28, 34, 48), ForeColor = Color.White, BorderStyle = BorderStyle.FixedSingle };
+        browse = new Button { Text = "...", Location = new Point(464, 156), Size = new Size(70, 30), FlatStyle = FlatStyle.Flat, ForeColor = Gold };
+        browse.Click += delegate
+        {
+            if (scanning) return;   // v4.15.1e
+            using (FolderBrowserDialog d = new FolderBrowserDialog { SelectedPath = dest.Text })
+                if (d.ShowDialog(this) == DialogResult.OK)
+                {   // v4.15.1d scan: a folder that already holds the game is used as it is
+                    string hit = new[] { d.SelectedPath, Path.Combine(d.SelectedPath, "The Valley") }.FirstOrDefault(IsInstall);
+                    if (hit != null && !bBusy) { RememberInstall(hit); existingInstall = null; installedExe = null; go.Text = "INSTALL"; Find(); }
+                    else dest.Text = Path.Combine(d.SelectedPath, "The Valley");
+                }
+        };
+        scan = new Button { Text = "SCAN", Location = new Point(542, 156), Size = new Size(72, 30), FlatStyle = FlatStyle.Flat, ForeColor = Gold, Font = new Font("Segoe UI", 9f, FontStyle.Bold) };
+        scan.Click += delegate { if (!bBusy) ScanForInstall(); };
+        new ToolTip().SetToolTip(scan, "Search every drive on this PC for an installed copy of The Valley");
         keepZip = new CheckBox { Text = "Keep the joined zip afterwards", Location = new Point(26, 196), Size = new Size(300, 24) };
         launch = new CheckBox { Text = "Start The Valley when done", Location = new Point(330, 196), Size = new Size(280, 24), Checked = true };
         bar = new ProgressBar { Location = new Point(26, 232), Size = new Size(588, 22) };
         go = new Button { Text = "INSTALL", Location = new Point(26, 270), Size = new Size(588, 50), FlatStyle = FlatStyle.Flat, ForeColor = Ink, BackColor = Gold, Font = new Font("Georgia", 13f, FontStyle.Bold) };
         go.Click += delegate
         {   // v4.15 play button: once installed, the button starts the game and closes the setup
+            if (scanning) return;   // v4.15.1e
             if (installedExe != null) { try { Process.Start(new ProcessStartInfo(installedExe) { WorkingDirectory = Path.GetDirectoryName(installedExe), UseShellExecute = true }); } catch (Exception) { } Close(); return; }
             Start();
         };
-        Controls.Add(dest); Controls.Add(browse); Controls.Add(keepZip); Controls.Add(launch); Controls.Add(bar); Controls.Add(go);
+        Controls.Add(dest); Controls.Add(browse); Controls.Add(scan); Controls.Add(keepZip); Controls.Add(launch); Controls.Add(bar); Controls.Add(go);
         Find();
+        if (scanPending) Shown += delegate { ScanForInstall(); };   // v4.15.1d scan: nothing in the usual places - search the PC
         // v4.14 unattended: TheValley_Setup.exe -install "<folder>" [-quiet]  (tests, admins) - installs, updates, closes
         string[] av = Environment.GetCommandLineArgs();
         int ix = Array.FindIndex(av, x => x.Equals("-install", StringComparison.OrdinalIgnoreCase));
@@ -60,6 +88,94 @@ public class SetupForm : Form
         }
     }
     bool quiet; string installedExe;   // v4.15 play button
+    // v4.15.1d scan
+    Button scan; bool scanPending, scanned; volatile bool scanning; bool bBusy;
+    const string FreshText = "INSTALL downloads The Valley (about 29 GB) and installs it - there is nothing else to download. You need about 60 GB free on the drive you install to. If the connection breaks, run the setup again: it carries on where it stopped.";
+    // v4.15.1e: the launcher + version.txt + the GAME (Windows\TheValley.exe). Launcher or game without the rest = incomplete.
+    static bool HasGame(string dir) { try { return File.Exists(Path.Combine(dir, "Windows", "TheValley.exe")) || File.Exists(Path.Combine(dir, "TheValley.exe")); } catch (Exception) { return false; } }
+    static bool IsInstall(string dir) { try { return dir != null && File.Exists(Path.Combine(dir, "The Valley.exe")) && File.Exists(Path.Combine(dir, "version.txt")) && HasGame(dir); } catch (Exception) { return false; } }
+    static bool IsPartial(string dir)
+    {
+        try
+        {
+            if (dir == null || IsInstall(dir)) return false;
+            bool runner = File.Exists(Path.Combine(dir, "The Valley.exe")), ver = File.Exists(Path.Combine(dir, "version.txt")), game = HasGame(dir);
+            return (runner && (ver || Directory.Exists(Path.Combine(dir, "Windows")))) || (game && (runner || ver));
+        }
+        catch (Exception) { return false; }
+    }
+    static string brokenInstall;
+    static string RepairText(string d) { return "The Valley in " + d + " is incomplete - the game files are missing. INSTALL repairs it there (about 29 GB to download, nothing else to do)."; }
+    static bool Unattended() { return Environment.GetCommandLineArgs().Any(x => x.Equals("-install", StringComparison.OrdinalIgnoreCase)); }
+    static readonly string[] SkipDirs = { "Windows", "$Recycle.Bin", "System Volume Information", "$WinREAgent", "$SysReset", "Recovery", "PerfLogs",
+        "Config.Msi", "MSOCache", "WinSxS", "node_modules", "Packages", "Temp", "INetCache", "Microsoft", "NVIDIA Corporation", "Intel", "AMD" };
+
+    /** v4.15.1d scan: every fixed drive, folder by folder (6 deep, skips system folders and links, 2 minutes at most).
+     *  The newest copy found wins; the setup then checks it for updates exactly as if it had been found in the usual place. */
+    void ScanForInstall()
+    {   // v4.15.1e: level by level over every fixed drive at once - E:\The Valley, D:\Games\The Valley ... are seen in seconds
+        if (scanning) return; scanning = true; scanned = true; scanPending = false; Prog(0);
+        scan.Text = "WAIT"; Say("Scanning this PC for an installed copy of The Valley ...");
+        new Thread(() =>
+        {
+            string found = null, foundVer = null, partial = null; int seen = 0, foundDepth = 99; DateTime t0 = DateTime.UtcNow, next = DateTime.MinValue;
+            List<DriveInfo> ds = new List<DriveInfo>();
+            foreach (DriveInfo d in DriveInfo.GetDrives()) { try { if (d.IsReady && d.DriveType == DriveType.Fixed) ds.Add(d); } catch (Exception) { } }
+            Queue<KeyValuePair<string, int>> q = new Queue<KeyValuePair<string, int>>();
+            foreach (DriveInfo d in ds) q.Enqueue(new KeyValuePair<string, int>(d.RootDirectory.FullName, 0));
+            while (q.Count > 0 && (DateTime.UtcNow - t0).TotalSeconds < 120)
+            {
+                KeyValuePair<string, int> cur = q.Dequeue(); seen++; if (cur.Value > foundDepth) break;   // found: finish that level, then stop
+                if (DateTime.UtcNow > next)
+                {
+                    next = DateTime.UtcNow.AddMilliseconds(250); Prog(Math.Min(95, (int)((DateTime.UtcNow - t0).TotalSeconds * 100 / 120)));
+                    Say(string.Format("Scanning {0} drive(s) for The Valley (The Valley.exe + TheValley.exe) ... {1:N0} folders checked - now {2}{3}",
+                        ds.Count, seen, cur.Key.Length > 60 ? cur.Key.Substring(0, 57) + "..." : cur.Key, found != null ? "  |  found " + found : ""));
+                }
+                try
+                {
+                    if (IsInstall(cur.Key))
+                    {
+                        string v = ValleyUpdate.LocalVersion(cur.Key);
+                        if (found == null || ValleyUpdate.Compare(v, foundVer) > 0) { found = cur.Key; foundVer = v; } foundDepth = Math.Min(foundDepth, cur.Value);
+                        continue;
+                    }
+                    if (partial == null && IsPartial(cur.Key)) partial = cur.Key;
+                    if (cur.Value >= 7) continue;
+                    foreach (DirectoryInfo sub in new DirectoryInfo(cur.Key).EnumerateDirectories())
+                    {
+                        string n = sub.Name;
+                        if ((sub.Attributes & (FileAttributes.ReparsePoint | FileAttributes.System)) != 0) continue;   // links, $Recycle.Bin, System Volume Information
+                        if (n.StartsWith(".") || n.StartsWith("$") || n.StartsWith("_") || n.Equals("TheValley_UE5", StringComparison.OrdinalIgnoreCase)
+                            || SkipDirs.Any(x => x.Equals(n, StringComparison.OrdinalIgnoreCase))) continue;
+                        q.Enqueue(new KeyValuePair<string, int>(sub.FullName, cur.Value + 1));
+                    }
+                }
+                catch (Exception) { }   // no access to that folder - skip it
+            }
+            bool cut = q.Count > 0 && found == null;
+            BeginInvoke((Action)(() =>
+            {
+                scanning = false; scan.Text = "SCAN"; Prog(0);
+                if (found != null)
+                {
+                    RememberInstall(found); existingInstall = null; installedExe = null; brokenInstall = null; go.Text = "INSTALL";
+                    Say("Found The Valley " + foundVer + " in " + found + " (" + seen.ToString("N0") + " folders checked) - checking it ...");
+                    Find();
+                }
+                else if (brokenInstall != null || partial != null)
+                {
+                    if (brokenInstall == null) brokenInstall = partial;
+                    dest.Text = brokenInstall; Say(RepairText(brokenInstall));
+                }
+                else
+                {
+                    dest.Text = DefaultTarget();
+                    Say("No installed copy of The Valley on this PC (" + seen.ToString("N0") + " folders on " + ds.Count + " drive(s) checked" + (cut ? ", stopped after 2 minutes - use ... if it is somewhere deeper" : "") + "). " + FreshText);
+                }
+            }));
+        }) { IsBackground = true }.Start();
+    }
     bool bNet;   // v4.15 installer: no pieces beside the setup - it downloads them
 
     /** v4.15 upgrade in place: an existing install (the desktop link, or the usual folders) is upgraded where it is; a fresh
@@ -76,11 +192,12 @@ public class SetupForm : Form
         }
         catch (Exception) { }
         tries.Add(Path.Combine(Environment.GetFolderPath(Environment.SpecialFolder.LocalApplicationData), "The Valley"));
-        foreach (DriveInfo d in DriveInfo.GetDrives()) if (d.IsReady && d.DriveType == DriveType.Fixed) tries.Add(Path.Combine(d.RootDirectory.FullName, "Games", "The Valley"));
+        foreach (DriveInfo d in DriveInfo.GetDrives()) if (d.IsReady && d.DriveType == DriveType.Fixed) { tries.Add(Path.Combine(d.RootDirectory.FullName, "Games", "The Valley")); tries.Add(Path.Combine(d.RootDirectory.FullName, "The Valley")); tries.Add(Path.Combine(d.RootDirectory.FullName, "Program Files", "The Valley")); }   // v4.15.1d
         foreach (string t in tries)
         {
-            try { if (t != null && File.Exists(Path.Combine(t, "The Valley.exe")) && File.Exists(Path.Combine(t, "version.txt"))) { existingInstall = t; return t; } } catch (Exception) { }
+            try { if (IsInstall(t)) { existingInstall = t; return t; } if (brokenInstall == null && IsPartial(t)) brokenInstall = t; } catch (Exception) { }   // v4.15.1e the game itself must be there
         }
+        if (brokenInstall != null) return brokenInstall;   // v4.15.1e repair the incomplete copy where it is
         DriveInfo best = null;
         foreach (DriveInfo d in DriveInfo.GetDrives()) { try { if (d.IsReady && d.DriveType == DriveType.Fixed && (best == null || d.AvailableFreeSpace > best.AvailableFreeSpace)) best = d; } catch (Exception) { } }
         return Path.Combine(best != null ? best.RootDirectory.FullName : "C:\\", "Games", "The Valley");
@@ -115,6 +232,13 @@ public class SetupForm : Form
         if (groups.Length == 0)
         {   // v4.15 installer: nothing beside the setup - it downloads the game itself
             bNet = true; keepZip.Text = "Keep the downloaded pieces afterwards"; keepZip.Checked = false;
+            if (Environment.GetCommandLineArgs().Any(x => x.Equals("-scan", StringComparison.OrdinalIgnoreCase)) && !scanned) existingInstall = null;   // -scan: always search the PC
+            if (existingInstall == null && !scanned && !Unattended())
+            {   // v4.15.1d scan
+                Say("Looking for an installed copy of The Valley on this PC ...");
+                if (IsHandleCreated) ScanForInstall(); else scanPending = true;
+                return;
+            }
             if (existingInstall != null)
             {   // v4.15.1b installed already: ask the server what (if anything) is needed - never the whole game by default
                 Say("The Valley is installed in " + existingInstall + " - checking for updates ...");
@@ -125,14 +249,14 @@ public class SetupForm : Form
                     {
                         if (st == 0) { installedExe = Path.Combine(existingInstall, "The Valley.exe"); Say("The Valley " + haveVer + " is installed in " + existingInstall + " and up to date. Nothing to download."); go.Text = "PLAY"; keepZip.Visible = false; }
                         else if (st == 1) { long mb = relChain.Sum(p => p.Size) / 1048576; Say("The Valley " + haveVer + " is installed in " + existingInstall + ". UPDATE brings it to " + relInfo.Version + " - only " + mb + " MB to download."); go.Text = "UPDATE"; keepZip.Visible = false; }
-                        else if (st == 2) Say("The Valley " + haveVer + " is installed in " + existingInstall + ". Version " + (relInfo != null ? relInfo.Version : "?") + " is a full download (about 26 GB) - INSTALL fetches it and upgrades in place; your account and settings stay.");
+                        else if (st == 2) Say("The Valley " + haveVer + " is installed in " + existingInstall + ". Version " + (relInfo != null ? relInfo.Version : "?") + " is a full download (about 29 GB) - INSTALL fetches it and upgrades in place; your account and settings stay.");
                         else Say("The Valley " + haveVer + " is installed in " + existingInstall + ". The update server did not answer - PLAY, or try again in a minute.");
                         if (st == -1) { installedExe = Path.Combine(existingInstall, "The Valley.exe"); go.Text = "PLAY"; }
                     }));
                 }) { IsBackground = true }.Start();
                 return;
             }
-            Say("INSTALL downloads The Valley (about 26 GB) and installs it - there is nothing else to download. You need about 55 GB free on the drive you install to. If the connection breaks, run the setup again: it carries on where it stopped.");
+            Say(brokenInstall != null ? RepairText(brokenInstall) : FreshText);
             return;
         }
         keepZip.Visible = false;   // v4.15: the parts beside the setup are read in place and always kept
@@ -154,7 +278,7 @@ public class SetupForm : Form
     void Start()
     {
         string target = dest.Text.Trim(); if (target.Length == 0) return;
-        go.Enabled = false; browse.Enabled = false; browse.Visible = false; dest.Enabled = false;
+        go.Enabled = false; browse.Enabled = false; browse.Visible = false; dest.Enabled = false; bBusy = true; if (scan != null) { scan.Enabled = false; scan.Visible = false; }   // v4.15.1d
         bool keep = keepZip.Checked, run = launch.Checked;
         new Thread(() =>
         {
