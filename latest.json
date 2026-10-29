@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.17.3",
+  "version": "4.17.4",
   "minVersion": "4.15.0",
   "title": "Shared Blood",
-  "notes": "**THE VALLEY v4.17.3** \u2014 Ionity Global (Pty) Ltd\n\n- **No more crash at the end of a round** (the \"Assertion failed: Bunch\" error when the map resets).\n- **A new round is a new war:** when the hour turns, every town goes back to its own side (the last round's owner used to keep the map).\n- **New players welcome:** creeps no longer jump to your level. A new map starts with low-level creeps that grow slowly with the round (level 4 at the start, +1 every 5 minutes).\n- **Fewer units on you:** a side's creep wave only marches out of a town it still owns, nothing spawns within 55 m of an enemy champion, fewer are alive at once, and a creep's call for help brings at most 2 friends (it used to pull a whole town).\n- **Half the gold:** town upgrades, troops, patrols, towers, tower enchants and unlearning talents cost about half the gold.\n- **Healers carry the light:** a Cleric / Shaman glows at night and lights up the allies around them.\n- **7 champion slots**, **score and quests fold away** beside the minimap (with the time), **titans wait** 3\u20136 minutes and never rise at base camp, **the Valley WIN popup** stays until the reset.\n- **Boulders fixed** on the cliffs and roads; **no more glowing white animals** at night.\n- **New painted bag icons**, and **sell as many as you like:** Shift + click marks items, then **Sell N**.\n- **The launcher:** the full THE VALLEY logo is back, and a **GM MESSAGE** box under CHECK / REFRESH carries news from the team.\n",
-  "released": "2026-10-29T15:51:49Z",
+  "notes": "**THE VALLEY v4.17.4** \u2014 Ionity Global (Pty) Ltd\n\n- **Nicknames:** type **/nick YourName** in chat \u2014 everyone sees **(YourName)** under your champion's name. **/nick** alone clears it. It is saved with your champion.\n- **BACK button in the champion forge** \u2014 change your mind and go back to the champion list.\n- **Quiet menus:** no more wind and rain \"swish\" over the music on the title, login and forge screens.\n- **Readable town line:** \"x of 10 towns\" and the town buffs sit on a dark plate in bigger type.\n",
+  "released": "2026-10-29T16:05:21Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -98,6 +98,16 @@
       "sha256": "fbd25224222fda493f7f7f828d381763dfa98ad46ee2cd81e135df43732b1a9b",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.17.3/TheValley_patch_4.17.2_to_4.17.3.zip"
+      ]
+    },
+    {
+      "from": "4.17.3",
+      "to": "4.17.4",
+      "file": "TheValley_patch_4.17.3_to_4.17.4.zip",
+      "size": 124857050,
+      "sha256": "f78fe4db4b6196bedf3c412ff3febeaa4e24c4375bb33942c604f0d1449beb48",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.17.4/TheValley_patch_4.17.3_to_4.17.4.zip"
       ]
     }
   ],
