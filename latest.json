@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.14.1",
-  "minVersion": "4.13.0",
-  "title": "Field of Honour",
-  "notes": "**THE VALLEY v4.14.1** - Ionity (Pty) Ltd\n\n- Fixed: champions load from your account again (an account rule added with the updater blocked the champion list).\n- The title, footer, credits and loading screen show v4.14 FIELD OF HONOUR; NEWS has the v4.14 and v4.13 entries.\n- The runner says when you already have the newest version.\n",
-  "released": "2026-10-28T16:23:04Z",
+  "version": "4.15.0",
+  "minVersion": "4.15.0",
+  "title": "Wild Karoo",
+  "notes": "**THE VALLEY v4.15.0 \"WILD KAROO\"** \u2014 Ionity (Pty) Ltd\n\nInstall or update with one small file: **TheValley_Setup.exe** (below). It downloads the game itself and never re-downloads what you already have. Every piece is verified when it arrives and every installed file is verified as it is unpacked (\"Verifying items ...\"), so a damaged file stops the setup instead of breaking the game.\n\n**Play together**\n- PvP between players: Kernel against Ashclaw, every blow checked by the World Server.\n- Duels: `/duel <name>` \u2014 a banner drops, a 20 m ring, 3-2-1, fight to 1 HP. No death, no level lost; the Valley hears who won. Leave the ring for 5 s and you forfeit.\n- Line of sight: ranged spells and shots need a clear line \u2014 hills, cliffs, walls and buildings block them.\n- Rejoins the World Server by itself once you are signed in. Ping shown bottom-right.\n\n**The Wild Karoo**\n- Vegetation packs across the whole valley; real zebra, cow, fox and more; photoscanned pebble fields.\n- Ore veins with real copper, iron, gold and mana-crystal ore.\n- Draw distance by object size (DRAW DISTANCE slider) \u2014 big help on weaker PCs.\n\n**Classes**\n- Rogues use Energy (starts at 30 of 150, refills 10 a second); Rage builds 1:1 from damage taken and 1:2 from damage dealt.\n- New spell effects, casting animations and hit effects; champions talk (\"I need more mana!\", \"Ouch!\").\n- Towers have less HP and grow stronger for every town your side holds.\n\n**Feel**\n- Controls no longer stick: mouse smoothing off, no more micro-freezes on heavy hits, full speed straight after a cast.\n- Resolution is a dropdown in settings.\n",
+  "released": "2026-10-29T07:33:55Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -32,133 +32,142 @@
     }
   ],
   "full": {
-    "version": "4.14.1",
+    "version": "4.15.0",
     "setup": "https://github.com/Ionity-Global/the-valley-releases/releases/latest/download/TheValley_Setup.exe",
     "folder": "https://drive.google.com/open?id=1ZQvrCKguXWNNnwHkBtP8XAP2iHAdHmKg",
-    "parts": 15,
-    "size": 28405415304,
+    "parts": 16,
+    "size": 30732006211,
     "files": [
       {
-        "name": "TheValley_v4.14_Client.zip.001",
+        "name": "TheValley_v4.15_Client.zip.001",
         "size": 1992294400,
-        "md5": "3236e6c7a932ba3724d63c09500ef3db",
+        "md5": "70188771329f18f5cfaf0e0d4972f9e3",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.001"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.001"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.002",
+        "name": "TheValley_v4.15_Client.zip.002",
         "size": 1992294400,
-        "md5": "cc0ec0187203e1b29c5649636c71a9d2",
+        "md5": "25aa8201abfa01b4ebed2fdcc4e75676",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.002"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.002"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.003",
+        "name": "TheValley_v4.15_Client.zip.003",
         "size": 1992294400,
-        "md5": "d5adb3475f0051259163a148d0e62a63",
+        "md5": "1afe8c3dc43447ed261b965bd36fe688",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.003"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.003"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.004",
+        "name": "TheValley_v4.15_Client.zip.004",
         "size": 1992294400,
-        "md5": "9a51ba9dc41d98d992ecb34d17befdcf",
+        "md5": "627c2cbe36397dab00ee79c11b5fbbb7",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.004"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.004"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.005",
+        "name": "TheValley_v4.15_Client.zip.005",
         "size": 1992294400,
-        "md5": "92d04aa3abccd8ee61bf6086fd34534f",
+        "md5": "5aba3fef27a9774189d214fb96331056",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.005"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.005"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.006",
+        "name": "TheValley_v4.15_Client.zip.006",
         "size": 1992294400,
-        "md5": "d20d58129bfc8cdd3b3d6a32713e59c7",
+        "md5": "538feb9787a6c0965b8c35f8df6b49cd",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.006"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.006"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.007",
+        "name": "TheValley_v4.15_Client.zip.007",
         "size": 1992294400,
-        "md5": "484ecbee7e9f3716da463afc68402018",
+        "md5": "bb9f51a2fee69856f290a3332ef19d1e",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.007"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.007"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.008",
+        "name": "TheValley_v4.15_Client.zip.008",
         "size": 1992294400,
-        "md5": "d30d412f41913f4e975168d1af9b6829",
+        "md5": "e8d21cf7d3346eb6b00ef60871222732",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.008"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.008"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.009",
+        "name": "TheValley_v4.15_Client.zip.009",
         "size": 1992294400,
-        "md5": "dc340197d9d68e7575356bfda61f7952",
+        "md5": "b0e24cbe92549f60fe922418f77da6d6",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.009"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.009"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.010",
+        "name": "TheValley_v4.15_Client.zip.010",
         "size": 1992294400,
-        "md5": "d30af9e99575aeb4382ec97ecdf9550f",
+        "md5": "a25b438feb527cef01a73c4ee30c8760",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.010"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.010"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.011",
+        "name": "TheValley_v4.15_Client.zip.011",
         "size": 1992294400,
-        "md5": "9c96b3aa34113a697fe79c03363b52b6",
+        "md5": "223688fea23e569246085c2b000cc775",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.011"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.011"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.012",
+        "name": "TheValley_v4.15_Client.zip.012",
         "size": 1992294400,
-        "md5": "d691ae17aa6db38957d46aac6e07735f",
+        "md5": "8f65016c6979d004057f725f567bbaa9",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.012"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.012"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.013",
+        "name": "TheValley_v4.15_Client.zip.013",
         "size": 1992294400,
-        "md5": "99749601e0bdbe79c961fa505e952427",
+        "md5": "9eb2b1a2bf51148f6823212e215cd8bd",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.013"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.013"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.014",
+        "name": "TheValley_v4.15_Client.zip.014",
         "size": 1992294400,
-        "md5": "cf7d66baa486524549fbb1eee8a439bf",
+        "md5": "9e4a5f068127ad4f8ca3e97f050bbddb",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.014"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.014"
         ]
       },
       {
-        "name": "TheValley_v4.14_Client.zip.015",
-        "size": 513293704,
-        "md5": "84d9e2d358ea22abded689a4870a390b",
+        "name": "TheValley_v4.15_Client.zip.015",
+        "size": 1992294400,
+        "md5": "b1b1febd16644e746e401c32d922b21e",
         "urls": [
-          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.14.1/TheValley_v4.14_Client.zip.015"
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.015"
+        ]
+      },
+      {
+        "name": "TheValley_v4.15_Client.zip.016",
+        "size": 847590211,
+        "md5": "62e7e06fa14430249979068cc6e13ddd",
+        "urls": [
+          "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.15.0/TheValley_v4.15_Client.zip.016"
         ]
       }
     ],
-    "setupDrive": "https://drive.google.com/open?id=1ckkOcVtetVPZPnzoYZG2tnXbbRtfQega"
+    "setupDrive": "https://drive.google.com/open?id=1ckkOcVtetVPZPnzoYZG2tnXbbRtfQega",
+    "name": "WILD KAROO"
   }
 }
