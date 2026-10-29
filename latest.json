@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.16.2",
+  "version": "4.17.0",
   "minVersion": "4.15.0",
-  "title": "Iron & Ale",
-  "notes": "**THE VALLEY v4.16.2** \u2014 Ionity Global (Pty) Ltd\n\n- **Chameleon is a camouflage everyone sees:** a rogue who turned to water looks like water to every other player too. It is only a camouflage \u2014 players can still target and hit a chameleon rogue; monsters leave them alone.\n- **Emotes everyone sees:** /dance /sit /sleep /laugh (/lol) /taunt /cheer /roar /bow /flex, new /wave /salute /kneel /no \u2014 on a World Server the players near you see your champion do it.\n",
-  "released": "2026-10-29T11:17:22Z",
+  "title": "Shared Blood",
+  "notes": "**THE VALLEY v4.17.0 \"SHARED BLOOD\"** \u2014 Ionity Global (Pty) Ltd\n\nThe launcher fetches it by itself. The first step of shared combat:\n\n**One Titan for everyone**\n- The World Server decides when and where a Titan rises (every 4\u20136 minutes near a random player; the Mega Titan every 25 minutes). Every player sees the same Titan at the same place.\n- Its health is the server's: every blow from every player counts, and the health bar everyone sees is the same bar.\n- The nearest player's game drives the body; the others see it walk, and it still swings at whoever stands in reach.\n- When it falls, **everyone who struck it** is paid the Epic (and sometimes Legendary) loot, gold and XP. The LOG tab names the slayer and how many shared the spoils.\n- A single blow can take at most 6 % of its health, so a crowd takes it down together.\n\nOnly players within 300 m receive the Titan's movement, so the server's traffic stays small.\n",
+  "released": "2026-10-29T11:51:25Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -58,6 +58,16 @@
       "sha256": "9075aa80b7113cc233dec253841d10bff1a1c76caf8f7b3540e30abf3d345020",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.16.2/TheValley_patch_4.16.1_to_4.16.2.zip"
+      ]
+    },
+    {
+      "from": "4.16.2",
+      "to": "4.17.0",
+      "file": "TheValley_patch_4.16.2_to_4.17.0.zip",
+      "size": 124842373,
+      "sha256": "6174080ca7d3596431c14544b8d47efd7aa813202f0a46a183dbc4a235473b12",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.17.0/TheValley_patch_4.16.2_to_4.17.0.zip"
       ]
     }
   ],
