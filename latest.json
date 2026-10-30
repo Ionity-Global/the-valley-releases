@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.18.4",
+  "version": "4.18.5",
   "minVersion": "4.15.0",
   "title": "Shared Blood",
-  "notes": "**THE VALLEY v4.18.4** \u2014 Ionity Global (Pty) Ltd\n\nA small update: the launcher shows **UPDATE 4.18.4** and fetches it by itself.\n\n**Mage \u2014 Blink**\n- When you land, Blink fires **3 Arcane Missiles** at the 3 nearest enemies in sight (up to 30 m).\n- **Arcane Ward:** 15 % less damage taken for 15 sec.\n- **Arcane Vigor:** +10 % health for 5 sec (the extra health is yours at once).\n- Blink still slows enemies where you stood, bursts frost where you land and gives +25 % run speed for 3 sec.\n",
-  "released": "2026-10-30T11:00:43Z",
+  "notes": "**THE VALLEY v4.18.5** \u2014 Ionity Global (Pty) Ltd\n\nA small update: the launcher shows **UPDATE 4.18.5** and fetches it by itself.\n\n**Death hurts more**\n- Dying now costs **3 levels** (never below level 1).\n\n**Thief Ampies**\n- Travel the roads at night, outside the towns and camps, and you are not alone: every 30\u2013110 seconds **Thief Ampies** leaps from the dark \u2014 an elite cut-throat or vampire two levels above you, with far more health and a fat purse of experience.\n- At most two of him at a time. Stay in town after dark, or travel together.\n",
+  "released": "2026-10-30T11:53:08Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -178,6 +178,16 @@
       "sha256": "04d2316bfe01142821799da7f9251b120ed655f6dfa7cb294bb22b03a0c45646",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.18.4/TheValley_patch_4.18.3_to_4.18.4.zip"
+      ]
+    },
+    {
+      "from": "4.18.4",
+      "to": "4.18.5",
+      "file": "TheValley_patch_4.18.4_to_4.18.5.zip",
+      "size": 124810170,
+      "sha256": "1ab24c59b027f7cbd8e032e587cc0f242e6423ec796f752b8a600cb852dfc9f6",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.18.5/TheValley_patch_4.18.4_to_4.18.5.zip"
       ]
     }
   ],
