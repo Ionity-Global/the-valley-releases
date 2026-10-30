@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.18.7",
+  "version": "4.19.2",
   "minVersion": "4.15.0",
-  "title": "Shared Blood",
-  "notes": "**THE VALLEY v4.18.7** \u2014 Ionity Global (Pty) Ltd\n\nA small update: the launcher shows **UPDATE 4.18.7** and fetches it by itself.\n\n**A greener Karoo**\n- About half again as much vegetation across the valley.\n- The Karoo's own plants now grow everywhere too: wild rooibos, searsia, Namaqualand daisies and flowers, ice plant, succulents, shrubs and ferns.\n\n**View distance that really saves your PC**\n- The DRAW DISTANCE slider now works like in other big games: far-away models switch to simpler versions sooner, the far landscape uses less detail, and at the low end distant textures are softer.\n- Creatures and camp folk beyond your view range now sleep \u2014 hidden and costing nothing \u2014 and wake as you come near. Waves, titans and anything fighting you always stay awake.\n\n**A cleaner welcome**\n- The crest on the title screen is no longer cut off at the top - it sits whole, with soft edges, in its true shape.\n- The loading screen shows the full crest larger, and a new line of valley wisdom under the bar every few seconds.\n\n\n**Area spells land where you point**\n- Meteor, Starfall, Blizzard, Hurricane, Rain of Fel, Eagle Strike, Volley / Arrow Storm, Hammer of Dawn and every ground channel are now cast on the spot you choose.\n- Press the key: a glowing circle follows your mouse on the ground. LEFT-CLICK (or press the key again) to cast there - channels rain on that circle for their full time. RIGHT-CLICK to cancel.\n- Beyond the spell's range the circle stops at the edge of your reach.\n\n",
-  "released": "2026-10-30T13:09:06Z",
+  "title": "Iron Crown",
+  "notes": "# The Valley 4.19.2 \"Iron Crown\"\n\n(c) 2018-2026 Antwerp Designs | Ionity (Pty) Ltd | AEDI | Policy 986 AED | Building Tomorrow, Today.\n\nEverything since 4.18.7 in one update (4.18.8 - 4.19.2).\n\n## Combat & classes\n- **Warlock - Shard Armor** (always on): 15% less damage taken, attackers take 7% of their hit back, 0.5% health regenerated per second.\n- **Cleric & Shaman - Thorns** (always on): attackers take 5% of their hit back.\n- **Paragon levels** past level 100: far slower, each gives +1 to every stat and +1 attack. Blue level badge, blue XP bar. The valley's foes stop scaling at 100.\n- **Aimed Shot** cast time +50%.\n- **Ground-targeted area spells** and channels; **5-second spawn shield** after every respawn.\n- **Death costs 1 level** (a Paragon level past 100).\n- **Faction towers fire on enemy players**.\n\n## Multiplayer\n- You now **see other players' attacks and spells**: their swing or cast, the bolt to the target and the impact.\n- **Right-click a player's portrait**: Duel / Whisper / Invite. Duel and party invites pop up in the centre of the screen.\n- **Chat bubbles** above heads for /s. **Whispers** in bright orange with a chime and a banner.\n- **Allies** of your faction on the minimap.\n\n## World\n- **The Stone Warden** (Stone Golem) at the Watchstone; the **Vampyr Stalker** hunts at night; a dark stone **monument** with statue and sword.\n- **Sterkfontein Grotte**: the ledge and the floating building are fixed.\n- A placed tower pushes players aside; nobody rides on a tower's roof any more.\n- Bigger, brighter station labels.\n\n## Items & interface\n- **Potion vendor shop window**: buy 1/5/10/20, sell what you select. New **Gman's Brew** (+30% speed for 60 s).\n- **Hold Shift** over an item to see what you wear in that slot.\n- **Type your own champion name** at creation; the attunement tile shows what it gives.\n- Mouse-look keeps turning past the screen edge; the mouse stays in the window; **Quit** from the sign-in page.\n- Calmer shadows, lighter rain.\n\nThe Barghest, centaur, griffon and dragon models follow in 4.19.3 with the King of the North.\n",
+  "released": "2026-10-30T18:12:13Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -198,6 +198,16 @@
       "sha256": "16ccd02ca37b473348c67f85ccd80620e489c525126e09f0cc43f069ae0f3c76",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.18.7/TheValley_patch_4.18.5_to_4.18.7.zip"
+      ]
+    },
+    {
+      "from": "4.18.7",
+      "to": "4.19.2",
+      "file": "TheValley_patch_4.18.7_to_4.19.2.zip",
+      "size": 650958485,
+      "sha256": "b0cba9c8ea92f95a7b0b215eac2a37e956ac27708bb4db31a827f0993531122a",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.19.2/TheValley_patch_4.18.7_to_4.19.2.zip"
       ]
     }
   ],
