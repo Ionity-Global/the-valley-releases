@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.19.3",
+  "version": "4.19.4",
   "minVersion": "4.15.0",
-  "title": "The North Remembers",
-  "notes": "# The Valley 4.19.3 \"The North Remembers\"\n\n(c) 2018-2026 Antwerp Designs | Ionity (Pty) Ltd | AEDI | Policy 986 AED | Building Tomorrow, Today.\n\n## The King of the North\n- A **level-200 raid boss** on his frozen throne in the far north (about 600, 1110 m), with four Frostbound guards. He never leaves his camp.\n- **Frost Smash** (ring at his feet, 1.5 s warning), **Glacier Toss** (a boulder on the farthest champion, 1.6 s warning), **Blizzard Aura** (cold every second within 16 m), **Enrage** below 30 %.\n- Every 3 minutes **his host marches south** on the nearest towns: thralls, bowmen and a brute.\n- **Legacy of the North**: every kill drops one Legacy piece for the next slot you lack - Frostbite (frost-burst weapon), the Crown (-10 % damage taken), Heart-of-Ice Cuirass (4 % thorns), Stride of the Long Winter (+10 % speed), Heart of Winter (0.3 % health a second) and more. Ice-blue in your bags.\n- He returns 30 minutes after he falls. The **Barghest, centaur, griffon and mountain dragon** now stand in the valley.\n\n## Fair fights\n- **Creeps are your level** (give or take one), from the first minute, measured against your champion: about five of your blows for a common foe, its blow about 5.5 % of your health. The end of one-shotting everything.\n- **PvP level gap**: a player more than 10 levels above you does 75 % less damage to you; more than 20 levels, 90 % less.\n- **Captures**: standing anywhere in a town's capture ring counts (you had to stand within 3.5 m of the flag - the bar never moved).\n- **Troops press on**: when their route ends they march on the nearest town that is not yours; when every town is yours, to the enemy's landing camp, where they wait outside the gate until someone comes out.\n- **The guardians hunt**: strike anyone in a landing camp and its level-999 Commander / Warchief follows you across the valley for 60 seconds.\n\n## Progression\n- **Capture a town: +2 levels. Capture an enemy town: +3 levels** (stand in the ring when it falls). Past 100: one Paragon level.\n- **Gathering** gives about 4 % of a level per node, **crafting** about 6 %.\n- **Blessings last**: the shrine's Sovereign Elixir and the campfire's Potjie Warmth last 30 minutes and survive three deaths.\n- **Scroll of Town Portal** (key Y, the blue button above the bar): home to your harbour, free, every 90 seconds. Not in combat.\n\n## The valley\n- **Calm shadows**: the day is now one real hour and the sun glides to its place every 45 seconds instead of turning every frame (the jumping shadows and their lag are gone).\n- **Nights 25 % lighter.**\n- **The chains come off**: the Chainbreaker, Shieldbreaker and Ironjaw no longer drag flailing glowing chains.\n\n## Interface\n- **Other players glow purple** in the target frame, with a PLAYER tag.\n- **Minimap zoom**: the mouse wheel over the minimap, or its + / - buttons (80 m to 600 m).\n- **Bigger match clock** at the top; the realm map's legend text no longer overlaps.\n- **.ampies** in the chat console: a massive flame burns every enemy within 40 yards (bosses lose a tenth; two minutes between uses).\n\nNext: 4.19.4 \"Stone and Iron\" - castle and dungeon walls for the camps and towns, the props pass, trading, the gold economy, the mines and the stable.\n",
-  "released": "2026-10-30T19:19:22Z",
+  "title": "Clear the Field",
+  "notes": "# The Valley 4.19.4 - Clear the Field\n\n**Performance**\n- Troops no longer pile up outside the enemy gate. Once every town is taken, only 12 per side wait at the gate; later waves run round the other towns.\n- Boss call-ups (\"Oproep\" soldiers) are capped at 4 near a boss and fall away after 1 to 2.5 minutes. Before, they never left.\n\n**Town Portal**\n- Press Y (or the button) and the realm map opens: pick your harbour or any town in the valley. Enemy towns are marked. Every 90 s, not in combat.\n- The button now shows a portal swirl icon.\n\n**Titans**\n- Titans top out at level 300.\n\n(c) 2018-2026 Antwerp Designs | Ionity (Pty) Ltd | AEDI | Policy 986 AED\n",
+  "released": "2026-10-30T19:57:47Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -218,6 +218,16 @@
       "sha256": "a5b2d5d7373283be9eedccec0c18faffc35721b2be8b31331bb6e66ace102021",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.19.3/TheValley_patch_4.19.2_to_4.19.3.zip"
+      ]
+    },
+    {
+      "from": "4.19.3",
+      "to": "4.19.4",
+      "file": "TheValley_patch_4.19.3_to_4.19.4.zip",
+      "size": 125186866,
+      "sha256": "c14650ec3fd3ad11957c9e1a79c658848ce4bc7bb9a8652a58b511bb41cb5051",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.19.4/TheValley_patch_4.19.3_to_4.19.4.zip"
       ]
     }
   ],
