@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.18.5",
+  "version": "4.18.7",
   "minVersion": "4.15.0",
   "title": "Shared Blood",
-  "notes": "**THE VALLEY v4.18.5** \u2014 Ionity Global (Pty) Ltd\n\nA small update: the launcher shows **UPDATE 4.18.5** and fetches it by itself.\n\n**Death hurts more**\n- Dying now costs **3 levels** (never below level 1).\n\n**Thief Ampies**\n- Travel the roads at night, outside the towns and camps, and you are not alone: every 30\u2013110 seconds **Thief Ampies** leaps from the dark \u2014 an elite cut-throat or vampire two levels above you, with far more health and a fat purse of experience.\n- At most two of him at a time. Stay in town after dark, or travel together.\n",
-  "released": "2026-10-30T11:53:08Z",
+  "notes": "**THE VALLEY v4.18.7** \u2014 Ionity Global (Pty) Ltd\n\nA small update: the launcher shows **UPDATE 4.18.7** and fetches it by itself.\n\n**A greener Karoo**\n- About half again as much vegetation across the valley.\n- The Karoo's own plants now grow everywhere too: wild rooibos, searsia, Namaqualand daisies and flowers, ice plant, succulents, shrubs and ferns.\n\n**View distance that really saves your PC**\n- The DRAW DISTANCE slider now works like in other big games: far-away models switch to simpler versions sooner, the far landscape uses less detail, and at the low end distant textures are softer.\n- Creatures and camp folk beyond your view range now sleep \u2014 hidden and costing nothing \u2014 and wake as you come near. Waves, titans and anything fighting you always stay awake.\n\n**A cleaner welcome**\n- The crest on the title screen is no longer cut off at the top - it sits whole, with soft edges, in its true shape.\n- The loading screen shows the full crest larger, and a new line of valley wisdom under the bar every few seconds.\n\n\n**Area spells land where you point**\n- Meteor, Starfall, Blizzard, Hurricane, Rain of Fel, Eagle Strike, Volley / Arrow Storm, Hammer of Dawn and every ground channel are now cast on the spot you choose.\n- Press the key: a glowing circle follows your mouse on the ground. LEFT-CLICK (or press the key again) to cast there - channels rain on that circle for their full time. RIGHT-CLICK to cancel.\n- Beyond the spell's range the circle stops at the edge of your reach.\n\n",
+  "released": "2026-10-30T13:09:06Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -188,6 +188,16 @@
       "sha256": "1ab24c59b027f7cbd8e032e587cc0f242e6423ec796f752b8a600cb852dfc9f6",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.18.5/TheValley_patch_4.18.4_to_4.18.5.zip"
+      ]
+    },
+    {
+      "from": "4.18.5",
+      "to": "4.18.7",
+      "file": "TheValley_patch_4.18.5_to_4.18.7.zip",
+      "size": 126508055,
+      "sha256": "16ccd02ca37b473348c67f85ccd80620e489c525126e09f0cc43f069ae0f3c76",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.18.7/TheValley_patch_4.18.5_to_4.18.7.zip"
       ]
     }
   ],
