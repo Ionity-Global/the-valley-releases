@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.19.4",
+  "version": "4.19.5",
   "minVersion": "4.15.0",
-  "title": "Clear the Field",
-  "notes": "# The Valley 4.19.4 - Clear the Field\n\n**Performance**\n- Troops no longer pile up outside the enemy gate. Once every town is taken, only 12 per side wait at the gate; later waves run round the other towns.\n- Boss call-ups (\"Oproep\" soldiers) are capped at 4 near a boss and fall away after 1 to 2.5 minutes. Before, they never left.\n\n**Town Portal**\n- Press Y (or the button) and the realm map opens: pick your harbour or any town in the valley. Enemy towns are marked. Every 90 s, not in combat.\n- The button now shows a portal swirl icon.\n\n**Titans**\n- Titans top out at level 300.\n\n(c) 2018-2026 Antwerp Designs | Ionity (Pty) Ltd | AEDI | Policy 986 AED\n",
-  "released": "2026-10-30T19:57:47Z",
+  "title": "The Frozen Court",
+  "notes": "# The Valley 4.19.5 - The Frozen Court\n\n**Town Portal works**\n- Press Y (or the button): CHOOSE LOCATION. The map opens and every place the portal can open pings on it - your harbour and every town (enemy towns in red). Click a mark, or a line in the side panel. Before, a pick did nothing.\n\n**The North**\n- The King of the North now holds court. A ring of battlements, four corner towers, a gated south wall and a lantern-lit throne dais stand at the far north of the valley. Find \"The Frozen Court\" on the map.\n- Two new court bosses stand with the King: **The Warchief of the Dead** (level 150) raises thralls and drains souls; **The Frost Witch** (level 175) lays blizzard pools and mends the Warchief. Each pays out a piece of the Legacy of the North you still lack, or a Legendary.\n\n**A new face**\n- New sign-in gate and a new menu hall, painted; stone and gold menu buttons.\n- The map of the realm is now an old scroll: contour lines, hill shading, the river and the coast in ink, roads in red-brown.\n- New launcher screen: world server list with ping and players, server check and refresh, update progress and the GM herald.\n\n**Coming next: 4.19.6 Stone and Iron**\n- The castle, dungeon, gothic, fountain, market, ruins and Atris weapon kits (content pack 3, about 2.4 GB) follow right after this update, downloaded in parts by the new launcher. Until then the walls and the Frozen Court use their simple stand-in shapes.\n\n**Titans**\n- Titans are capped at level 300.\n\n(c) 2018-2026 Antwerp Designs | Ionity (Pty) Ltd | AEDI | Policy 986 AED\n",
+  "released": "2026-10-30T22:39:31Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -228,6 +228,16 @@
       "sha256": "c14650ec3fd3ad11957c9e1a79c658848ce4bc7bb9a8652a58b511bb41cb5051",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.19.4/TheValley_patch_4.19.3_to_4.19.4.zip"
+      ]
+    },
+    {
+      "from": "4.19.4",
+      "to": "4.19.5",
+      "file": "TheValley_patch_4.19.4_to_4.19.5.zip",
+      "size": 137217324,
+      "sha256": "d36ed1b6b0e3ec90d232beb784b40d96d8bb56de4f5a1b2b55a495cc8e9c30da",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.19.5/TheValley_patch_4.19.4_to_4.19.5.zip"
       ]
     }
   ],
