@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.18.3",
+  "version": "4.18.4",
   "minVersion": "4.15.0",
   "title": "Shared Blood",
-  "notes": "**THE VALLEY v4.18.3** \u2014 Ionity Global (Pty) Ltd\n\nA small update: the launcher shows **UPDATE 4.18.3** and fetches it by itself.\n\n**Tower limit**\n- Each champion can build at most **7 new towers in any 5 minutes** (build mode and field watchtowers). When you reach the limit the game tells you when the next one is allowed.\n- Upgrading or capturing an existing tower does not count toward the limit.\n- Fixed: the field watchtower's cost message now shows the real price (45 gold, 70 wood, 60 stone).\n",
-  "released": "2026-10-30T10:14:38Z",
+  "notes": "**THE VALLEY v4.18.4** \u2014 Ionity Global (Pty) Ltd\n\nA small update: the launcher shows **UPDATE 4.18.4** and fetches it by itself.\n\n**Mage \u2014 Blink**\n- When you land, Blink fires **3 Arcane Missiles** at the 3 nearest enemies in sight (up to 30 m).\n- **Arcane Ward:** 15 % less damage taken for 15 sec.\n- **Arcane Vigor:** +10 % health for 5 sec (the extra health is yours at once).\n- Blink still slows enemies where you stood, bursts frost where you land and gives +25 % run speed for 3 sec.\n",
+  "released": "2026-10-30T11:00:43Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -168,6 +168,16 @@
       "sha256": "c8c82ed8506a12aba05aef64e59eee389a14a3cb088a5fee0a73a8cfd94ded5f",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.18.3/TheValley_patch_4.18.2_to_4.18.3.zip"
+      ]
+    },
+    {
+      "from": "4.18.3",
+      "to": "4.18.4",
+      "file": "TheValley_patch_4.18.3_to_4.18.4.zip",
+      "size": 124804817,
+      "sha256": "04d2316bfe01142821799da7f9251b120ed655f6dfa7cb294bb22b03a0c45646",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.18.4/TheValley_patch_4.18.3_to_4.18.4.zip"
       ]
     }
   ],
