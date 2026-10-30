@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.18.2",
+  "version": "4.18.3",
   "minVersion": "4.15.0",
   "title": "Shared Blood",
-  "notes": "**THE VALLEY v4.18.2** \u2014 Ionity Global (Pty) Ltd\n\nA small update: the launcher shows **UPDATE 4.18.2** and fetches it by itself.\n\n**Warrior**\n- Charge: really runs the whole 50 yd now, steering onto the target, untouchable until it lands (it used to stop after about 10 m).\n- Thunder Clap: slows enemies by 30 % for 3 sec (and they still take +20 % damage for 5 sec).\n- Shield Wall: 30 % less damage for 15 sec, and every ally within 25 m takes 10 % less damage for 15 sec too (the ally shield never switched on before).\n\n**Readable text, whatever your graphics settings**\n- Full screen always runs at your monitor's own resolution. A lower Resolution choice now lowers only the 3D world, so the HUD, menus and every letter stay sharp and full size.\n- All HUD text is a little larger and never smaller than 13 pixels; light text gets a soft shadow on bright ground.\n\n**Also in this update**\n- A new install starts on EPIC graphics at full resolution.\n- The northern waves are the UNDEAD: two lanes march south from the north-west and north-east passes \u2014 thralls, bowmen, brutes, ghosts, death-witches and a death-lord.\n- Every skill tooltip now says what the skill really does; buff icons explain themselves when you hover over them.\n- Fixed: the Grotte wraiths and reaper and the kobold slingers now appear with their proper bodies.\n",
-  "released": "2026-10-30T09:54:51Z",
+  "notes": "**THE VALLEY v4.18.3** \u2014 Ionity Global (Pty) Ltd\n\nA small update: the launcher shows **UPDATE 4.18.3** and fetches it by itself.\n\n**Tower limit**\n- Each champion can build at most **7 new towers in any 5 minutes** (build mode and field watchtowers). When you reach the limit the game tells you when the next one is allowed.\n- Upgrading or capturing an existing tower does not count toward the limit.\n- Fixed: the field watchtower's cost message now shows the real price (45 gold, 70 wood, 60 stone).\n",
+  "released": "2026-10-30T10:14:38Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -158,6 +158,16 @@
       "sha256": "448a827630993f51df9889c9c3614c9fea6d59295a34004803c144be17330575",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.18.2/TheValley_patch_4.18.1_to_4.18.2.zip"
+      ]
+    },
+    {
+      "from": "4.18.2",
+      "to": "4.18.3",
+      "file": "TheValley_patch_4.18.2_to_4.18.3.zip",
+      "size": 124801593,
+      "sha256": "c8c82ed8506a12aba05aef64e59eee389a14a3cb088a5fee0a73a8cfd94ded5f",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.18.3/TheValley_patch_4.18.2_to_4.18.3.zip"
       ]
     }
   ],
