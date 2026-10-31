@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.19.7",
+  "version": "4.19.8",
   "minVersion": "4.15.0",
-  "title": "Launcher",
-  "notes": "# The Valley 4.19.7 - Launcher\n\n**Launcher**\n- When an update replaces the launcher itself, the launcher now restarts into its new version and carries on with the rest of the update chain by itself. (4.19.5 -> 4.19.6 stopped with \"could not be downloaded\" because the old launcher tried to finish a chain only the new one understands; closing and reopening the launcher was the fix.)\n\n(c) 2018-2026 Antwerp Designs | Ionity (Pty) Ltd | AEDI | Policy 986 AED\n",
-  "released": "2026-10-31T03:39:14Z",
+  "title": "The Old Map",
+  "notes": "# The Valley 4.19.8 \u2014 \"The Old Map\"\n\n## The map, redrawn\n- The realm map is now an old ink map: rivers, roads and bridges, towns, harbours with ships, camps, landmarks, forests and mountains, with every name lettered on it, a cartouche, a compass and a scale.\n- The map still shows what is live: who holds each town, your quests, you, your allies.\n- **Town Portal** says CHOOSE LOCATION and pings every place you can open it to on the map.\n\n## A quiet sign-in\n- Behind the sign-in, menu and champion forge you now hear only the theme, a soft wind and your clicks. The fights, beasts and voices of the world behind it are silent.\n- If loading takes too long, the intro film is skipped instead of starting halfway through your sign-in.\n\n## The Ashclaw walls\n- The Ashclaw camp and town walls now stand as real walls: 3.4 m of black stone with iron spikes and skull-crowned pillars. Before, they were giant slabs that blocked the camera.\n- The gothic gate is the right size again.\n\n## Bags and the potion shop\n- Gman's Brew, Elixir of the Lion, Elixir of the Ionflow and Moonflower Tonic have their own painted flasks. The potion shop and your supplies list show the icon of every item.\n- **SELL ALL** in the potion shop sells everything the shop buys in one click.\n- **Sell all** in your bags sells every piece of gear. Click it twice; the first click tells you what you would get.\n- **Destroy**: mark bag pieces (Shift + click) and press Destroy. Every supply row also has an **X** that throws the stack away. Both ask you to click twice.\n\n## No more endless fights at the base camps\n- The faction war parties now gather on the road about 120 m out, stop well short of the enemy camp, march every 2 minutes instead of every 42 seconds, and at most 8 are on the field at once.\n\n(c) 2018-2026 Antwerp Designs | Ionity (Pty) Ltd | AEDI | Policy 986 AED | www.ionity.today\n",
+  "released": "2026-10-31T05:25:56Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -269,6 +269,16 @@
       "sha256": "bfff2b6ec510b3fb29c4a417bde7cb64862118a1c8771296fca64bec5b827a6a",
       "urls": [
         "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.19.7/TheValley_patch_4.19.6_to_4.19.7.zip"
+      ]
+    },
+    {
+      "from": "4.19.7",
+      "to": "4.19.8",
+      "file": "TheValley_patch_4.19.7_to_4.19.8.zip",
+      "size": 130572160,
+      "sha256": "7a301cdd5d614ee8e8990d7cf1bc96a6238027cd1623678667bec715aecd31c9",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.19.8/TheValley_patch_4.19.7_to_4.19.8.zip"
       ]
     }
   ],
