@@ -2,11 +2,11 @@
   "schema": 1,
   "product": "The Valley",
   "publisher": "Ionity (Pty) Ltd",
-  "version": "4.19.6",
+  "version": "4.19.7",
   "minVersion": "4.15.0",
-  "title": "Stone and Iron",
-  "notes": "# The Valley 4.19.6 - Stone and Iron\n\n**Content pack 3 (about 2.4 GB, downloaded in parts)**\n- The castle, dungeon, gothic, fountain, market, ruins and Atris weapon kits now ship with the game. Town walls and the two landing camps stand in real stone; the wooden stakes are gone.\n- The Frozen Court in the far north rises in the castle kit: battlements, corner towers, the gate and the throne dais.\n- The launcher downloads this update in parts and checks the whole before installing. Let it finish; it resumes where it stopped.\n\n(c) 2018-2026 Antwerp Designs | Ionity (Pty) Ltd | AEDI | Policy 986 AED\n",
-  "released": "2026-10-30T23:03:27Z",
+  "title": "Launcher",
+  "notes": "# The Valley 4.19.7 - Launcher\n\n**Launcher**\n- When an update replaces the launcher itself, the launcher now restarts into its new version and carries on with the rest of the update chain by itself. (4.19.5 -> 4.19.6 stopped with \"could not be downloaded\" because the old launcher tried to finish a chain only the new one understands; closing and reopening the launcher was the fix.)\n\n(c) 2018-2026 Antwerp Designs | Ionity (Pty) Ltd | AEDI | Policy 986 AED\n",
+  "released": "2026-10-31T03:39:14Z",
   "patches": [
     {
       "from": "4.13.0",
@@ -259,6 +259,16 @@
             "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.19.6/TheValley_patch_4.19.5_to_4.19.6.zip.002"
           ]
         }
+      ]
+    },
+    {
+      "from": "4.19.6",
+      "to": "4.19.7",
+      "file": "TheValley_patch_4.19.6_to_4.19.7.zip",
+      "size": 247922,
+      "sha256": "bfff2b6ec510b3fb29c4a417bde7cb64862118a1c8771296fca64bec5b827a6a",
+      "urls": [
+        "https://github.com/Ionity-Global/the-valley-releases/releases/download/v4.19.7/TheValley_patch_4.19.6_to_4.19.7.zip"
       ]
     }
   ],
